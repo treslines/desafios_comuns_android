@@ -1,6 +1,6 @@
 
 ### 🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
-Tenho certeza que cedo ou tarde você vai precisar desse repositório. Após o **SUCESSO** que a playlist do Certificado para o <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a> teve e esta tendo no canal <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">**PROGRAMADOR DE ELITE**</a>, resolvi criar mais esse App no mesmo estilo, porém agora focando nos principais desafios que enfrentamos no nosso dia a dia. Tudo em 🇵🇹 **PORTUGUÊS** 🇧🇷 e em **KOTLIN!** 
+**Tenho certeza que cedo ou tarde você vai precisar desse repositório.** Após o **SUCESSO** que a playlist do **Certificado** para o <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a> teve e esta tendo no canal <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">**PROGRAMADOR DE ELITE**</a>, resolvi criar mais esse App no mesmo estilo, porém agora focando nos principais desafios que enfrentamos no nosso dia a dia. Tudo em 🇵🇹 **PORTUGUÊS** 🇧🇷 e em **KOTLIN!** 
 
 
 ### 👉 Desafios Comuns Android
@@ -29,3 +29,8 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 EM BREVE DISPONÍVEL** | 🚩 EM BREVE DISPONÍVEL |
+
+---
+
+### 👉 **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
+🇧🇷 **Preparatório em Português** 🇵🇹: <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a>
