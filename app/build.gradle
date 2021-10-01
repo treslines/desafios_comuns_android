@@ -11,7 +11,6 @@ apply plugin: 'de.mannodermaus.android-junit5'
 
 android {
     compileSdk 31
-
     defaultConfig {
         applicationId "com.progdeelite.dca"
         minSdk 23
