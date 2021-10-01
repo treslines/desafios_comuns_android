@@ -1,0 +1,193 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+// +-----------------------------------------------------------------+
+// | Annotation processor for Room                                   |
+// +-----------------------------------------------------------------+
+apply plugin: 'kotlin-kapt'
+// +-----------------------------------------------------------------+
+// | Unit5 Plugin                                                    |
+// +-----------------------------------------------------------------+
+apply plugin: 'de.mannodermaus.android-junit5'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.progdeelite.dca"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // +-----------------------------------------------------------------+
+    // | PARA ASSINAR SUA APP: USADO NO buildTypes DE release            |
+    // +-----------------------------------------------------------------+
+    signingConfigs {
+        release {
+            storeFile file("release-key.keystore")
+            storePassword 'password'
+            keyAlias 'alias'
+            keyPassword 'journaldev'
+        }
+    }
+    // +-----------------------------------------------------------------+
+    // | VARIACÕES DE BUILD COMUNS EM PROJETOS                           |
+    // +-----------------------------------------------------------------+
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        // +-----------------------------------------------------------------+
+        // | debug NORMALEMENTE NÃO PRECISA SER ESPECIFICADO, APENAS QUANDO  |
+        // | QUEREMOS MUDAR ALGUMA COISA, COMO FOI O CASO AQUI               |
+        // +-----------------------------------------------------------------+
+        debug {
+            pseudoLocalesEnabled true   // para exibir idiomas fakes no seu dispositivo
+            minifyEnabled false         // para nao compactar o código durante desenvolvimento
+            debuggable true             // para poder usar break points e depurar valores
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        // +-----------------------------------------------------------------+
+        // | initWith PERMITE COPIAR CONFIGURACÕES DE UM TIPO EXISTENTE E    |
+        // | ADICIONAR OUTRAS OU ALTERAR EXISTENTES. BOM PARA NÃO TER QUE    |
+        // | REDIGITAR TUDO NOVAMENTE. AQUI COPIAMOS debug COMO EXEMPLO      |
+        // +-----------------------------------------------------------------+
+        staging {
+            initWith debug
+            manifestPlaceholders = [hostName:"internal.progdeelite.com"]
+            applicationIdSuffix ".debugStaging"
+        }
+    }
+
+    // +-----------------------------------------------------------------+
+    // | OPCÕES DE COMPILACÃO DO Java Compiler                           |
+    // +-----------------------------------------------------------------+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    // +-----------------------------------------------------------------+
+    // | OPCÕES DE EMPACOTAMENTO EXCLUINDO META INFOS                    |
+    // +-----------------------------------------------------------------+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
+    // +-----------------------------------------------------------------+
+    // | HABILITANDO O view binding                                      |
+    // +-----------------------------------------------------------------+
+    viewBinding {
+        enabled = true
+    }
+
+    // +-----------------------------------------------------------------+
+    // | OPCÕES PARA TESTE                                               |
+    // +-----------------------------------------------------------------+
+    useLibrary("android.test.runner")
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+
+    // +-----------------------------------------------------------------+
+    // | Material Components                                             |
+    // +-----------------------------------------------------------------+
+    implementation 'com.google.android.material:material:1.5.0-alpha04'
+
+    // +-----------------------------------------------------------------+
+    // | Preferences                                                     |
+    // +-----------------------------------------------------------------+
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+
+    // +-----------------------------------------------------------------+
+    // | Navigation                                                      |
+    // +-----------------------------------------------------------------+
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:2.3.5"
+    // Jetpack Compose Integration
+    //implementation "androidx.navigation:navigation-compose:2.4.0-alpha10"
+
+    // +-----------------------------------------------------------------+
+    // | StartFragmentForResult (setFragmentResultListener)              |
+    // +-----------------------------------------------------------------+
+    implementation "androidx.fragment:fragment-ktx:1.3.6"
+
+    // +-----------------------------------------------------------------+
+    // | Layouting                                                       |
+    // +-----------------------------------------------------------------+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // +-----------------------------------------------------------------+
+    // | Coroutines                                                      |
+    // +-----------------------------------------------------------------+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+
+    // +-----------------------------------------------------------------+
+    // | Depuração deps                                                  |
+    // +-----------------------------------------------------------------+
+    implementation "com.jakewharton.timber:timber:4.7.1"
+
+    // +-----------------------------------------------------------------+
+    // | Unit Tests (logic)                                              |
+    // +-----------------------------------------------------------------+
+    // (Required) Writing and executing Unit Tests on the JUnit Platform
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.0")
+    // (Optional) If you need "Parameterized Tests"
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.0")
+    // (Optional) If you also have JUnit 4-based tests
+    //testImplementation("junit:junit:4.13.2")
+    //testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.0")
+
+    // +-----------------------------------------------------------------+
+    // | Instrumented Unit Tests (UI & Integration Test)                 |
+    // +-----------------------------------------------------------------+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // +-----------------------------------------------------------------+
+    // | Mocked Tests (UI & Integration Test)                            |
+    // +-----------------------------------------------------------------+
+    androidTestImplementation "org.mockito:mockito-core:2.28.2"
+
+    // +-----------------------------------------------------------------+
+    // | Testing Navigation                                              |
+    // +-----------------------------------------------------------------+
+    //androidTestImplementation "androidx.navigation:navigation-testing:2.3.5"
+
+    // +-----------------------------------------------------------------+
+    // | Room with view                                                  |
+    // +-----------------------------------------------------------------+
+    //implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    //implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    //implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+    //implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+    //implementation "androidx.room:room-runtime:2.3.0"
+    //implementation "androidx.room:room-ktx:2.3.0"
+
+    // +-----------------------------------------------------------------+
+    // | Retrofit                                                        |
+    // +-----------------------------------------------------------------+
+    //implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    //implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    //implementation "com.squareup.retrofit2:retrofit-mock:2.9.0"
+    //implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+}
