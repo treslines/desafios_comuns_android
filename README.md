@@ -28,7 +28,7 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 ### 🧪 **PROBLEMA OU DESAFIO**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **🚩 EM BREVE DISPONÍVEL** | 🚩 EM BREVE DISPONÍVEL |
+| **🚩 AGENDADO: 14/10/2021** 🔑 COMO SOLICITAR MÚLTIPLAS PERMISSÕES PROGRAMATICAMENTE NO ANDROID STUDIO - CONCEDER PERMISSÃO  | <a href="https://youtu.be/grYUKZDTzVA" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BPEDIR-PERMISS%C3%83O%5D-COMO-SOLICITAR-M%C3%9ALTIPLAS-PERMISS%C3%95ES-PROGRAMATICAMENTE-NO-ANDROID-STUDIO-COMO-CONCEDER-PERMISS%C3%83O-ANDROID.png" width="100" height="56"></a> |
 
 ---
 
