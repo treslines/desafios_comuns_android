@@ -4,9 +4,11 @@
 
 
 ### 👉 Desafios Comuns Android
-Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da lígua Portuguêsa! 
+Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguêsa** 🇧🇷! 
 
-
+| Desafios Comuns Android |
+| :------------- |
+| <img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/desafios_problemas_comuns_na_vida_do_desenvolvedor_android.png" width="240" height="520"> |
 
 ### 👉 Quais são as vantagens desse aplicativo referência?
 * ✔️ Ele é modular e pode ser incrementado com cada novidade que for surgindo
@@ -33,4 +35,10 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 ---
 
 ### 👉 **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
-🇧🇷 **Preparatório em Português** 🇵🇹: <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a>
+🇧🇷 **Preparatório em Português** 🇵🇹
+</br>
+<a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a>
+
+| 🎨 App Multi-Uso | 🎨 Resultdo Final |
+| :------------- |:-------------:|
+| <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer1.png" width="240" height="520"></a> | <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer2.png" width="240" height="520"></a>|
