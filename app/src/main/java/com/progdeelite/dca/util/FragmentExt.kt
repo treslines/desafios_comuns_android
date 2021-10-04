@@ -16,6 +16,7 @@ import com.google.android.material.snackbar.Snackbar
 fun Fragment.navTo(@IdRes dest: Int) = findNavController().navigate(dest)
 fun Fragment.navTo(directions: NavDirections) = findNavController().navigate(directions)
 fun Fragment.navTo(@IdRes dest: Int, args: Bundle) = findNavController().navigate(dest, args)
+fun Fragment.navBack() = findNavController().navigateUp()
 
 /** EXIBE UMA MENSAGEM SIMPLES TEMPORARIZADA NA TELA DO CELULAR */
 fun Fragment.toast(msg: String) = Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show()

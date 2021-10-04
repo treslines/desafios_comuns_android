@@ -9,13 +9,10 @@
         android:id="@+id/setResultFragment"
         android:name="com.progdeelite.dca.request_permission.RequestPermissionFragment"
         android:label="fragment_set_result"
-        tools:layout="@layout/fragment_Request_Permission">
+        tools:layout="@layout/fragment_request_permission">
         <action
             android:id="@+id/action_setResultFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_setResultFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -25,6 +22,9 @@
         <action
             android:id="@+id/action_mainFragment_to_setResultFragment"
             app:destination="@id/setResultFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_requestResultFragment"
+            app:destination="@id/requestResultFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -32,7 +32,19 @@
         android:label="fragment_result"
         tools:layout="@layout/fragment_result">
         <action
-            android:id="@+id/action_resultFragment_to_setResultFragment"
-            app:destination="@id/setResultFragment" />
+            android:id="@+id/action_resultFragment_to_requestResultFragment"
+            app:destination="@id/requestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestResultFragment"
+        android:name="com.progdeelite.dca.start_for_result.RequestResultFragment"
+        android:label="fragment_request_result"
+        tools:layout="@layout/fragment_request_result">
+        <action
+            android:id="@+id/action_requestResultFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_requestResultFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

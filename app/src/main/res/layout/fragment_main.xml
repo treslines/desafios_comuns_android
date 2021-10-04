@@ -34,14 +34,663 @@
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/start_for_result"
+            android:id="@+id/requestPermissions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_secondary"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Solicitando Permissão por Demanda"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle2"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Resultados de Telas"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_for_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Requisitando Resultado de Tela"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle3"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Diálogo Personalizado"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/custom_dialogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Exibir Custom Dialogs"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle4"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Conexão de Internet"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/app_no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Verificar se App Tem Internet"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle5"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Capturas de Tela"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/capture_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Bloquear Capturas de Telas"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle6"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Teclado Flutuante"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hide_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Esconder SoftKeyboard"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle7"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Vibrar Celular"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vibrate_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Fazer Celular Vibrar"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle8"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Biometria"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_biometry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Exibir Leiter de Biometria"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle9"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Criar Vídeos"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Salvar Vídeos"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle10"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ícones Adaptáveis"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adaptive_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar Ícones Adaptáveis"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle11"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Requisições"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Disparar Requisições"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle12"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Registrar Erros"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/log_errors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Commo Imprimir Erros"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle13"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Dark Theme / Tema Noturno"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dark_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Tema Noturno no WebView"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle14"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cookies"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clear_cookies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Limpar Cookies"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle15"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Definindo Ambientes"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/define_environment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Definir Ambiente"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle16"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Extensões Kotlin"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/kotlin_extensions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Definir Extensões"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle17"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Salvar em Memória"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_in_Memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Salvar em Memória"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle18"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Checkar Emulador"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check_emulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Descobrir o Emulador"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle19"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Acessando Conteúdo"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/content_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar ContentProvider"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle20"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Dados Sensíveis"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cryptographie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criptografar Dados Sensíveis"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle21"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Botão de Back"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/press_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Reagir ao Botão de Back"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle22"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Telas Invisíveis"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/invisible_screens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar Telas Translucentes"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle23"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Anotações de LifeCycle"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lifecycle_annotations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Usar LifeCycle Annotations"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle24"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Animações de Campos"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anim_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Animar Campos e Textos"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle25"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Requisições Seguras"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/secure_requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Requisições Seguras HTTPS"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle26"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Client HTTP"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/client_http"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar um Client HTTP"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle27"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Animações no Navigation Graph"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anim_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Animar Transições de Telas"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle28"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Validando Campos e Textos"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/validate_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Validar Campos e Textos"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
     </LinearLayout>

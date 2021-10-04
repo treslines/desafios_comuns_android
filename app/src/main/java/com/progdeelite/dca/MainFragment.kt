@@ -13,6 +13,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
-        binding.startForResult.setOnClickListener { navTo(R.id.setResultFragment) }
+        
+        // solicitar permissões com a nova API da google
+        binding.requestPermissions.setOnClickListener { navTo(R.id.setResultFragment) }
+
+        // lançar activity e fragments e obter resultados
+        binding.startForResults.setOnClickListener { navTo(R.id.requestResultFragment) }
     }
 }
