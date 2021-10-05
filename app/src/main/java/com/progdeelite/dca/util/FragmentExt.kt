@@ -1,10 +1,10 @@
 package com.progdeelite.dca.util
 
+import android.content.Context
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
-import android.os.Bundle
+import android.os.*
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_FORCED
@@ -78,5 +78,32 @@ fun Fragment.showKeyboard(view: View? = activity?.currentFocus) {
 
 fun Fragment.inputMethodManager() =
     context?.getSystemService(INPUT_METHOD_SERVICE) as? InputMethodManager
+
+
+@Suppress("DEPRECATION")
+fun Fragment.vibrate(duration: Long = 100) {
+    val vibrator = requireContext().getSystemService(Context.VIBRATOR_SERVICE) as? Vibrator
+    when {
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+            val vm =
+                requireContext().getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
+            vm.defaultVibrator.vibrate(
+                VibrationEffect.createOneShot(
+                    duration,
+                    VibrationEffect.DEFAULT_AMPLITUDE
+                )
+            )
+        }
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && Build.VERSION.SDK_INT < Build.VERSION_CODES.S -> {
+            vibrator?.vibrate(
+                VibrationEffect.createOneShot(
+                    duration,
+                    VibrationEffect.DEFAULT_AMPLITUDE
+                )
+            )
+        }
+        else -> vibrator?.vibrate(duration)
+    }
+}
 
 
