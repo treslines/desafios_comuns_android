@@ -31,6 +31,7 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 AGENDADO: 14/10/2021** 🔑 COMO SOLICITAR MÚLTIPLAS PERMISSÕES PROGRAMATICAMENTE NO ANDROID STUDIO - CONCEDER PERMISSÃO  | <a href="https://youtu.be/grYUKZDTzVA" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BPEDIR-PERMISS%C3%83O%5D-COMO-SOLICITAR-M%C3%9ALTIPLAS-PERMISS%C3%95ES-PROGRAMATICAMENTE-NO-ANDROID-STUDIO-COMO-CONCEDER-PERMISS%C3%83O-ANDROID.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 18/10/2021** ✔️ COMO OBTER O RESULTADO DE UMA TELA (FRAGMENT OU ACTIVITY) NO ANDROID STUDIO - RESULTADO DE TELA | <a href="xxxxxxx" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/COMO-OBTER-O-RESULTADO-DE-UMA-TELA-FRAGMENT-OU-ACTIVITY-NO-ANDROID-STUDIO-%5BRESULTADO-DE-TELA%5D.png" width="100" height="56"></a> |
 
 ---
 
@@ -42,3 +43,5 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 | 🎨 App Multi-Uso | 🎨 Resultdo Final |
 | :------------- |:-------------:|
 | <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer1.png" width="240" height="520"></a> | <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer2.png" width="240" height="520"></a>|
+
+
