@@ -1,9 +1,13 @@
 package com.progdeelite.dca.util
 
+import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.view.inputmethod.InputMethodManager.SHOW_FORCED
 import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.core.content.ContextCompat
@@ -48,4 +52,31 @@ fun Fragment.shouldRequestPermission(permissions: Array<String>): Boolean {
     }
     return grantedPermissions.any { granted -> !granted }
 }
+
+/** ESCONDE O TECLADO */
+fun Fragment.hideKeyboard(view: View? = activity?.window?.decorView?.rootView) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        view?.hideKeyboard(view)
+    } else {
+        inputMethodManager()?.hideSoftInputFromWindow(view?.applicationWindowToken, 0)
+    }
+}
+
+/** EXIBE O TECLADO */
+fun Fragment.showKeyboard(view: View? = activity?.currentFocus) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        view?.showKeyboard(view)
+    } else {
+        view?.let {
+            it.postDelayed({
+                it.requestFocus()
+                inputMethodManager()?.showSoftInput(it, SHOW_FORCED)
+            }, 100)
+        }
+    }
+}
+
+fun Fragment.inputMethodManager() =
+    context?.getSystemService(INPUT_METHOD_SERVICE) as? InputMethodManager
+
 
