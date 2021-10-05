@@ -31,7 +31,8 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 AGENDADO: 14/10/2021** 🔑 COMO SOLICITAR MÚLTIPLAS PERMISSÕES PROGRAMATICAMENTE NO ANDROID STUDIO - CONCEDER PERMISSÃO  | <a href="https://youtu.be/grYUKZDTzVA" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BPEDIR-PERMISS%C3%83O%5D-COMO-SOLICITAR-M%C3%9ALTIPLAS-PERMISS%C3%95ES-PROGRAMATICAMENTE-NO-ANDROID-STUDIO-COMO-CONCEDER-PERMISS%C3%83O-ANDROID.png" width="100" height="56"></a> |
-| **🚩 AGENDADO: 18/10/2021** ✔️ COMO OBTER O RESULTADO DE UMA TELA (FRAGMENT OU ACTIVITY) NO ANDROID STUDIO - RESULTADO DE TELA | <a href="xxxxxxx" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/COMO-OBTER-O-RESULTADO-DE-UMA-TELA-FRAGMENT-OU-ACTIVITY-NO-ANDROID-STUDIO-%5BRESULTADO-DE-TELA%5D.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 18/10/2021** ✔️ COMO OBTER O RESULTADO DE UMA TELA (FRAGMENT OU ACTIVITY) NO ANDROID STUDIO - RESULTADO DE TELA | <a href="https://youtu.be/mhm096S_qrA" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/COMO-OBTER-O-RESULTADO-DE-UMA-TELA-FRAGMENT-OU-ACTIVITY-NO-ANDROID-STUDIO-%5BRESULTADO-DE-TELA%5D.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 21/10/2021** ✔️ COMO OCULTAR OU ESCONDER O TECLADO VIRTUAL NO ANDROID STUDIO EM KOTLIN - FECHAR TECLADO | <a href="https://youtu.be/OzK1fJi9FiQ" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BFECHAR-TECLADO%5D-COMO-OCULTAR-OU-ESCONDER-O-TECLADO-VIRTUAL-NO-ANDROID-STUDIO-EM-KOTLIN.png" width="100" height="56"></a> |
 
 ---
 
