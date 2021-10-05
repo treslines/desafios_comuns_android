@@ -9,6 +9,9 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
+    <!-- VÍDEO CELULAR TEM INTERNET -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <!-- VÍDEO VIBRANDO O CELULAR -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
