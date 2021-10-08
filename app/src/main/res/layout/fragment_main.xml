@@ -160,9 +160,105 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Verificar se App Tem Internet"
+            android:textAllCaps="false"
+            android:textColor="@color/gold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle9"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Criar / Gravar Vídeos"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Gravar Vídeos Android Studio"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle13"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Dark Theme / Tema Noturno"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dark_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Tema Noturno no WebView"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle12"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Registrar Erros"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/log_errors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Commo Imprimir Erros"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/subtitle10"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ícones Adaptáveis"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adaptive_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar Ícones Adaptáveis"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -215,54 +311,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle9"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Criar Vídeos"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/create_video"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Salvar Vídeos"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/subtitle10"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Ícones Adaptáveis"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/adaptive_icons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Criar Ícones Adaptáveis"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
             android:id="@+id/subtitle11"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
@@ -283,54 +331,6 @@
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Como Disparar Requisições"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/subtitle12"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Registrar Erros"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/log_errors"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Commo Imprimir Erros"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/subtitle13"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Dark Theme / Tema Noturno"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/dark_theme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Tema Noturno no WebView"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 

@@ -45,5 +45,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         // | VIDEO: COMO VERIFICAR CONEXÃO COM INTERNET: https://youtu.be/DpyxLwibE0M          |
         // +-----------------------------------------------------------------------------------+
         binding.appNoInternet.setOnClickListener { navTo(R.id.checkAppInternetFragment) }
+
+        // +-----------------------------------------------------------------------------------+
+        // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DENTRO DO ANDROID STUDIO: XXXXXXX               |
+        // +-----------------------------------------------------------------------------------+
+        binding.createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
     }
 }
