@@ -25,6 +25,12 @@
         <action
             android:id="@+id/action_mainFragment_to_requestResultFragment"
             app:destination="@id/requestResultFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_hideKeyboardFragment"
+            app:destination="@id/hideKeyboardFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_checkAppInternetFragment"
+            app:destination="@id/checkAppInternetFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -45,6 +51,24 @@
             app:destination="@id/resultFragment" />
         <action
             android:id="@+id/action_requestResultFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hideKeyboardFragment"
+        android:name="com.progdeelite.dca.hide_keyboard.HideKeyboardFragment"
+        android:label="fragment_hide_keyboard"
+        tools:layout="@layout/fragment_hide_keyboard">
+        <action
+            android:id="@+id/action_hideKeyboardFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkAppInternetFragment"
+        android:name="com.progdeelite.dca.check_app_internet.CheckAppInternetFragment"
+        android:label="fragment_check_app_internet"
+        tools:layout="@layout/fragment_check_app_internet">
+        <action
+            android:id="@+id/action_checkAppInternetFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
