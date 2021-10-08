@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme - ATENTE-SE PARA O DETALHE "DayNight" -->
     <style name="Theme.DesafiosComunsAndroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +13,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!-- FORCE DARK WEB VIEW: SE JA TIVER USANDO VERSÃO 29 PODE HABILITAR ESSA PROPERTY -->
+        <!-- <item name="android:forceDarkAllowed">true</item> -->
     </style>
 </resources>

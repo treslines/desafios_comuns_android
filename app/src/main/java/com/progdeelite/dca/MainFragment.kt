@@ -50,5 +50,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DENTRO DO ANDROID STUDIO: XXXXXXX               |
         // +-----------------------------------------------------------------------------------+
         binding.createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+        // +-----------------------------------------------------------------------------------+
+        // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: XXXXXXX                                 |
+        // +-----------------------------------------------------------------------------------+
+        binding.darkTheme.setOnClickListener { navTo(R.id.darkWebViewFragment) }
     }
 }

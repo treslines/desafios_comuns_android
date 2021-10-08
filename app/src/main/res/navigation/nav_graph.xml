@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_mainFragment_to_checkAppInternetFragment"
             app:destination="@id/checkAppInternetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_darkWebViewFragment"
+            app:destination="@id/darkWebViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -69,6 +72,15 @@
         tools:layout="@layout/fragment_check_app_internet">
         <action
             android:id="@+id/action_checkAppInternetFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/darkWebViewFragment"
+        android:name="com.progdeelite.dca.web_view_force_dark.DarkWebViewFragment"
+        android:label="fragment_dark_web_view"
+        tools:layout="@layout/fragment_dark_web_view">
+        <action
+            android:id="@+id/action_darkWebViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
