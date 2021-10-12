@@ -16,44 +16,51 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: SOLICITAR PERMISSÕES COM API NOVA DA GOOGLE: https://youtu.be/grYUKZDTzVA  |
-        // +-----------------------------------------------------------------------------------+
-        binding.requestPermissions.setOnClickListener { navTo(R.id.setResultFragment) }
+        with(binding) {
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: SOLICITAR PERMISSÕES COM API NOVA DA GOOGLE: https://youtu.be/grYUKZDTzVA  |
+            // +-----------------------------------------------------------------------------------+
+            requestPermissions.setOnClickListener { navTo(R.id.setResultFragment) }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: LANCAR ACTIVITY, FRAGMENTS E OBTER RESULTADO: https://youtu.be/mhm096S_qrA |
-        // +-----------------------------------------------------------------------------------+
-        binding.startForResults.setOnClickListener { navTo(R.id.requestResultFragment) }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: LANCAR ACTIVITY, FRAGMENTS E OBTER RESULTADO: https://youtu.be/mhm096S_qrA |
+            // +-----------------------------------------------------------------------------------+
+            startForResults.setOnClickListener { navTo(R.id.requestResultFragment) }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: ESCONDER TECLADO: https://youtu.be/OzK1fJi9FiQ                             |
-        // +-----------------------------------------------------------------------------------+
-        binding.hideKeyboard.setOnClickListener { navTo(R.id.hideKeyboardFragment) }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: ESCONDER TECLADO: https://youtu.be/OzK1fJi9FiQ                             |
+            // +-----------------------------------------------------------------------------------+
+            hideKeyboard.setOnClickListener { navTo(R.id.hideKeyboardFragment) }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: VIBRAR CELULAR: https://youtu.be/ogxgiaCq_24                               |
-        // +-----------------------------------------------------------------------------------+
-        binding.vibrateCellphone.setOnClickListener { toast("vibrei! :)"); vibrate(1000) }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: VIBRAR CELULAR: https://youtu.be/ogxgiaCq_24                               |
+            // +-----------------------------------------------------------------------------------+
+            vibrateCellphone.setOnClickListener { toast("vibrei! :)"); vibrate(1000) }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO BLOQUEAR / IMPEDIR CAPTURAS DE TALAS: https://youtu.be/7zUdUYiu8Rs    |
-        // +-----------------------------------------------------------------------------------+
-        binding.captureScreen.setOnClickListener { toast("Apenas o vídeo explica!") }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO BLOQUEAR / IMPEDIR CAPTURAS DE TALAS: https://youtu.be/7zUdUYiu8Rs    |
+            // +-----------------------------------------------------------------------------------+
+            captureScreen.setOnClickListener { toast("Apenas o vídeo explica!") }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO VERIFICAR CONEXÃO COM INTERNET: https://youtu.be/DpyxLwibE0M          |
-        // +-----------------------------------------------------------------------------------+
-        binding.appNoInternet.setOnClickListener { navTo(R.id.checkAppInternetFragment) }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO VERIFICAR CONEXÃO COM INTERNET: https://youtu.be/DpyxLwibE0M          |
+            // +-----------------------------------------------------------------------------------+
+            appNoInternet.setOnClickListener { navTo(R.id.checkAppInternetFragment) }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DENTRO DO ANDROID STUDIO: XXXXXXX               |
-        // +-----------------------------------------------------------------------------------+
-        binding.createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DENTRO DO ANDROID STUDIO: XXXXXXX               |
+            // +-----------------------------------------------------------------------------------+
+            createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
 
-        // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: XXXXXXX                                 |
-        // +-----------------------------------------------------------------------------------+
-        binding.darkTheme.setOnClickListener { navTo(R.id.darkWebViewFragment) }
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: XXXXXXX                                 |
+            // +-----------------------------------------------------------------------------------+
+            darkTheme.setOnClickListener { navTo(R.id.darkWebViewFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR ÍCONES ADAPTÁVEIS E LEGACY: XXXXXXX                             |
+            // +-----------------------------------------------------------------------------------+
+            adaptiveIcons.setOnClickListener { toast("Apenas o vídeo explica!") }
+        }
     }
 }

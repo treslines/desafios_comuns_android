@@ -15,7 +15,9 @@
     <!-- VÍDEO VIBRANDO O CELULAR -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <!-- VÍDEO LOGCAT E TIMBER: .MainApplication -->
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
