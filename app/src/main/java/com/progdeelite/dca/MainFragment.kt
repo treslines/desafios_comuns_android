@@ -75,7 +75,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO DIFERENCIAR EMULADOR DE APARELHO FISICO: XXXXXXX                      |
             // +-----------------------------------------------------------------------------------+
-            // checkEmulator.setOnClickListener { navTo(R.id.checkEmulatorFragment) }
+            checkEmulator.setOnClickListener { navTo(R.id.checkEmulatorFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): XXXXXXX                           |
