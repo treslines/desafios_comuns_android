@@ -23,7 +23,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/subtitle1"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +46,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle2"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +69,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle6"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +92,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle7"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +115,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle5"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,7 +138,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle4"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -167,7 +161,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle9"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -191,7 +184,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle13"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -215,14 +207,13 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle12"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Registrar Erros"
+            android:text="Visualizar Erros Em Produção"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
@@ -234,12 +225,11 @@
             android:backgroundTint="@color/design_default_color_on_secondary"
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
-            android:text="Commo Imprimir Erros"
+            android:text="Como Registrar Erros Com Timber"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle10"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -263,7 +253,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle3"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -287,7 +276,29 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle8"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Delegando ViewBinding Em Fragments"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delegate_view_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Delegar ViewBinding"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -311,7 +322,75 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle11"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Diferenciar Emulador de Aparelho Físico"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check_emulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Descobrir o Emulador"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Salvar em Memória"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_in_memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Salvar em Memória"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Persistir em Memória Com Criptografia"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_in_memory_criptography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Salvar em Memória Criptografado"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -335,7 +414,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle14"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -359,7 +437,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle15"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -383,7 +460,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle16"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -407,55 +483,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle17"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Salvar em Memória"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/save_in_Memory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Salvar em Memória"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/subtitle18"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Checkar Emulador"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/check_emulator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Descobrir o Emulador"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            android:id="@+id/subtitle19"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -479,7 +506,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle20"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -503,7 +529,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle21"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -527,7 +552,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle22"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -551,7 +575,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle23"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -575,7 +598,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle24"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -599,7 +621,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle25"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -623,7 +644,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle26"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -647,7 +667,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle27"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -671,7 +690,6 @@
             tools:ignore="RtlHardcoded" />
 
         <TextView
-            android:id="@+id/subtitle28"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

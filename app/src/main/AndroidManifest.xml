@@ -3,19 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.progdeelite.dca">
 
-    <!-- VÍDEO SOLICITANDO PERMISSÕES -->
+    <!-- VÍDEO SOLICITANDO PERMISSÕES: https://youtu.be/grYUKZDTzVA -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
-    <!-- VÍDEO CELULAR TEM INTERNET -->
+    <!-- VÍDEO CELULAR TEM INTERNET: https://youtu.be/DpyxLwibE0M -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- VÍDEO VIBRANDO O CELULAR -->
+    <!-- VÍDEO VIBRANDO O CELULAR: https://youtu.be/ogxgiaCq_24 -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <!-- VÍDEO LOGCAT E TIMBER: .MainApplication -->
+    <!-- VÍDEO BIOMETRY: -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- VÍDEO LOGCAT E TIMBER(.MainApplication): https://youtu.be/rz8O8V4Ho1M -->
     <application
         android:name=".MainApplication"
         android:allowBackup="true"

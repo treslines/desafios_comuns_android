@@ -4,16 +4,24 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
+import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentCheckAppInternetBinding
 import com.progdeelite.dca.util.hasInternet
 import com.progdeelite.dca.util.toast
 
 class CheckAppInternetFragment : Fragment(R.layout.fragment_check_app_internet) {
-    private lateinit var binding: FragmentCheckAppInternetBinding
+
+    // ANTES :(
+    //private lateinit var binding: FragmentCheckAppInternetBinding
+
+    // DEPOIS! :) COM DELEGACÃO E EXTENSÃO!
+    private val binding by viewBinding(FragmentCheckAppInternetBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentCheckAppInternetBinding.bind(view)
+
+        // ANTES :(
+        //binding = FragmentCheckAppInternetBinding.bind(view)
 
         binding.appHasInternetButton.setOnClickListener {
             if (hasInternet()) {

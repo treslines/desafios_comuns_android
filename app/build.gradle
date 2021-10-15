@@ -103,7 +103,13 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
 
     // +-----------------------------------------------------------------+
-    // | Lib VIDEO: force dark mode webview                              |
+    // | Delegar ViewBinding: xxxxxx                                     |
+    // +-----------------------------------------------------------------+
+    // kapt "androidx.lifecycle:lifecycle-compiler:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+
+    // +-----------------------------------------------------------------+
+    // | force dark mode webview: https://youtu.be/aMuHOlTNL9E           |
     // +-----------------------------------------------------------------+
     implementation 'androidx.webkit:webkit:1.4.0'
 
@@ -149,9 +155,14 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
 
     // +-----------------------------------------------------------------+
-    // | Depuração com timber                                            |
+    // | Visualizar erros em Produção: https://youtu.be/rz8O8V4Ho1M      |
     // +-----------------------------------------------------------------+
     implementation "com.jakewharton.timber:timber:4.7.1"
+
+    // +-----------------------------------------------------------------+
+    // | Mostrar caixa de diálogo de autenticação biométrica             |
+    // +-----------------------------------------------------------------+
+    implementation "androidx.biometric:biometric-ktx:1.2.0-alpha03"
 
     // +-----------------------------------------------------------------+
     // | Unit Tests (logic)                                              |

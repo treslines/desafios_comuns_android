@@ -48,19 +48,49 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             appNoInternet.setOnClickListener { navTo(R.id.checkAppInternetFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DENTRO DO ANDROID STUDIO: XXXXXXX               |
+            // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DO ANDROID STUDIO: https://youtu.be/1vB46ujfVrA |
             // +-----------------------------------------------------------------------------------+
             createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: XXXXXXX                                 |
+            // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: https://youtu.be/aMuHOlTNL9E            |
             // +-----------------------------------------------------------------------------------+
             darkTheme.setOnClickListener { navTo(R.id.darkWebViewFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO CRIAR ÍCONES ADAPTÁVEIS E LEGACY: XXXXXXX                             |
+            // | VIDEO: COMO CRIAR ÍCONES ADAPTÁVEIS E LEGACY: https://youtu.be/FNQ3DQSVd30        |
             // +-----------------------------------------------------------------------------------+
             adaptiveIcons.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO VISUALIZAR ERROS COM TIMBER EM PRODUCÃO: https://youtu.be/rz8O8V4Ho1M |
+            // +-----------------------------------------------------------------------------------+
+            logErrors.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO DELEGAR O VIEW BINDING EM SEUS FRAGMENTS: XXXXXXX                     |
+            // +-----------------------------------------------------------------------------------+
+            delegateViewBinding.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO DIFERENCIAR EMULADOR DE APARELHO FISICO: XXXXXXX                      |
+            // +-----------------------------------------------------------------------------------+
+            // checkEmulator.setOnClickListener { navTo(R.id.checkEmulatorFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): XXXXXXX                           |
+            // +-----------------------------------------------------------------------------------+
+            // saveInMemory.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: ANIMACÕES DE CAMPOS E TEXTOS: XXXXXXX                                      |
+            // +-----------------------------------------------------------------------------------+
+            // animFields.setOnClickListener { navTo(R.id.animFieldsFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO USAR A BIOMETRIA DO SEU CELULAR: XXXXXXX                              |
+            // +-----------------------------------------------------------------------------------+
+            // showBiometry.setOnClickListener { navTo(R.id.biometryFragment) }
         }
     }
 }
