@@ -259,29 +259,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Diálogo Personalizado"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/custom_dialogs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Exibir Custom Dialogs"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
             android:text="Delegando ViewBinding Em Fragments"
             android:textStyle="bold" />
 
@@ -305,29 +282,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Biometria"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/show_biometry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Exibir Leiter de Biometria"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
             android:text="Diferenciar Emulador de Aparelho Físico"
             android:textStyle="bold" />
 
@@ -341,6 +295,75 @@
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Como Descobrir o Emulador"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Animações de Campos"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anim_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Animar Campos e Textos"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Diálogo Personalizado"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/custom_dialogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Exibir Custom Dialogs"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Biometria"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_biometry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Como Exibir Leiter de Biometria"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -594,29 +617,6 @@
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Como Usar LifeCycle Annotations"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Animações de Campos"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/anim_fields"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Animar Campos e Textos"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 

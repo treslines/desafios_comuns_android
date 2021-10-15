@@ -34,6 +34,15 @@
         <action
             android:id="@+id/action_mainFragment_to_darkWebViewFragment"
             app:destination="@id/darkWebViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_biometryFragment"
+            app:destination="@id/biometryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_checkEmulatorFragment"
+            app:destination="@id/checkEmulatorFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_animFieldsFragment"
+            app:destination="@id/animFieldsFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -81,6 +90,33 @@
         tools:layout="@layout/fragment_dark_web_view">
         <action
             android:id="@+id/action_darkWebViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/biometryFragment"
+        android:name="com.progdeelite.dca.biometric.BiometryFragment"
+        android:label="fragment_biometry"
+        tools:layout="@layout/fragment_biometry">
+        <action
+            android:id="@+id/action_biometryFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkEmulatorFragment"
+        android:name="com.progdeelite.dca.check_emulator.CheckEmulatorFragment"
+        android:label="CheckEmulatorFragment"
+        tools:layout="@layout/fragment_check_emulator">>
+        <action
+            android:id="@+id/action_checkEmulatorFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animFieldsFragment"
+        android:name="com.progdeelite.dca.anim_fields.AnimFieldsFragment"
+        android:label="fragment_anim_fields"
+        tools:layout="@layout/fragment_anim_fields">
+        <action
+            android:id="@+id/action_animFieldsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

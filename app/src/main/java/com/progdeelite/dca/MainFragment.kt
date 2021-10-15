@@ -78,14 +78,15 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             checkEmulator.setOnClickListener { navTo(R.id.checkEmulatorFragment) }
 
             // +-----------------------------------------------------------------------------------+
+            // | VIDEO: ANIMACÕES DE CAMPOS E TEXTOS: XXXXXXX                                      |
+            // +-----------------------------------------------------------------------------------+
+            animFields.setOnClickListener { navTo(R.id.animFieldsFragment) }
+
+            // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): XXXXXXX                           |
             // +-----------------------------------------------------------------------------------+
             // saveInMemory.setOnClickListener { toast("Apenas o vídeo explica!") }
 
-            // +-----------------------------------------------------------------------------------+
-            // | VIDEO: ANIMACÕES DE CAMPOS E TEXTOS: XXXXXXX                                      |
-            // +-----------------------------------------------------------------------------------+
-            // animFields.setOnClickListener { navTo(R.id.animFieldsFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO USAR A BIOMETRIA DO SEU CELULAR: XXXXXXX                              |
