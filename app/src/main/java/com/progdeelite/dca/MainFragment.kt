@@ -68,22 +68,22 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             logErrors.setOnClickListener { toast("Apenas o vídeo explica!") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO DELEGAR O VIEW BINDING EM SEUS FRAGMENTS: XXXXXXX                     |
+            // | VIDEO: COMO AUTOMATIZAR VIEW BINDING SEUS FRAGMENTS: https://youtu.be/qivrch6qxQw |
             // +-----------------------------------------------------------------------------------+
             delegateViewBinding.setOnClickListener { toast("Apenas o vídeo explica!") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO DIFERENCIAR EMULADOR DE APARELHO FISICO: XXXXXXX                      |
+            // | VIDEO: COMO DIFERENCIAR EMULADOR DE APARELHO FISICO: https://youtu.be/A14WEDpWjds |
             // +-----------------------------------------------------------------------------------+
             checkEmulator.setOnClickListener { navTo(R.id.checkEmulatorFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: ANIMACÕES DE CAMPOS E TEXTOS: XXXXXXX                                      |
+            // | VIDEO: ANIMACÕES DE CAMPOS E TEXTOS: https://youtu.be/4WMmin8vnU0                 |
             // +-----------------------------------------------------------------------------------+
             animFields.setOnClickListener { navTo(R.id.animFieldsFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): XXXXXXX                           |
+            // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): https://youtu.be/XBqY-3MPjkg      |
             // +-----------------------------------------------------------------------------------+
             saveInMemory.setOnClickListener { toast("Apenas o vídeo explica!") }
 
