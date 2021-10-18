@@ -89,7 +89,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             saveInMemory.setOnClickListener { showYoutubeVideo("XBqY-3MPjkg") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO SALVAR DADOS SENSIVEIS EM MEMÓRIA: XXXXXX                             |
+            // | VIDEO: COMO CRIPTOGRAFAR DADOS SENSIVEIS: https://youtu.be/aJqZ38-bZUc            |
             // +-----------------------------------------------------------------------------------+
             saveInMemoryCriptography.setOnClickListener { toast("Apenas o vídeo explica!") }
 
