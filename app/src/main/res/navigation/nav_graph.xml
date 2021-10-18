@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_mainFragment_to_animFieldsFragment"
             app:destination="@id/animFieldsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_backPressedFragment"
+            app:destination="@id/backPressedFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -105,7 +108,7 @@
         android:id="@+id/checkEmulatorFragment"
         android:name="com.progdeelite.dca.check_emulator.CheckEmulatorFragment"
         android:label="CheckEmulatorFragment"
-        tools:layout="@layout/fragment_check_emulator">>
+        tools:layout="@layout/fragment_check_emulator">
         <action
             android:id="@+id/action_checkEmulatorFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -117,6 +120,15 @@
         tools:layout="@layout/fragment_anim_fields">
         <action
             android:id="@+id/action_animFieldsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backPressedFragment"
+        android:name="com.progdeelite.dca.onback_pressed.BackPressedFragment"
+        android:label="BackPressedFragment"
+        tools:layout="@layout/fragment_back_pressed">
+        <action
+            android:id="@+id/action_backPressedFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

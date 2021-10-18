@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.progdeelite.dca.databinding.FragmentMainBinding
 import com.progdeelite.dca.util.navTo
+import com.progdeelite.dca.util.showYoutubeVideo
 import com.progdeelite.dca.util.toast
 import com.progdeelite.dca.util.vibrate
 
@@ -40,7 +41,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO BLOQUEAR / IMPEDIR CAPTURAS DE TALAS: https://youtu.be/7zUdUYiu8Rs    |
             // +-----------------------------------------------------------------------------------+
-            captureScreen.setOnClickListener { toast("Apenas o vídeo explica!") }
+            captureScreen.setOnClickListener { showYoutubeVideo("7zUdUYiu8Rs") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO VERIFICAR CONEXÃO COM INTERNET: https://youtu.be/DpyxLwibE0M          |
@@ -50,7 +51,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO CRIAR / GRAVAR VIDEOS DO ANDROID STUDIO: https://youtu.be/1vB46ujfVrA |
             // +-----------------------------------------------------------------------------------+
-            createVideo.setOnClickListener { toast("Apenas o vídeo explica!") }
+            createVideo.setOnClickListener { showYoutubeVideo("1vB46ujfVrA") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO FORCAR DARK MODE NA WEB VIEW: https://youtu.be/aMuHOlTNL9E            |
@@ -60,17 +61,17 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO CRIAR ÍCONES ADAPTÁVEIS E LEGACY: https://youtu.be/FNQ3DQSVd30        |
             // +-----------------------------------------------------------------------------------+
-            adaptiveIcons.setOnClickListener { toast("Apenas o vídeo explica!") }
+            adaptiveIcons.setOnClickListener { showYoutubeVideo("FNQ3DQSVd30") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO VISUALIZAR ERROS COM TIMBER EM PRODUCÃO: https://youtu.be/rz8O8V4Ho1M |
             // +-----------------------------------------------------------------------------------+
-            logErrors.setOnClickListener { toast("Apenas o vídeo explica!") }
+            logErrors.setOnClickListener { showYoutubeVideo("rz8O8V4Ho1M") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO AUTOMATIZAR VIEW BINDING SEUS FRAGMENTS: https://youtu.be/qivrch6qxQw |
             // +-----------------------------------------------------------------------------------+
-            delegateViewBinding.setOnClickListener { toast("Apenas o vídeo explica!") }
+            delegateViewBinding.setOnClickListener { showYoutubeVideo("qivrch6qxQw") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO DIFERENCIAR EMULADOR DE APARELHO FISICO: https://youtu.be/A14WEDpWjds |
@@ -85,13 +86,22 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO PERSISTIR EM MEMÓRIA (CHAVE-VALOR): https://youtu.be/XBqY-3MPjkg      |
             // +-----------------------------------------------------------------------------------+
-            saveInMemory.setOnClickListener { toast("Apenas o vídeo explica!") }
+            saveInMemory.setOnClickListener { showYoutubeVideo("XBqY-3MPjkg") }
 
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO SALVAR DADOS SENSIVEIS EM MEMÓRIA: XXXXXX                             |
+            // +-----------------------------------------------------------------------------------+
+            saveInMemoryCriptography.setOnClickListener { toast("Apenas o vídeo explica!") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO REAGIR AO BOTÃO DE BACK EM FRAGMENTS: XXXXXX                          |
+            // +-----------------------------------------------------------------------------------+
+            pressBackButton.setOnClickListener { navTo(R.id.backPressedFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO USAR A BIOMETRIA DO SEU CELULAR: XXXXXXX                              |
             // +-----------------------------------------------------------------------------------+
-            // showBiometry.setOnClickListener { navTo(R.id.biometryFragment) }
+            showBiometry.setOnClickListener { navTo(R.id.biometryFragment) }
         }
     }
 }
