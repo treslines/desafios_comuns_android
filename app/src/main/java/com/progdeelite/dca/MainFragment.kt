@@ -91,17 +91,34 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO CRIPTOGRAFAR DADOS SENSIVEIS: https://youtu.be/aJqZ38-bZUc            |
             // +-----------------------------------------------------------------------------------+
-            saveInMemoryCriptography.setOnClickListener { toast("Apenas o vídeo explica!") }
+            saveInMemoryCriptography.setOnClickListener { showYoutubeVideo("aJqZ38-bZUc") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO REAGIR AO BOTÃO DE BACK EM FRAGMENTS: XXXXXX                          |
+            // | VIDEO: COMO REAGIR AO BOTÃO DE BACK EM FRAGMENTS: https://youtu.be/8pvQ-dTaRGI    |
             // +-----------------------------------------------------------------------------------+
             pressBackButton.setOnClickListener { navTo(R.id.backPressedFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO USAR A BIOMETRIA DO SEU CELULAR: XXXXXXX                              |
+            // | VIDEO: COMO USAR A BIOMETRIA DO SEU CELULAR: https://youtu.be/xpN94rgPkds         |
             // +-----------------------------------------------------------------------------------+
             showBiometry.setOnClickListener { navTo(R.id.biometryFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO EXIBIR FULL SCREEN DIALOGS: XXXXXXX                                   |
+            // +-----------------------------------------------------------------------------------+
+            fullscreenDialogs.setOnClickListener { navTo(R.id.fullscreenDialogFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO REALIZAR UM POLLING A UMA API: XXXXXXX                                |
+            // +-----------------------------------------------------------------------------------+
+            pollingApi.setOnClickListener { navTo(R.id.pollingApiFragment) }
+            
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: XXXXXXX                                        |
+            // +-----------------------------------------------------------------------------------+
+            //customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
+
+
         }
     }
 }
