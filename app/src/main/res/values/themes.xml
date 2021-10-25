@@ -17,4 +17,8 @@
         <!-- FORCE DARK WEB VIEW: SE JA TIVER USANDO VERSÃO 29 PODE HABILITAR ESSA PROPERTY -->
         <!-- <item name="android:forceDarkAllowed">true</item> -->
     </style>
+
+    <style name="Theme.DesafiosComunsAndroid.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>

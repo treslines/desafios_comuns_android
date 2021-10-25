@@ -46,6 +46,15 @@
         <action
             android:id="@+id/action_mainFragment_to_backPressedFragment"
             app:destination="@id/backPressedFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customDialogFragment"
+            app:destination="@id/customDialogFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fullscreenDialogFragment"
+            app:destination="@id/fullscreenDialogFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pollingApiFragment"
+            app:destination="@id/pollingApiFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -129,6 +138,33 @@
         tools:layout="@layout/fragment_back_pressed">
         <action
             android:id="@+id/action_backPressedFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customDialogFragment"
+        android:name="com.progdeelite.dca.custom_dialog.CustomDialogFragment"
+        android:label="fragment_custom_dialog"
+        tools:layout="@layout/fragment_custom_dialog">
+        <action
+            android:id="@+id/action_customDialogFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullscreenDialogFragment"
+        android:name="com.progdeelite.dca.full_screen_dialog.FullscreenDialogFragment"
+        android:label="fragment_fullscreen_dialog"
+        tools:layout="@layout/fragment_fullscreen_dialog">
+        <action
+            android:id="@+id/action_fullscreenDialogFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pollingApiFragment"
+        android:name="com.progdeelite.dca.polling_api.PollingApiFragment"
+        android:label="fragment_polling_api"
+        tools:layout="@layout/fragment_polling_api">
+        <action
+            android:id="@+id/action_pollingApiFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
