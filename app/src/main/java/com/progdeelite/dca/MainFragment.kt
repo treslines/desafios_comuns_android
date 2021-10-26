@@ -112,13 +112,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // | VIDEO: COMO REALIZAR UM POLLING A UMA API: XXXXXXX                                |
             // +-----------------------------------------------------------------------------------+
             pollingApi.setOnClickListener { navTo(R.id.pollingApiFragment) }
-            
+
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: XXXXXXX                                        |
             // +-----------------------------------------------------------------------------------+
-            //customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
-
-
+            customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
         }
     }
 }

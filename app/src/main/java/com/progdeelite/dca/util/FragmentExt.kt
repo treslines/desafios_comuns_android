@@ -13,13 +13,25 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_FORCED
 import android.widget.Toast
+import androidx.annotation.DrawableRes
 import androidx.annotation.IdRes
+import androidx.annotation.LayoutRes
+import androidx.annotation.StyleRes
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.view.ContextThemeWrapper
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
+import com.progdeelite.dca.BuildConfig
+import com.progdeelite.dca.ClearableCoroutineScope
+import com.progdeelite.dca.CoroutineContextProvider
+import com.progdeelite.dca.full_screen_dialog.FullscreenAlertDialog
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import timber.log.Timber
 import javax.crypto.Cipher
 
@@ -176,4 +188,178 @@ fun Fragment.promptBiometricChecker(
     }
 
     prompt.authenticate(promptInfo)
+}
+
+/** NAVEGAR PARA PLAYSTORE DE MANEIRA FACIL */
+fun Fragment.openPlayStore() {
+    Intent(Intent.ACTION_VIEW).apply {
+        data =
+            Uri.parse("https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}")
+        setPackage("com.android.vending")
+    }.let { startActivity(it) }
+}
+
+/** EXIBIR MATERIAL ALERT DIALOG DE ACORDO COM SUAS NECESSIDADES */
+fun Fragment.showDefaultMaterialAlertDialog(
+    title: String? = null,
+    message: String? = null,
+    positiveButtonLabel: String? = null,
+    positiveButtonClickListener: () -> Unit = {},
+    negativeButtonLabel: String? = null,
+    negativeButtonClickListener: () -> Unit = {},
+    cancelable: Boolean = false,
+    cancelListener: () -> Unit = {},
+    dismissListener: () -> Unit = {},
+) {
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle(title)
+        .setMessage(message)
+        .setPositiveButton(positiveButtonLabel) { dialog, _ -> dialog.dismiss(); positiveButtonClickListener() }
+        .setNegativeButton(negativeButtonLabel) { dialog, _ -> dialog.dismiss(); negativeButtonClickListener() }
+        .setCancelable(cancelable)
+        .setOnCancelListener { cancelListener() }
+        .setOnDismissListener { dismissListener() }
+        .create().also { it.show() }
+}
+
+/** CRIAR ALERTAS SEMI-CUSTOMIZAOS (APENAS COM CONTEUDO ESTÁTICO CUSTOMIZADO) */
+fun Fragment.showDefaultMaterialAlertDialogWithCustomStaticContent(
+    positiveButtonLabel: String? = null,
+    positiveButtonClickListener: () -> Unit = {},
+    negativeButtonLabel: String? = null,
+    negativeButtonClickListener: () -> Unit = {},
+    cancelable: Boolean = false,
+    cancelListener: () -> Unit = {},
+    dismissListener: () -> Unit = {},
+    @LayoutRes customLayoutId: Int,
+    @StyleRes styleId: Int? = null,
+    @DrawableRes customBackgroundId: Int? = null
+) {
+    // if you want to customize the dialog's theme
+    val builder = if (styleId != null) MaterialAlertDialogBuilder(
+        ContextThemeWrapper(
+            requireContext(),
+            styleId
+        )
+    ) else MaterialAlertDialogBuilder(requireContext())
+
+    // if you want to customize the alert dialog's content!
+    builder.setView(customLayoutId)
+
+    val dialog = builder
+        .setPositiveButton(positiveButtonLabel) { dialog, _ -> dialog.dismiss(); positiveButtonClickListener() }
+        .setNegativeButton(negativeButtonLabel) { dialog, _ -> dialog.dismiss(); negativeButtonClickListener() }
+        .setCancelable(cancelable)
+        .setOnCancelListener { cancelListener() }
+        .setOnDismissListener { dismissListener() }
+        .create()
+
+    // if you want to customize the window background like color and border
+    if (customBackgroundId != null) {
+        dialog.window?.setBackgroundDrawableResource(customBackgroundId)
+    }
+    dialog.show()
+}
+
+/** CRIAR ALERTAS TOTALMENTE CUSTOMIZADOS */
+fun Fragment.createFullCustomAlertDialog(
+    customView: View,
+    @StyleRes styleId: Int? = null,
+    @DrawableRes customBackgroundId: Int? = null
+): AlertDialog {
+    // if you want to customize the dialog's theme
+    val builder = if (styleId != null) MaterialAlertDialogBuilder(
+        ContextThemeWrapper(
+            requireContext(),
+            styleId
+        )
+    ) else MaterialAlertDialogBuilder(requireContext())
+
+    builder.setView(customView)
+    val dialog = builder.create()
+
+    // if you want to customize the window background like color and border
+    if (customBackgroundId != null) {
+        dialog.window?.setBackgroundDrawableResource(customBackgroundId)
+    }
+    return dialog
+}
+
+
+/** EXIBIR UM ALERTA DE MENSAGENS FULLSCREEN PERSONALIZADO */
+fun Fragment.showFullscreenAlertDialog(
+    title: String,
+    message: String,
+    positiveButtonLabel: String = getString(android.R.string.ok),
+    positiveButtonClickListener: () -> Unit = {},
+    cancelButtonLabel: String? = null,
+    negativeButtonClickListener: () -> Unit = {},
+    dismissAction: () -> Unit = {},
+) = FullscreenAlertDialog(
+    title = title,
+    message = message,
+    positiveLabel = positiveButtonLabel,
+    positiveAction = positiveButtonClickListener,
+    cancelLabel = cancelButtonLabel,
+    cancelAction = negativeButtonClickListener,
+    dismissAction = dismissAction,
+).also { it.show(parentFragmentManager, it.javaClass.simpleName) }
+
+
+/** REALIZAR UMA TAREFA EM LOOP (EX: CONSULTAR ALGUM RESULTADO DE UM SERVIDOR) */
+fun Fragment.polling(
+    isOffline: () -> Boolean = { false },
+    onOffline: () -> Unit = {},
+    isCompleted: () -> Boolean = { false },
+    onCompleted: () -> Unit = {},
+    isError: () -> Boolean = { false },
+    onError: () -> Unit = {},
+    isCanceled: () -> Boolean = { false },
+    onCanceled: () -> Unit = {},
+    pollingDelayInMilliSeconds: Long = 5000L
+) {
+    val pollingScope = ClearableCoroutineScope(CoroutineContextProvider().ui)
+    pollingScope.launch {
+        if (isOffline()) {
+            handleStateChange(onOffline, pollingScope)
+            return@launch
+        }
+        when {
+            isCompleted() -> {
+                handleStateChange(onCompleted, pollingScope)
+                return@launch
+            }
+            isCanceled() -> {
+                handleStateChange(onCanceled, pollingScope)
+                return@launch
+            }
+            isError() -> {
+                handleStateChange(onError, pollingScope)
+                return@launch
+            }
+            else -> {
+                toast("polling a cada 5 segundos!")
+                delay(pollingDelayInMilliSeconds)
+                pollingScope.clearScope()
+                polling(
+                    isOffline = isOffline,
+                    onOffline = onOffline,
+                    isCompleted = isCompleted,
+                    onCompleted = onCompleted,
+                    isError = isError,
+                    onError = onError,
+                    isCanceled = isCanceled,
+                    onCanceled = onCanceled
+                )
+            }
+        }
+    }
+}
+
+private fun handleStateChange(
+    handle: () -> Unit, pollingScope: ClearableCoroutineScope
+) {
+    handle()
+    pollingScope.clearScope()
+    return
 }
