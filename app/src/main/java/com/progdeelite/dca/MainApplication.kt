@@ -2,6 +2,8 @@ package com.progdeelite.dca
 
 import android.app.Application
 import com.progdeelite.dca.logcat_timber.CustomLogger
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import timber.log.Timber
 
 // import com.microsoft.appcenter.crashes.Crashes
@@ -19,6 +21,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         setupLogging()
+        setupDefaultExceptionHandler()
     }
 
     // +-----------------------------------------------------------------+
@@ -37,6 +40,22 @@ class MainApplication : Application() {
             // Crashes.setEnabled(true)
             // AppCenter.setLogLevel(Log.ERROR)
             // AppCenter.start(this, BuildConfig.APP_CENTER_ID, Crashes::class.java)
+        }
+    }
+
+    // +-----------------------------------------------------------------+
+    // | Instalando DefaultExceptionHandler                             |
+    // +-----------------------------------------------------------------+
+    private fun setupDefaultExceptionHandler() {
+        // pega o default Uncaught Exception handler para repassar os erros
+        val existingHandler = Thread.getDefaultUncaughtExceptionHandler()
+        // intercepta os erros, faz o que or preciso e so depois disso lança os erros
+        Thread.setDefaultUncaughtExceptionHandler { thread, exception ->
+            ClearableCoroutineScope(Dispatchers.Default).launch {
+                Timber.v("clearing cookies")
+                // Faça tudo que for pedido pela auditoria de segurança
+            }
+            existingHandler?.uncaughtException(thread, exception)
         }
     }
 }
