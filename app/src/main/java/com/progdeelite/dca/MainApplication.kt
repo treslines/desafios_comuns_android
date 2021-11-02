@@ -6,7 +6,20 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
+// +-----------------------------------------------------------------+
+// | Aula de distribuição de apps e logs atraves de Appcenter        |
+// +-----------------------------------------------------------------+
+// Log Crashes over AppCenter
+// import com.microsoft.appcenter.AppCenter
 // import com.microsoft.appcenter.crashes.Crashes
+
+// +-----------------------------------------------------------------+
+// | Aula de injeção de dependência com Koin                         |
+// +-----------------------------------------------------------------+
+// Init Dependency Injection Koin
+// import org.koin.android.ext.koin.androidContext
+// import org.koin.android.ext.koin.androidLogger
+// import org.koin.core.logger.Level
 
 // 1) inserir dependência no build.gradle
 // 2) criar a classe de log customizada para sua empresa usar me prod
@@ -21,11 +34,23 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         setupLogging()
-        setupDefaultExceptionHandler()
+        setupDefaultExceptionHandler() // https://youtu.be/zu9MOl95LKs
+//        setupDependencyInjection()
     }
 
+// +-----------------------------------------------------------------+
+// | Aula de injeção de dependência com Koin                         |
+// +-----------------------------------------------------------------+
+//    private fun setupDependencyInjection() = initKoin {
+//        androidLogger(Level.NONE)
+//        androidContext(this@MainApplication)
+//        modules(
+//            appModule,
+//        )
+//    }
+
     // +-----------------------------------------------------------------+
-    // | Inicializando o timber de log e o timber customizado            |
+    // | Log e o timber customizado: https://youtu.be/rz8O8V4Ho1M        |
     // +-----------------------------------------------------------------+
     private fun setupLogging() {
         if (BuildConfig.DEBUG) {
@@ -36,6 +61,9 @@ class MainApplication : Application() {
             // +---------------------------------------------------------------------+
             Timber.plant(CustomLogger())
 
+            // +-----------------------------------------------------------------+
+            // | Distribuição de apps e logs atraves de Appcenter                |
+            // +-----------------------------------------------------------------+
             // SE VOCE OPTAR POR LOGAR CRASHES COM APPCENTER, CONFIGURACÕES NECESSÁRIAS
             // Crashes.setEnabled(true)
             // AppCenter.setLogLevel(Log.ERROR)
@@ -43,9 +71,9 @@ class MainApplication : Application() {
         }
     }
 
-    // +-----------------------------------------------------------------+
-    // | Instalando DefaultExceptionHandler                             |
-    // +-----------------------------------------------------------------+
+    // +-------------------------------------------------------------------+
+    // | Instalando DefaultExceptionHandler: https://youtu.be/zu9MOl95LKs  |
+    // +-------------------------------------------------------------------+
     private fun setupDefaultExceptionHandler() {
         // pega o default Uncaught Exception handler para repassar os erros
         val existingHandler = Thread.getDefaultUncaughtExceptionHandler()

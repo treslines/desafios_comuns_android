@@ -104,17 +104,17 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             showBiometry.setOnClickListener { navTo(R.id.biometryFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO EXIBIR FULL SCREEN DIALOGS: XXXXXXX                                   |
+            // | VIDEO: COMO EXIBIR FULL SCREEN DIALOGS: https://youtu.be/DRkS0NWNAvg              |
             // +-----------------------------------------------------------------------------------+
             fullscreenDialogs.setOnClickListener { navTo(R.id.fullscreenDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO REALIZAR UM POLLING A UMA API: XXXXXXX                                |
+            // | VIDEO: COMO REALIZAR UM POLLING A UMA API: https://youtu.be/OX2KhMbm0_I           |
             // +-----------------------------------------------------------------------------------+
             pollingApi.setOnClickListener { navTo(R.id.pollingApiFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: XXXXXXX                                        |
+            // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: https://youtu.be/W8La6tMRv14                   |
             // +-----------------------------------------------------------------------------------+
             customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
         }
