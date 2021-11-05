@@ -46,7 +46,7 @@ class FullscreenAlertDialog(
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): android.app.Dialog {
-        setStyle(STYLE_NO_FRAME, R.style.ThemeDesafiosComunsAndroid)
+        setStyle(STYLE_NO_FRAME, R.style.Theme_DesafiosComunsAndroid)
         return super.onCreateDialog(savedInstanceState)
     }
 }

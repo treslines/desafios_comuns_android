@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.progdeelite.dca.MainFragment"
-        android:label="fragment_main"
+        android:label="Home"
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_setResultFragment"
@@ -55,6 +55,9 @@
         <action
             android:id="@+id/action_mainFragment_to_pollingApiFragment"
             app:destination="@id/pollingApiFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_bottomSheetDialogFragment"
+            app:destination="@id/bottomSheetDialogFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -165,6 +168,15 @@
         tools:layout="@layout/fragment_polling_api">
         <action
             android:id="@+id/action_pollingApiFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomSheetDialogFragment"
+        android:name="com.progdeelite.dca.bottom_sheet.BottomSheetDialogFragment"
+        android:label="Tela Flutuante"
+        tools:layout="@layout/fragment_bottom_sheet_dialog">
+        <action
+            android:id="@+id/action_bottomSheetDialogFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

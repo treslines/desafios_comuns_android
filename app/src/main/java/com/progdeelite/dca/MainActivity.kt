@@ -1,10 +1,15 @@
 package com.progdeelite.dca
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewTreeObserver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.progdeelite.dca.databinding.ActivityMainBinding
 import com.progdeelite.dca.util.preventScreenshotsAndRecentAppThumbnails
 
 // VANTAGEM DE TER UM SINGLE PAGE APPLICATION, VOCÊ FAZ A
@@ -12,14 +17,27 @@ import com.progdeelite.dca.util.preventScreenshotsAndRecentAppThumbnails
 class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA ABAIXO
 
     // +-----------------------------------------------------------------------------------+
-    //    // | ********** IMPORTANTE SE USAR SPLAH COM A LIB NOVA DO ANDROID 12 *************    |
-    //    // +-----------------------------------------------------------------------------------+
-    //    // NORMALMENTE EU INTANCIO MINHAS CLASSES E FRAGMENTS ASSIM, COMO NA LINHA ABAIXO:
-    //    // class MainActivity : AppCompatActivity(R.layout.activity_main)
-    //    // POREM A LIB DE SPLASH SCREEN LANCA UM ERRO BIZARRO ALEGANDO QUE TENHO QUE ESTENDER
-    //    // DE "Theme.AppCompat" QUANTO NA VERDADE A UNICA COISA QUE TENHO QUE FAZER É NÃO
-    //    // INSTANCIAR O LAYOU NO CONSTRUTOR, MAS SIM APÓS A INSTALACÃO COMO FEITO NA LINHA 48
+    // | ********** IMPORTANTE SE USAR SPLAH COM A LIB NOVA DO ANDROID 12 *************    |
+    // +-----------------------------------------------------------------------------------+
+    // NORMALMENTE EU INTANCIO MINHAS CLASSES E FRAGMENTS ASSIM, COMO NA LINHA ABAIXO:
+    // class MainActivity : AppCompatActivity(R.layout.activity_main)
+    // POREM A LIB DE SPLASH SCREEN LANCA UM ERRO BIZARRO ALEGANDO QUE TENHO QUE ESTENDER
+    // DE "Theme.AppCompat" QUANTO NA VERDADE A UNICA COISA QUE TENHO QUE FAZER É NÃO
+    // INSTANCIAR O LAYOU NO CONSTRUTOR, MAS SIM APÓS A INSTALACÃO COMO FEITO NA LINHA 48
 
+
+    // +-----------------------------------------------------------------------------------+
+    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+    // +-----------------------------------------------------------------------------------+
+    // 1) adicionar no layout
+    // 2) criar menu de navegação
+    // 3) definir binding e obter navController
+    // 4) fazer o setup do navigation view usando o navigation graph
+
+    private lateinit var binding: ActivityMainBinding
+    private val navController by lazy {
+        supportFragmentManager.findFragmentById(R.id.nav_host_fragment)!!.findNavController()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +48,7 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
         // SENSÍVEIS. BLOQUEIA CAPTURAS DE TELA!
 
         // +-----------------------------------------------------------------------------------+
-        // | VIDEO: BLOQUEAR SCREEN SHOTS E THUMBNAILS: XXXXXXXXX                              |
+        // | VIDEO: BLOQUEAR SCREEN SHOTS E THUMBNAILS: https://youtu.be/7zUdUYiu8Rs           |
         // +-----------------------------------------------------------------------------------+
         preventScreenshotsAndRecentAppThumbnails()
 
@@ -45,7 +63,11 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
         // 5) Usar delay na main activity
         // 6) Tomar cuidado com um detalhes importante
         installSplashScreen()
-        setContentView(R.layout.activity_main)
+        // setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
 
         val content: View = findViewById(android.R.id.content)
         content.viewTreeObserver.addOnPreDrawListener(
@@ -58,5 +80,46 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
                 }
             }
         )
+
+        // +-----------------------------------------------------------------------------------+
+        // | VIDEO: COMO CRIAR UMA ACTIONBAR/TOOLBAR BAR: XXXXXXXXX                            |
+        // +-----------------------------------------------------------------------------------+
+        setupToolbar()
+
+        // +-----------------------------------------------------------------------------------+
+        // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+        // +-----------------------------------------------------------------------------------+
+        setupBottomNavigation()
     }
+
+    // +-----------------------------------------------------------------------------------+
+    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+    // +-----------------------------------------------------------------------------------+
+    private fun setupBottomNavigation() {
+        with(binding.bottomNavigation) { setupWithNavController(navController) }
+    }
+
+
+    // +-----------------------------------------------------------------------------------+
+    // | VIDEO: COMO CRIAR UMA TOP ACTION BAR COM NAV CONTROLLER: XXXXXXXXX                |
+    // +-----------------------------------------------------------------------------------+
+    // 1) definir toolbar no xml da main activity
+    // 2) configurar o theme da sua aplicação para nao estourar esse erro aqui
+    // 3) configurar a action bar para carregar os titulos direto do navigation graph
+    // 4) fazer o setup dela dentro da main activity
+
+    private fun setupToolbar() {
+        // Caused by: java.lang.IllegalStateException: This Activity already has an action bar
+        // supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and
+        // set windowActionBar to false in your theme to use a Toolbar instead.
+        setSupportActionBar(binding.mainToolbar)
+        supportActionBar?.apply { setupActionBarWithNavController(navController) }
+        // Da a habilidade de navegar de volta na seta do toolbar
+        binding.mainToolbar.setNavigationOnClickListener { navController.navigateUp() }
+    }
+
+    fun setToolbarNavigationIcon(icon: Drawable?) {
+        binding.mainToolbar.navigationIcon = icon
+    }
+
 }

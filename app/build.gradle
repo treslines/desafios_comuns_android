@@ -130,7 +130,7 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.1.1'
 
     // +-----------------------------------------------------------------+
-    // | Splashscreen lib android 12: xxxxxxx                            |
+    // | Splashscreen lib android 12: https://youtu.be/cMXE8PN-qIc       |
     // +-----------------------------------------------------------------+
     implementation "androidx.core:core-splashscreen:1.0.0-alpha02"
 

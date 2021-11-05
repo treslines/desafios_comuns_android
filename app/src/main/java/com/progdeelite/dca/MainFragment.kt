@@ -117,6 +117,21 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: https://youtu.be/W8La6tMRv14                   |
             // +-----------------------------------------------------------------------------------+
             customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO EXIBIR SPLASH SCREEN MODERNO SEM XML: https://youtu.be/cMXE8PN-qIc    |
+            // +-----------------------------------------------------------------------------------+
+            splashScreen.setOnClickListener { showYoutubeVideo("cMXE8PN-qIc") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO EXIBIR UMA BARRA DE NAVEGAçÃO: XXXXXXXXXX                             |
+            // +-----------------------------------------------------------------------------------+
+            bottomNavigationView.setOnClickListener { toast("Apenas o video explica") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO EXIBIR UMA BOTTOM SHEET DIALOG: XXXXXXXXXX                            |
+            // +-----------------------------------------------------------------------------------+
+            bottomSheetDialog.setOnClickListener { navTo(R.id.bottomSheetDialogFragment) }
         }
     }
 }
