@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.progdeelite.dca.databinding.ActivityMainBinding
-import com.progdeelite.dca.util.preventScreenshotsAndRecentAppThumbnails
 
 // VANTAGEM DE TER UM SINGLE PAGE APPLICATION, VOCÊ FAZ A
 // CONFIGURACÃO UMA ÚNICA VEZ EM UM LUGAR CENTRAL!
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
 
 
     // +-----------------------------------------------------------------------------------+
-    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: https://youtu.be/1mG3-I8bof0        |
     // +-----------------------------------------------------------------------------------+
     // 1) adicionar no layout
     // 2) criar menu de navegação
@@ -50,11 +49,11 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
         // +-----------------------------------------------------------------------------------+
         // | VIDEO: BLOQUEAR SCREEN SHOTS E THUMBNAILS: https://youtu.be/7zUdUYiu8Rs           |
         // +-----------------------------------------------------------------------------------+
-        preventScreenshotsAndRecentAppThumbnails()
+        //preventScreenshotsAndRecentAppThumbnails()
 
 
         // +-----------------------------------------------------------------------------------+
-        // | VIDEO: SPLASH SCREEN ANDROID 12: XXXXXXXXX                                        |
+        // | VIDEO: SPLASH SCREEN ANDROID 12: https://youtu.be/cMXE8PN-qIc                     |
         // +-----------------------------------------------------------------------------------+
         // 1) Definir dependency no build.gradle
         // 2) Criar logo / drawable - ou especificar drawable-v31
@@ -82,27 +81,27 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
         )
 
         // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO CRIAR UMA ACTIONBAR/TOOLBAR BAR: XXXXXXXXX                            |
+        // | VIDEO: COMO CRIAR UMA ACTIONBAR/TOOLBAR BAR: https://youtu.be/RbOCBzHIwSw         |
         // +-----------------------------------------------------------------------------------+
         setupToolbar()
 
         // +-----------------------------------------------------------------------------------+
-        // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+        // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: https://youtu.be/1mG3-I8bof0        |
         // +-----------------------------------------------------------------------------------+
         setupBottomNavigation()
     }
 
     // +-----------------------------------------------------------------------------------+
-    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: XXXXXXXXX                           |
+    // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: https://youtu.be/1mG3-I8bof0        |
     // +-----------------------------------------------------------------------------------+
     private fun setupBottomNavigation() {
         with(binding.bottomNavigation) { setupWithNavController(navController) }
     }
 
 
-    // +-----------------------------------------------------------------------------------+
-    // | VIDEO: COMO CRIAR UMA TOP ACTION BAR COM NAV CONTROLLER: XXXXXXXXX                |
-    // +-----------------------------------------------------------------------------------+
+    // +----------------------------------------------------------------------------------------+
+    // | VIDEO: COMO CRIAR UMA TOP ACTION BAR COM NAV CONTROLLER: https://youtu.be/RbOCBzHIwSw  |
+    // +----------------------------------------------------------------------------------------+
     // 1) definir toolbar no xml da main activity
     // 2) configurar o theme da sua aplicação para nao estourar esse erro aqui
     // 3) configurar a action bar para carregar os titulos direto do navigation graph

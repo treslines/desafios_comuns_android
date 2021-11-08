@@ -11,6 +11,7 @@ import com.progdeelite.dca.databinding.FragmentBottomSheetDialogBinding
 // 2) Definir layout e itens a serem exibidos
 // 3) Criar a classe de tela flutuante (bottom sheet fragment)
 // 4) Usar o bottom sheet dialog na pratica
+// Video: https://youtu.be/vku9pMNHT9o
 class BottomSheetDialogFragment : Fragment(R.layout.fragment_bottom_sheet_dialog) {
 
     // ANTES :(

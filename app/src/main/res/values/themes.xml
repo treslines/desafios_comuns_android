@@ -3,7 +3,7 @@
     <style name="Theme.DesafiosComunsAndroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 
         <!-- +=======================================================+ -->
-        <!-- | Video setup toolbar: xxxxxxxx                         | -->
+        <!-- | Video setup toolbar: https://youtu.be/RbOCBzHIwSw      | -->
         <!-- +=======================================================+ -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -29,7 +29,7 @@
     </style>
 
     <!-- +=======================================================+ -->
-    <!-- | Video Splash Screen: xxxxxxxx                         | -->
+    <!-- | Video Splash Screen: https://youtu.be/cMXE8PN-qIc     | -->
     <!-- +=======================================================+ -->
     <style name="SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/splash_background_color</item>

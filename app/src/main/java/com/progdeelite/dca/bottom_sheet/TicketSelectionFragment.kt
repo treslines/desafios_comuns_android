@@ -11,6 +11,7 @@ import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentTicketSelectionBinding
 import com.progdeelite.dca.util.toast
 
+// Video bottom sheet dialog: https://youtu.be/vku9pMNHT9o
 class TicketSelectionFragment(private val showAddItem: Boolean) : BottomSheetDialogFragment(),
     OnItemClickListener<TicketSelectionElement> {
     private val binding by viewBinding(FragmentTicketSelectionBinding::bind)

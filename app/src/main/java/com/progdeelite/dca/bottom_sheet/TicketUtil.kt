@@ -9,6 +9,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.progdeelite.dca.R
 
+// Video bottom sheet dialog: https://youtu.be/vku9pMNHT9o
 interface OnItemClickListener<T> {
     /**
      * Returns the item data, that has been clicked.

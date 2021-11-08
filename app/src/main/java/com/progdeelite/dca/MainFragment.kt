@@ -124,12 +124,12 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             splashScreen.setOnClickListener { showYoutubeVideo("cMXE8PN-qIc") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO EXIBIR UMA BARRA DE NAVEGAçÃO: XXXXXXXXXX                             |
+            // | VIDEO: COMO EXIBIR UMA BARRA DE NAVEGAçÃO: https://youtu.be/1mG3-I8bof0           |
             // +-----------------------------------------------------------------------------------+
             bottomNavigationView.setOnClickListener { toast("Apenas o video explica") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: COMO EXIBIR UMA BOTTOM SHEET DIALOG: XXXXXXXXXX                            |
+            // | VIDEO: COMO EXIBIR UMA BOTTOM SHEET DIALOG: https://youtu.be/vku9pMNHT9o          |
             // +-----------------------------------------------------------------------------------+
             bottomSheetDialog.setOnClickListener { navTo(R.id.bottomSheetDialogFragment) }
         }

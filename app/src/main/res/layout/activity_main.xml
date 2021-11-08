@@ -7,7 +7,7 @@
     tools:showIn="com.progdeelite.dca.MainFragment">
 
     <!-- +=======================================================+ -->
-    <!-- | Video setup toolbar: xxxxxxxx                         | -->
+    <!-- | Video setup toolbar: https://youtu.be/RbOCBzHIwSw     | -->
     <!-- +=======================================================+ -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_toolbar"
@@ -30,9 +30,9 @@
         app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
         app:navGraph="@navigation/nav_graph" />
 
-    <!-- +=======================================================+ -->
-    <!-- | Video setup bottom navigation view: xxxxxxxx          | -->
-    <!-- +=======================================================+ -->
+    <!-- +===================================================================+ -->
+    <!-- | Video setup bottom navigation view: https://youtu.be/1mG3-I8bof0  | -->
+    <!-- +===================================================================+ -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
