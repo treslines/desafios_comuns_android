@@ -23,7 +23,7 @@
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <!-- VÍDEO LOGCAT E TIMBER(.MainApplication): https://youtu.be/rz8O8V4Ho1M -->
-    <!-- VÍDEO SPLASH SCREEN: XXXXXXXX -->
+    <!-- VÍDEO SPLASH SCREEN: https://youtu.be/cMXE8PN-qIc -->
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -44,6 +44,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- VÍDEO CONTENT PROVIDER: XXXXXXXX -->
+        <provider
+            android:name="com.progdeelite.dca.content_provider.AppInfoProvider"
+            android:authorities="${applicationId}.provider"
+            android:enabled="true"
+            android:protectionLevel="signature"
+            android:readPermission="${applicationId}.permission.ACCOUNT_STATUS"
+            android:exported="true" />
     </application>
 
 </manifest>
