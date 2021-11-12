@@ -9,6 +9,7 @@ import com.progdeelite.dca.util.showYoutubeVideo
 import com.progdeelite.dca.util.toast
 import com.progdeelite.dca.util.vibrate
 
+
 class MainFragment : Fragment(R.layout.fragment_main) {
 
     private lateinit var binding: FragmentMainBinding
@@ -116,7 +117,16 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO EXIBIR CUSTOM DIALOGS: https://youtu.be/W8La6tMRv14                   |
             // +-----------------------------------------------------------------------------------+
-            customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
+            // customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: CUSTOM NAVIGATION ANIMATION: XXXXXXXXX                                     |
+            // +-----------------------------------------------------------------------------------+
+            // 1) DEFINIR ACTION COM ANIMACÃO DE TRANSICÃO
+            // 2) CRIAR ARQUIVOS DE DURACÃO (integer.xml)
+            // 3) CRIAR ARQUIVOS DE ANIMAçÃO OU USAR AS ANIMAçÕES PADRÃO
+            // 4) APLICAR ANIMAçÃO NA PRÁTICA
+            customDialogs.setOnClickListener { navTo(R.id.action_mainFragment_to_customDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO EXIBIR SPLASH SCREEN MODERNO SEM XML: https://youtu.be/cMXE8PN-qIc    |

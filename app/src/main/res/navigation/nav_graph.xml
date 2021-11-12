@@ -46,9 +46,16 @@
         <action
             android:id="@+id/action_mainFragment_to_backPressedFragment"
             app:destination="@id/backPressedFragment" />
+
+        <!-- VIDEO CUSTOM NAVIGATION ANIMATION: XXXXXXXX -->
         <action
             android:id="@+id/action_mainFragment_to_customDialogFragment"
-            app:destination="@id/customDialogFragment" />
+            app:destination="@id/customDialogFragment"
+            app:enterAnim="@anim/nav_enter_anim"
+            app:exitAnim="@anim/nav_exit_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_anim"
+            app:popExitAnim="@anim/nav_pop_exit_anim"/>
+
         <action
             android:id="@+id/action_mainFragment_to_fullscreenDialogFragment"
             app:destination="@id/fullscreenDialogFragment" />
@@ -143,6 +150,8 @@
             android:id="@+id/action_backPressedFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+
+    <!-- VIDEO CUSTOM NAVIGATION ANIMATION: XXXXXXXX -->
     <fragment
         android:id="@+id/customDialogFragment"
         android:name="com.progdeelite.dca.custom_dialog.CustomDialogFragment"
@@ -150,8 +159,13 @@
         tools:layout="@layout/fragment_custom_dialog">
         <action
             android:id="@+id/action_customDialogFragment_to_mainFragment"
+            app:enterAnim="@anim/nav_enter_anim"
+            app:exitAnim="@anim/nav_exit_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_anim"
+            app:popExitAnim="@anim/nav_pop_exit_anim"
             app:destination="@id/mainFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/fullscreenDialogFragment"
         android:name="com.progdeelite.dca.full_screen_dialog.FullscreenDialogFragment"
