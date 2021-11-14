@@ -6,9 +6,9 @@
 ### 👉 Desafios Comuns Android
 Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguêsa** 🇧🇷! 
 
-| Desafios Comuns Android |
-| :------------- |
-| <img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/desafios_problemas_comuns_na_vida_do_desenvolvedor_android.png" width="240" height="520"> |
+| Desafios Comuns Android Dia | Desafios Comuns Android Noite |
+| ------------- | ------------- |
+| <img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/desafios_comuns_android_kotlin_1.jpg" width="280" height="607"> | <img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/desafios_comuns_android_kotlin_2.jpg" width="280" height="607"> |
 
 ### 👉 Quais são as vantagens desse aplicativo referência?
 * ✔️ Ele é modular e pode ser incrementado com cada novidade que for surgindo
