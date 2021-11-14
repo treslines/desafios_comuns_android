@@ -30,7 +30,7 @@ class DarkWebViewFragment : Fragment(R.layout.fragment_dark_web_view) {
         with(binding) {
             val mimeType = "text/html"
             val encoding = "utf-8"
-            val htmlText = "<h1>My Dark WebView</h1>"
+            val htmlText = "<h3>Mude o Tema para Night Em Settings</h3>"
             forceDarkWebview.loadDataWithBaseURL(null, htmlText, mimeType, encoding, null)
             val inDarkMode =
                 (requireContext().resources.configuration.uiMode and UI_MODE_NIGHT_MASK) == UI_MODE_NIGHT_YES

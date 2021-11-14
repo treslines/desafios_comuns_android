@@ -44,7 +44,7 @@ class PollingApiFragment : Fragment(R.layout.fragment_polling_api) {
 
         binding.startPollingBtn.setOnClickListener {
             polling(
-                isOffline = { hasInternet() },
+                isOffline = { !hasInternet() },
                 onOffline = { toast("Sem Internet") },
                 isCompleted = { stateSuccess },
                 onCompleted = { toast("sucesso") },

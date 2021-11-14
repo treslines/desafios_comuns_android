@@ -535,29 +535,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Formatando Entradas Numéricas"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/input_text_formatter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Formatar Decimais"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
             android:text="Diálogo Tela Cheia"
             android:textStyle="bold" />
 
@@ -604,7 +581,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Acessando Conteúdo"
+            android:text="Acessando Conteúdo com Content Provider"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
@@ -616,7 +593,7 @@
             android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Criar ContentProvider"
+            android:text="Provedor de Conteúdo (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -847,6 +824,29 @@
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Como Validar Campos e Textos"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Formatando Entradas Numéricas"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/input_text_formatter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:textColor="@color/gold"
+            android:gravity="left|center_vertical"
+            android:text="Formatar Decimais"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
     </LinearLayout>
