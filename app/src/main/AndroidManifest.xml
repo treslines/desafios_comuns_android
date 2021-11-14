@@ -45,7 +45,7 @@
             </intent-filter>
         </activity>
 
-        <!-- VÍDEO CONTENT PROVIDER: XXXXXXXX -->
+        <!-- VÍDEO CONTENT PROVIDER: https://youtu.be/dcBqUVUwBx4 -->
         <provider
             android:name="com.progdeelite.dca.content_provider.AppInfoProvider"
             android:authorities="${applicationId}.provider"

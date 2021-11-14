@@ -130,10 +130,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Bloquear Capturas de Telas"
+            android:text="Bloquear Capturas de Telas (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -176,10 +176,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Gravar Vídeos Android Studio"
+            android:text="Gravar Vídeos (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -222,10 +222,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Registrar Erros Com Timber"
+            android:text="Erros Com Timber (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -245,10 +245,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Criar Ícones Adaptáveis"
+            android:text="Ícones Adaptáveis (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -268,10 +268,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Delegar ViewBinding"
+            android:text="Delegar ViewBinding (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -337,10 +337,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Salvar em Memória"
+            android:text="Salvar em Memória (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -360,10 +360,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Salvar em Memória Criptografado"
+            android:text="Memória Criptografado (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -452,10 +452,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Exibir Splash Screen"
+            android:text="Splash Screen (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -475,10 +475,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_primary"
+            android:backgroundTint="@color/design_default_color_error"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Exibir Barra de Navegação"
+            android:text="Barra de Navegação (Youtube)"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -604,6 +604,75 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
+            android:text="Acessando Conteúdo"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/content_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Como Criar ContentProvider"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Transições de Telas Animadas com Navigation Graph"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/animated_screen_transtions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Transições de Telas (Youtube)"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Mapear Respostas e Exceções à Requisições"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/map_responses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Respostas e Exceções (Youtube)"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
             android:text="Requisições"
             android:textStyle="bold" />
 
@@ -696,29 +765,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Acessando Conteúdo"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/content_provider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Criar ContentProvider"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
             android:text="Telas Invisíveis"
             android:textStyle="bold" />
 
@@ -765,29 +811,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Requisições Seguras"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/secure_requests"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Requisições Seguras HTTPS"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
             android:text="Client HTTP"
             android:textStyle="bold" />
 
@@ -801,29 +824,6 @@
             android:textColor="@color/gold"
             android:gravity="left|center_vertical"
             android:text="Como Criar um Client HTTP"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Animações no Navigation Graph"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/anim_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Animar Transições de Telas"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 

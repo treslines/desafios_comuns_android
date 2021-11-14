@@ -136,12 +136,28 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO EXIBIR UMA BARRA DE NAVEGAçÃO: https://youtu.be/1mG3-I8bof0           |
             // +-----------------------------------------------------------------------------------+
-            bottomNavigationView.setOnClickListener { toast("Apenas o video explica") }
+            bottomNavigationView.setOnClickListener { showYoutubeVideo("1mG3-I8bof0") }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: COMO EXIBIR UMA BOTTOM SHEET DIALOG: https://youtu.be/vku9pMNHT9o          |
             // +-----------------------------------------------------------------------------------+
             bottomSheetDialog.setOnClickListener { navTo(R.id.bottomSheetDialogFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR CONTENT PROVIDER: https://youtu.be/dcBqUVUwBx4                  |
+            // +-----------------------------------------------------------------------------------+
+            contentProvider.setOnClickListener { showYoutubeVideo("dcBqUVUwBx4") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO ANIMAR TRANSIçÃO DE TELAS NO NAV GRAPH: https://youtu.be/d9O7sjlN6JQ  |
+            // +-----------------------------------------------------------------------------------+
+            animatedScreenTranstions.setOnClickListener { showYoutubeVideo("d9O7sjlN6JQ") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO MAPEAR RESPOSTAS E EXCEçÕES DE APIs: https://youtu.be/vYO3oSyDgQA     |
+            // +-----------------------------------------------------------------------------------+
+            mapResponses.setOnClickListener { showYoutubeVideo("vYO3oSyDgQA") }
+
         }
     }
 }
