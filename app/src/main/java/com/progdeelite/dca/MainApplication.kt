@@ -2,6 +2,7 @@ package com.progdeelite.dca
 
 import android.app.Application
 import com.progdeelite.dca.logcat_timber.CustomLogger
+import com.progdeelite.migration.MigrationUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -36,6 +37,11 @@ class MainApplication : Application() {
         setupLogging()
         setupDefaultExceptionHandler() // https://youtu.be/zu9MOl95LKs
 //        setupDependencyInjection()
+
+        // +-----------------------------------------------------------------+
+        // | VIDEO: COMO MIGRAR SETTINGS PARA APP NOVO: XXXXXXXXX            |
+        // +-----------------------------------------------------------------+
+        MigrationUtil(this).migrateOnlyOnce()
     }
 
 // +-----------------------------------------------------------------+
