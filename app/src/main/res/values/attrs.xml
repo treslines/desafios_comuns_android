@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MainMenuItem">
+        <attr name="mainMenuItemLabelText" format="string" />
+        <attr name="mainMenuItemButtonBackgroundTint" format="color" />
+        <attr name="mainMenuItemButtonTextColor" format="reference|color" />
+        <attr name="mainMenuItemButtonText" format="string" />
+        <attr name="mainMenuItemButtonAllCaps" format="boolean" />
+    </declare-styleable>
+    
+</resources>
