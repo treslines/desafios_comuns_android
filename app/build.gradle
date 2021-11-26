@@ -101,7 +101,7 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
 
     // +-----------------------------------------------------------------+
     // | Delegar ViewBinding: https://youtu.be/qivrch6qxQw               |
@@ -135,7 +135,7 @@ dependencies {
     implementation "androidx.core:core-splashscreen:1.0.0-alpha02"
 
     // +-----------------------------------------------------------------+
-    // | ktor vide: xxxxxxx                                              |
+    // | ktor vide: https://youtu.be/yTqByD4v7Ik                         |
     // +-----------------------------------------------------------------+
     implementation 'io.ktor:ktor-client-android:1.6.3'
     implementation 'io.ktor:ktor-client-okhttp:1.6.3'
@@ -160,12 +160,12 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | StartFragmentForResult (setFragmentResultListener)              |
     // +-----------------------------------------------------------------+
-    implementation "androidx.fragment:fragment-ktx:1.3.6"
+    implementation "androidx.fragment:fragment-ktx:1.4.0"
 
     // +-----------------------------------------------------------------+
     // | Layouting                                                       |
     // +-----------------------------------------------------------------+
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // +-----------------------------------------------------------------+
@@ -182,7 +182,7 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | Mostrar caixa de diálogo de autenticação biométrica             |
     // +-----------------------------------------------------------------+
-    implementation "androidx.biometric:biometric-ktx:1.2.0-alpha03"
+    implementation "androidx.biometric:biometric-ktx:1.2.0-alpha04"
 
     // +-----------------------------------------------------------------+
     // | Unit Tests (logic)                                              |

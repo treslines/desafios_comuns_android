@@ -604,7 +604,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Transições de Telas Animadas com Navigation Graph"
+            android:text="Transições Animadas com NavGraph"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
@@ -650,19 +650,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Requisições"
+            android:text="Definindo Ambientes"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/requests"
+            android:id="@+id/define_environment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Disparar Requisições"
+            android:text="Como Definir Ambiente"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -682,102 +682,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
             android:gravity="left|center_vertical"
             android:text="Como Limpar Cookies"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Definindo Ambientes"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/define_environment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Definir Ambiente"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Extensões Kotlin"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/kotlin_extensions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Definir Extensões"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Telas Invisíveis"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/invisible_screens"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Criar Telas Translucentes"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Anotações de LifeCycle"
-            android:textStyle="bold" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/lifecycle_annotations"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Como Usar LifeCycle Annotations"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
@@ -797,8 +705,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
             android:gravity="left|center_vertical"
             android:text="Como Criar um Client HTTP"
             android:textAllCaps="false"
@@ -811,44 +719,136 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Validando Campos e Textos"
+            android:text="App Demo Para Playstore"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/validate_fields"
+            android:id="@+id/demo_app_playstore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
             android:gravity="left|center_vertical"
-            android:text="Como Validar Campos e Textos"
+            android:text="Como Criar App Demo"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
-        <TextView
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="5dp"
-            android:text="Formatando Entradas Numéricas"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Extensões Kotlin"-->
+<!--            android:textStyle="bold" />-->
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/input_text_formatter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/design_default_color_on_secondary"
-            android:textColor="@color/gold"
-            android:gravity="left|center_vertical"
-            android:text="Formatar Decimais"
-            android:textAllCaps="false"
-            tools:ignore="RtlHardcoded" />
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/kotlin_extensions"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
+<!--            android:textColor="@color/gold"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Como Definir Extensões"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Telas Invisíveis"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/invisible_screens"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
+<!--            android:textColor="@color/gold"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Como Criar Telas Translucentes"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Anotações de LifeCycle"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/lifecycle_annotations"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
+<!--            android:textColor="@color/gold"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Como Usar LifeCycle Annotations"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Validando Campos e Textos"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/validate_fields"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
+<!--            android:textColor="@color/gold"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Como Validar Campos e Textos"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Formatando Entradas Numéricas"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/input_text_formatter"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
+<!--            android:textColor="@color/gold"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Formatar Decimais"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
     </LinearLayout>
 
 </ScrollView>

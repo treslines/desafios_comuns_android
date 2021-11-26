@@ -120,7 +120,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // customDialogs.setOnClickListener { navTo(R.id.customDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: CUSTOM NAVIGATION ANIMATION: XXXXXXXXX                                     |
+            // | VIDEO: CUSTOM NAVIGATION ANIMATION: https://youtu.be/d9O7sjlN6JQ                  |
             // +-----------------------------------------------------------------------------------+
             // 1) DEFINIR ACTION COM ANIMACÃO DE TRANSICÃO
             // 2) CRIAR ARQUIVOS DE DURACÃO (integer.xml)
@@ -158,6 +158,25 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // +-----------------------------------------------------------------------------------+
             mapResponses.setOnClickListener { showYoutubeVideo("vYO3oSyDgQA") }
 
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR AMBIENTES DE PROD,STAGE,DEV: https://youtu.be/DLezbqDBzA0       |
+            // +-----------------------------------------------------------------------------------+
+            defineEnvironment.setOnClickListener { showYoutubeVideo("DLezbqDBzA0") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO LIMPAR COOKIES DO SEU APLICATOVO: https://youtu.be/rjAmpDV0IvM        |
+            // +-----------------------------------------------------------------------------------+
+            clearCookies.setOnClickListener { showYoutubeVideo("rjAmpDV0IvM") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR CLIENT HTTP COM KTOR: https://youtu.be/yTqByD4v7Ik              |
+            // +-----------------------------------------------------------------------------------+
+            clientHttp.setOnClickListener { showYoutubeVideo("yTqByD4v7Ik") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO CRIAR APP DEMO PARA PLAYSTORE: https://youtu.be/-rld8-UH5d8           |
+            // +-----------------------------------------------------------------------------------+
+            demoAppPlaystore.setOnClickListener { showYoutubeVideo("-rld8-UH5d8") }
         }
     }
 }
