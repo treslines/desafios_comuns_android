@@ -35,3 +35,8 @@ fun Context.getBooleanSharedPref(key:String): Boolean{
     val sharedPref = getSharedPreferences(GLOBAL_SHARED_PREFS, Context.MODE_PRIVATE)
     return sharedPref?.getBoolean(key, false) ?: false
 }
+
+fun Context.removeSharedPref(key:String){
+    val sharedPref = getSharedPreferences(GLOBAL_SHARED_PREFS, Context.MODE_PRIVATE)
+    sharedPref?.edit()?.remove(key)?.apply()
+}

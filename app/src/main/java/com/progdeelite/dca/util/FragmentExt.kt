@@ -1,22 +1,24 @@
 package com.progdeelite.dca.util
 
+import android.app.Activity
 import android.content.Context
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
+import android.content.Intent.ACTION_VIEW
 import android.content.pm.PackageManager
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET
 import android.net.NetworkCapabilities.NET_CAPABILITY_VALIDATED
 import android.net.Uri
 import android.os.*
+import android.provider.Settings
+import android.util.TypedValue
 import android.view.View
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_FORCED
 import android.widget.Toast
-import androidx.annotation.DrawableRes
-import androidx.annotation.IdRes
-import androidx.annotation.LayoutRes
-import androidx.annotation.StyleRes
+import androidx.annotation.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.biometric.BiometricPrompt
@@ -161,7 +163,7 @@ fun Fragment.promptBiometricChecker(
     onAuthenticationSuccess: (BiometricPrompt.AuthenticationResult) -> Unit,
     onAuthenticationError: (Int, String) -> Unit
 ) {
-    val executor = ContextCompat.getMainExecutor(context)
+    val executor = ContextCompat.getMainExecutor(requireContext())
     val prompt = BiometricPrompt(this, executor, object : BiometricPrompt.AuthenticationCallback() {
         override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
             Timber.d("Authenticado com sucesso, acesso permitido!")
@@ -362,4 +364,80 @@ private fun handleStateChange(
     handle()
     pollingScope.clearScope()
     return
+}
+
+fun Fragment.openPhoneDial(phoneNumber: String) {
+    Intent(Intent.ACTION_DIAL).apply {
+        data = Uri.parse("tel:$phoneNumber")
+    }.let { startActivity(it) }
+}
+
+fun Fragment.setDefaultTheme(@StyleRes styleId: Int) {
+    requireActivity().setTheme(styleId)
+}
+
+fun Fragment.showTransparentStatusBar(isTransparent: Boolean) {
+    val translucentColor = 0x04000000
+    val window = requireActivity().window
+    if (isTransparent) window.addFlags(translucentColor) else window.clearFlags(translucentColor)
+}
+
+fun Fragment.setSystemStatusBarColorOverColorResource(@ColorRes id: Int) {
+    requireActivity().window.statusBarColor = requireActivity().getColor(id)
+}
+
+fun Fragment.setSystemNavigationBarColorOverColorResource(@ColorRes id: Int) {
+    requireActivity().window.navigationBarColor = requireActivity().getColor(id)
+}
+
+fun Fragment.setSystemStatusBarColorOverAttrResource(@AttrRes id: Int) {
+    requireActivity().window.statusBarColor = getColor(id)
+}
+
+fun Fragment.setSystemNavigationBarColorOverAttrResource(@AttrRes id: Int) {
+    requireActivity().window.navigationBarColor = getColor(id)
+}
+
+fun Fragment.getColor(@AttrRes id: Int): Int {
+    val typedValue = TypedValue()
+    requireContext().theme.resolveAttribute(id, typedValue, true)
+    return typedValue.data
+}
+
+fun Fragment.setTranslucentWindow(translucent: Boolean) {
+    if (translucent) {
+        requireActivity().window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
+    } else {
+        requireActivity().window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+            WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
+        )
+    }
+}
+
+fun openUrl(activity: Activity, url: String) {
+    activity.startActivity(Intent(ACTION_VIEW, Uri.parse(url)))
+}
+
+fun openAppSettings(context: Context) {
+    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+        data = Uri.fromParts("package", BuildConfig.APPLICATION_ID, null)
+    }
+    if (canHandleIntent(context, intent)) {
+        context.startActivity(intent)
+    } else {
+        context.startActivity(Intent(Settings.ACTION_SETTINGS))
+    }
+}
+
+// ==================================================
+// - Query Packages Android 12    -------------------
+// ==================================================
+/** PRECISA ESPECIFICAR A PERMISSION NO MANIFEST A PARTIR DO ANDROID 12 */
+fun canHandleIntent(context: Context, intent: Intent): Boolean {
+    return context.packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
+        .isNotEmpty()
 }

@@ -24,14 +24,14 @@ fun View.setVisible(show: Boolean) {
 }
 
 @RequiresApi(Build.VERSION_CODES.R)
-        /** ESCONDE O TECLADO */
+/** ESCONDE O TECLADO */
 fun View.showKeyboard(view: View) {
     windowInsetsController?.show(WindowInsets.Type.ime())
     view.requestFocus()
 }
 
 @RequiresApi(Build.VERSION_CODES.R)
-        /** EXIBE O TECLADO */
+/** EXIBE O TECLADO */
 fun View.hideKeyboard(view: View) {
     windowInsetsController?.hide(WindowInsets.Type.ime())
     view.clearFocus()
