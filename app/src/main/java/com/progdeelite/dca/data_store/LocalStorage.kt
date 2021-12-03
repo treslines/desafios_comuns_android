@@ -45,7 +45,7 @@ class LocalSimpleStorage(private val preferences: SharedPreferences) : StorageTy
 
 // EXEMPLO DE UM ARMAZENAMENTO LOCAL BASEADO EM CHAVE-VALOR CRIPTOGRAFADO
 // QUE PODERÁ SER USADO NA BIOMETRIA POR EXEMPLO OU DADOS SENSÍVEIS
-class LocalSecureStorage(private val preferences: SharedPreferences) : StorageType {
+open class LocalSecureStorage(private val preferences: SharedPreferences) : StorageType {
 
     override fun putString(key: String, value: String) {
         encrypt(value, key, getOrGenerateKey(key))
@@ -94,7 +94,7 @@ class LocalSecureStorage(private val preferences: SharedPreferences) : StorageTy
     }
 
     // GERA OU OBTEM UMA CHAVE SIMETRICA PARA CRIPTOGRAFIA
-    private fun getOrGenerateKey(
+    protected fun getOrGenerateKey(
         key: String,
         useForBiometricAuthentication: Boolean = false
     ): Key {
@@ -149,7 +149,7 @@ class LocalSecureStorage(private val preferences: SharedPreferences) : StorageTy
         return symmetricKeyGenerator.generateKey()
     }
 
-    private fun getCipherByMode(key: String, cypherSymmetricKey: Key, mode: Int): Cipher {
+    protected fun getCipherByMode(key: String, cypherSymmetricKey: Key, mode: Int): Cipher {
         val cipher = Cipher.getInstance(AES_MODE)
         return when (mode) {
             // DESCRIPTOGRAFA
@@ -216,5 +216,57 @@ class LocalSecureStorage(private val preferences: SharedPreferences) : StorageTy
 
         // TAMANHO DA CHAVE SECURA QUE SERÁ GERADA
         private const val AES_KEY_SIZE = 256
+    }
+}
+
+
+const val ALIAS_BIOMETRIC_AUTHENTICATION = "alias_biometric_authentication"
+
+interface SecureBiometricStorageType : StorageType {
+    fun getInitializedBiometricCipher(
+        alias: String = ALIAS_BIOMETRIC_AUTHENTICATION,
+        mode: Int
+    ): Cipher
+
+    fun putStringEncryptedUsingBiometricCipher(
+        alias: String,
+        dataToEncrypt: String,
+        authenticatedEncryptionCipher: Cipher
+    ): String
+
+    fun getStringDecryptedUsingBiometricCipher(
+        alias: String,
+        authenticatedDecryptionCipher: Cipher
+    ): String?
+}
+
+class LocalBiometricStorage(
+    private val preferences: SharedPreferences
+) : LocalSecureStorage(preferences), SecureBiometricStorageType {
+
+    override fun getInitializedBiometricCipher(alias: String, mode: Int): Cipher {
+        val secretKey = getOrGenerateKey(alias, true)
+        return getCipherByMode(alias, secretKey, mode)
+    }
+
+    override fun putStringEncryptedUsingBiometricCipher(
+        alias: String,
+        dataToEncrypt: String,
+        authenticatedEncryptionCipher: Cipher
+    ): String {
+        return authenticatedEncryptionCipher
+            .doFinal(dataToEncrypt.toByteArray(Charsets.UTF_8))
+            .let { Base64.encodeToString(it, Base64.NO_WRAP) }
+            .also { preferences.edit { putString(alias, it) } }
+    }
+
+    override fun getStringDecryptedUsingBiometricCipher(
+        alias: String,
+        authenticatedDecryptionCipher: Cipher
+    ): String? {
+        return preferences.getString(alias, null)
+            ?.let { Base64.decode(it, Base64.NO_WRAP) }
+            ?.let { authenticatedDecryptionCipher.doFinal(it) }
+            ?.toString(Charsets.UTF_8)
     }
 }
