@@ -65,6 +65,9 @@
         <action
             android:id="@+id/action_mainFragment_to_bottomSheetDialogFragment"
             app:destination="@id/bottomSheetDialogFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myViewFragment"
+            app:destination="@id/myViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -191,6 +194,14 @@
         tools:layout="@layout/fragment_bottom_sheet_dialog">
         <action
             android:id="@+id/action_bottomSheetDialogFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myViewFragment"
+        android:name="com.progdeelite.dca.mvp.concrete_view.MyViewFragment"
+        android:label="MyViewFragment" >
+        <action
+            android:id="@+id/action_myViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

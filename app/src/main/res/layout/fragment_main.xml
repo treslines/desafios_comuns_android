@@ -735,6 +735,98 @@
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Extensões Kotlin"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/kotlin_extensions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Como Definir Extensões"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Migrar Dados Apps Legados"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/migration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Como Migrar Dados"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="ViewHolder e BaseAdapter Genérico"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recyclerviewBaseAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Base Do RecyclerView"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Estrutura Base App Com MVP"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mvp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Como Implementar MVP"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 <!--        <TextView-->
 <!--            style="@style/TextAppearance.AppCompat.Small"-->
 <!--            android:layout_width="match_parent"-->
@@ -742,111 +834,19 @@
 <!--            android:layout_marginStart="16dp"-->
 <!--            android:layout_marginTop="16dp"-->
 <!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Extensões Kotlin"-->
+<!--            android:text="Navegação e Alertas com MVP"-->
 <!--            android:textStyle="bold" />-->
 
 <!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/kotlin_extensions"-->
+<!--            android:id="@+id/navigation_mvp"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:layout_marginStart="16dp"-->
 <!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
-<!--            android:textColor="@color/gold"-->
+<!--            android:backgroundTint="@color/design_default_color_error"-->
+<!--            android:textColor="@color/white"-->
 <!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Como Definir Extensões"-->
-<!--            android:textAllCaps="false"-->
-<!--            tools:ignore="RtlHardcoded" />-->
-
-<!--        <TextView-->
-<!--            style="@style/TextAppearance.AppCompat.Small"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Telas Invisíveis"-->
-<!--            android:textStyle="bold" />-->
-
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/invisible_screens"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
-<!--            android:textColor="@color/gold"-->
-<!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Como Criar Telas Translucentes"-->
-<!--            android:textAllCaps="false"-->
-<!--            tools:ignore="RtlHardcoded" />-->
-
-<!--        <TextView-->
-<!--            style="@style/TextAppearance.AppCompat.Small"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Anotações de LifeCycle"-->
-<!--            android:textStyle="bold" />-->
-
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/lifecycle_annotations"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
-<!--            android:textColor="@color/gold"-->
-<!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Como Usar LifeCycle Annotations"-->
-<!--            android:textAllCaps="false"-->
-<!--            tools:ignore="RtlHardcoded" />-->
-
-<!--        <TextView-->
-<!--            style="@style/TextAppearance.AppCompat.Small"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Validando Campos e Textos"-->
-<!--            android:textStyle="bold" />-->
-
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/validate_fields"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
-<!--            android:textColor="@color/gold"-->
-<!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Como Validar Campos e Textos"-->
-<!--            android:textAllCaps="false"-->
-<!--            tools:ignore="RtlHardcoded" />-->
-
-<!--        <TextView-->
-<!--            style="@style/TextAppearance.AppCompat.Small"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Formatando Entradas Numéricas"-->
-<!--            android:textStyle="bold" />-->
-
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/input_text_formatter"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_on_secondary"-->
-<!--            android:textColor="@color/gold"-->
-<!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Formatar Decimais"-->
+<!--            android:text="Navegação com MVP"-->
 <!--            android:textAllCaps="false"-->
 <!--            tools:ignore="RtlHardcoded" />-->
     </LinearLayout>

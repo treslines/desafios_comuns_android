@@ -177,6 +177,26 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // | VIDEO: COMO CRIAR APP DEMO PARA PLAYSTORE: https://youtu.be/-rld8-UH5d8           |
             // +-----------------------------------------------------------------------------------+
             demoAppPlaystore.setOnClickListener { showYoutubeVideo("-rld8-UH5d8") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: COMO DECLARAR/DEFINIR FUNçÃO DE EXTENSÃO: https://youtu.be/8rcbHgu1uNQ     |
+            // +-----------------------------------------------------------------------------------+
+            kotlinExtensions.setOnClickListener { showYoutubeVideo("8rcbHgu1uNQ") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO:  COMO MIGRAR DADOS APP LEGADO PARA APP NOVO: https://youtu.be/HANcH98pU6I  |
+            // +-----------------------------------------------------------------------------------+
+            migration.setOnClickListener { showYoutubeVideo("HANcH98pU6I") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: VIEWHOLDER E VIEWADAPTER PARA RECYCLERVIEW: https://youtu.be/2PBMBNFdG_E   |
+            // +-----------------------------------------------------------------------------------+
+            recyclerviewBaseAdapter.setOnClickListener { showYoutubeVideo("2PBMBNFdG_E") }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: ESTRUTURA BASE MVP ANDROID: XXXXXXXX                                       |
+            // +-----------------------------------------------------------------------------------+
+            mvp.setOnClickListener { navTo(R.id.myViewFragment) }
         }
     }
 }

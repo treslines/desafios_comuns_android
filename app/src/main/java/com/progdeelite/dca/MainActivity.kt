@@ -4,6 +4,8 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewTreeObserver
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.findNavController
@@ -119,6 +121,10 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
 
     fun setToolbarNavigationIcon(icon: Drawable?) {
         binding.mainToolbar.navigationIcon = icon
+    }
+
+    fun setToolbarNavigationTitle(title: String?) {
+        binding.mainToolbar.title = title
     }
 
 }

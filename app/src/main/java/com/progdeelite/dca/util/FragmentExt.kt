@@ -20,6 +20,7 @@ import android.view.inputmethod.InputMethodManager.SHOW_FORCED
 import android.widget.Toast
 import androidx.annotation.*
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
@@ -417,6 +418,13 @@ fun Fragment.setTranslucentWindow(translucent: Boolean) {
         )
     }
 }
+
+fun Fragment.hideTopActionBar() = activity?.let { (it as AppCompatActivity).hideActionBar() }
+fun Fragment.showTopActionBar() = activity?.let { (it as AppCompatActivity).showActionBar() }
+fun Fragment.setActionBarTitle(@StringRes title:Int) = activity?.let { (it as AppCompatActivity).setActionBarTitle(title) }
+fun Fragment.setActionBarIcon(@DrawableRes icon:Int) = activity?.let { (it as AppCompatActivity).setActionBarIcon(icon)}
+fun Fragment.setToolBarIcon(@DrawableRes icon:Int) =  activity?.let { (it as AppCompatActivity).setToolbarNavigationIcon(icon) }
+fun Fragment.setToolBarTitle(title: String) = activity?.let { (it as AppCompatActivity).setToolbarNavigationTitle(title) }
 
 fun openUrl(activity: Activity, url: String) {
     activity.startActivity(Intent(ACTION_VIEW, Uri.parse(url)))
