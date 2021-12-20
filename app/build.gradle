@@ -96,6 +96,7 @@ android {
         unitTests.returnDefaultValues = true
         unitTests.includeAndroidResources = true
     }
+    namespace 'com.progdeelite.dca'
 }
 
 dependencies {
@@ -122,7 +123,7 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | Material Components                                             |
     // +-----------------------------------------------------------------+
-    implementation 'com.google.android.material:material:1.5.0-beta01'
+    implementation 'com.google.android.material:material:1.6.0-alpha01'
 
     // +-----------------------------------------------------------------+
     // | Preferences                                                     |
@@ -172,7 +173,7 @@ dependencies {
     // | Coroutines                                                      |
     // +-----------------------------------------------------------------+
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
 
     // +-----------------------------------------------------------------+
     // | Visualizar erros em Produção: https://youtu.be/rz8O8V4Ho1M      |
