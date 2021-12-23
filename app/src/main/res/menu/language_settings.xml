@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="50"
+        android:background="@color/text_color_dark"
+        android:icon="@drawable/ic_language"
+        android:title="Idioma">
+        <menu>
+            <item
+                android:id="@+id/action_de"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_de"
+                android:background="@color/text_color_dark"
+                android:orderInCategory="10"
+                android:title="@string/deutsch" />
+            <item
+                android:id="@+id/action_fr"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_fr"
+                android:background="@color/text_color_dark"
+                android:orderInCategory="20"
+                android:title="@string/franzoesisch" />
+        </menu>
+    </item>
+</menu>

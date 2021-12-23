@@ -3,6 +3,7 @@ package com.progdeelite.dca.login
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.fragment.app.viewModels
 import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentLoginBinding
 import com.progdeelite.dca.language.BaseFragment
@@ -10,6 +11,7 @@ import com.progdeelite.dca.language.LanguageResource
 import com.progdeelite.dca.language.LanguageResource.AppLanguagesSettings.FRENCH
 import com.progdeelite.dca.language.LanguageResource.AppLanguagesSettings.GERMAN
 import com.progdeelite.dca.util.*
+import com.progdeelite.dca.viewmodel.ExposeObserveViewModel
 
 // 1) Como criar um menu flutuante
 // 2) configurações necessãrias no manifest (se fizer certo nem precisa)
@@ -17,9 +19,9 @@ import com.progdeelite.dca.util.*
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>() {
 
-
     override fun getViewBinding(): FragmentLoginBinding = FragmentLoginBinding.inflate(layoutInflater)
     override fun showActionBarOptionMenu() = true
+    val loginViewModel: ExposeObserveViewModel by viewModels()
 
     // 1) como interceptar ação de ENTER no teclado virtual
     // 2) Identificar qual tecla foi pressionada, definir extensão
@@ -27,6 +29,18 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     override fun initializeUi() {
         with(binding) {
             password.setOnEnterKeyListener(getOnLoginClickedAction())
+
+        }
+
+        // 0) como disparar o evento que altera o modelo e se reflete na Interface
+        binding.impressum.setOnClickListener{
+            loginViewModel.changeAppName("Novo AppName")
+        }
+        // 1) como criar viewmodel para expor livedata
+        // 2) como export livedata imunatavel no modelo
+        // 3) como observar o livedata e atualizar a view automaticamente
+        loginViewModel.observableName.observe(viewLifecycleOwner) { newAppName ->
+            binding.title.text = newAppName
         }
     }
 
