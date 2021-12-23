@@ -197,6 +197,16 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // | VIDEO: ESTRUTURA BASE MVP ANDROID: XXXXXXXX                                       |
             // +-----------------------------------------------------------------------------------+
             mvp.setOnClickListener { navTo(R.id.myViewFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: ITEM DECORATOR RECYCLERVIEW: XXXXXXXX                                      |
+            // +-----------------------------------------------------------------------------------+
+            dividerRecyclerview.setOnClickListener { navTo(R.id.itemDecoratorFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: FLOATING LAYOUT/VIEWS : XXXXXXXX                                           |
+            // +-----------------------------------------------------------------------------------+
+            floatingViews.setOnClickListener { navTo(R.id.loginFragment) }
         }
     }
 }

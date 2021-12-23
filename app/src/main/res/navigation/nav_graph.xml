@@ -68,6 +68,12 @@
         <action
             android:id="@+id/action_mainFragment_to_myViewFragment"
             app:destination="@id/myViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_itemDecoratorFragment"
+            app:destination="@id/itemDecoratorFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -202,6 +208,23 @@
         android:label="MyViewFragment" >
         <action
             android:id="@+id/action_myViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDecoratorFragment"
+        android:name="com.progdeelite.dca.item_decoration.ItemDecoratorFragment"
+        android:label="Item Decorator"
+        tools:layout="@layout/fragment_item_decorator" >
+        <action
+            android:id="@+id/action_itemDecoratorFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.progdeelite.dca.login.LoginFragment"
+        android:label="Layout Flutuante" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
