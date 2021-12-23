@@ -6,6 +6,9 @@
         <package android:name="com.progdeelite.dca" />
     </queries>
 
+    <!-- VÍDEO RETROFIT: XXXXXXXXXXXXXXXXX -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- VÍDEO SOLICITANDO PERMISSÕES: https://youtu.be/grYUKZDTzVA -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
@@ -36,6 +39,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
