@@ -2,4 +2,5 @@
 <resources>
     <dimen name="default_margin">16dp</dimen>
     <dimen name="default_padding">16dp</dimen>
+    <dimen name="divider_space">100dp</dimen>
 </resources>

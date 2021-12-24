@@ -12,20 +12,20 @@
 
     # app colors
     <color name="text_color_button">@android:color/white</color>
-    <color name="alarm_item_divider">@android:color/white</color>
-    <color name="image_button">#737373</color>
-    <color name="text_color_dark">#042745</color>
-    <color name="icon_color_dark">#042745</color>
+    <color name="alarm_item_divider">#FF032039</color>
+    <color name="image_button">@android:color/white</color>
+    <color name="text_color_dark">@android:color/white</color>
+    <color name="icon_color_dark">@android:color/white</color>
     <color name="light_grey">#bdbdbd</color>
 
     # chip colors
-    <color name="chip_bg_color">#042745</color>
+    <color name="chip_bg_color">#616161</color>
     <color name="chip_bg_color_light">#7692AB</color>
-    <color name="chip_bg_color_dark">#018786</color>
+    <color name="chip_bg_color_dark">#042745</color>
     <color name="chip_text_color_dark">#042745</color>
 
     # progress indicator
-    <color name="progressbar_indicator">#2D679A</color>
+    <color name="progressbar_indicator">@android:color/white</color>
 
     # back arrow
     <color name="navigation_back_arrow">#042745</color>
@@ -34,5 +34,4 @@
     <color name="red">#F6412D</color>
     <color name="orange">#FF9800</color>
     <color name="yellow">#FFEC19</color>
-
 </resources>

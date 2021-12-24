@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ScadaChipChoice.MaterialComponents.Chip.Choice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:chipMinTouchTargetSize="36dp"
+    android:clickable="true"
+    app:chipStartPadding="12dp"
+    app:iconStartPadding="0dp"
+    app:iconEndPadding="0dp"
+    app:textStartPadding="0dp"
+    app:textEndPadding="0dp"
+    app:closeIconStartPadding="0dp"
+    app:closeIconEndPadding="0dp"
+    app:chipEndPadding="12dp"
+    tools:text="Priorität 1"
+    android:focusable="true">
+
+</com.google.android.material.chip.Chip>

@@ -22,11 +22,20 @@
     </style>
 
     <!-- +=======================================================+ -->
-    <!-- | Video Splash Screen: xxxxxxxx                         | -->
+    <!-- | Video Splash Screen: https://youtu.be/cMXE8PN-qIc     | -->
     <!-- +=======================================================+ -->
     <style name="SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
         <item name="postSplashScreenTheme">@style/Theme.DesafiosComunsAndroid</item>
+    </style>
+
+    <!-- +===========================================================+ -->
+    <!-- | Video Dialog From Context: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx  | -->
+    <!-- +===========================================================+ -->
+    <style name="DcaDialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorOnPrimary">@color/purple_500</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/teal_200</item>
     </style>
 </resources>

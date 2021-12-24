@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 85% opacity -->
+    <item android:alpha="0.85" android:color="@color/chip_bg_color" android:state_enabled="true" android:state_selected="true"/>
+    <item android:alpha="0.85" android:color="@color/chip_bg_color_light" android:state_enabled="true" android:state_checked="true"/>
+
+    <item android:alpha="0.10" android:color="@color/chip_bg_color" android:state_enabled="true"/>
+    <item android:alpha="0.15" android:color="@color/chip_bg_color_dark"/> <!-- 15% of 10% opacity -->
+
+</selector>
