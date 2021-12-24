@@ -70,6 +70,7 @@ fun TextInputLayout.shake(onEndAction: () -> Unit = {}) {
     }.doOnEnd { onEndAction() }
 }
 
+// Video: Como reagir ao teclado ENTER: xxxxxxx
 fun EditText.setOnEnterKeyListener(action: () -> Unit = {}) {
     setOnKeyListener { _, keyCode, event ->
         if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
