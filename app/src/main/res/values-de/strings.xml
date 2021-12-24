@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Desafios Comuns Android</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="apply_filter">Aplicar Filtro</string>
+    <string name="last_15_min">Útimos 15 Minutos</string>
+    <string name="last_hour">À Hora Atrás</string>
+    <string name="last_4_hours">Últimas 4 Horas</string>
+    <string name="last_day">À Dia Atrás</string>
+
+    <string name="deutsch">Alemão</string>
+    <string name="franzoesisch">Francês</string>
+
+    <string name="app_login_title">Systemlogin</string>
+    <string name="username_hint">Benutzername</string>
+    <string name="password_hint">Passwort</string>
+    <string name="loggin">Anmelden</string>
+    <string name="imprint">Datenschutzerklärung</string>
+</resources>

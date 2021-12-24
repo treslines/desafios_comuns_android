@@ -12,10 +12,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.progdeelite.dca.databinding.ActivityMainBinding
+import com.progdeelite.dca.language.ActivityCallback
+import com.progdeelite.dca.util.setVisible
 
 // VANTAGEM DE TER UM SINGLE PAGE APPLICATION, VOCÊ FAZ A
 // CONFIGURACÃO UMA ÚNICA VEZ EM UM LUGAR CENTRAL!
-class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA ABAIXO
+class MainActivity : AppCompatActivity(), ActivityCallback { // IMPORTANTE: SE USAR SPLASH, LEIA ABAIXO
 
     // +-----------------------------------------------------------------------------------+
     // | ********** IMPORTANTE SE USAR SPLAH COM A LIB NOVA DO ANDROID 12 *************    |
@@ -127,4 +129,17 @@ class MainActivity : AppCompatActivity() { // IMPORTANTE: SE USAR SPLASH, LEIA A
         binding.mainToolbar.title = title
     }
 
+    // +----------------------------------------------------------------------------------------+
+    // | VIDEO: COMO SE COMUNICAR COM A MAIN ACTIVITY: XXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+    // +----------------------------------------------------------------------------------------+
+    override fun showLoadingSpinner() = binding.progress.setVisible(true)
+    override fun hideLoadingSpinner() = binding.progress.setVisible(false)
+
+    override fun showAppBarBackButton(show: Boolean) {
+        supportActionBar?.setHomeButtonEnabled(show)
+        supportActionBar?.setDisplayHomeAsUpEnabled(show)
+        supportActionBar?.setDisplayShowHomeEnabled(show)
+    }
+    override fun showAppBarTitle(show: Boolean) { supportActionBar?.setDisplayShowTitleEnabled(show) }
+    override fun showActionBar(show: Boolean) { if(show) supportActionBar?.show() else supportActionBar?.hide() }
 }

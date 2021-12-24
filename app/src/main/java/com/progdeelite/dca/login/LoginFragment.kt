@@ -16,11 +16,10 @@ import com.progdeelite.dca.viewmodel.ExposeObserveViewModel
 // 1) Como criar um menu flutuante
 // 2) configurações necessãrias no manifest (se fizer certo nem precisa)
 // 3) Como permitir entradas em celulares pequenos
-
 class LoginFragment : BaseFragment<FragmentLoginBinding>() {
 
     override fun getViewBinding(): FragmentLoginBinding = FragmentLoginBinding.inflate(layoutInflater)
-    override fun showActionBarOptionMenu() = true
+
     val loginViewModel: ExposeObserveViewModel by viewModels()
 
     // 1) como interceptar ação de ENTER no teclado virtual
@@ -29,7 +28,6 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     override fun initializeUi() {
         with(binding) {
             password.setOnEnterKeyListener(getOnLoginClickedAction())
-
         }
 
         // 0) como disparar o evento que altera o modelo e se reflete na Interface
@@ -42,6 +40,10 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
         loginViewModel.observableName.observe(viewLifecycleOwner) { newAppName ->
             binding.title.text = newAppName
         }
+
+        // chamar quando oportuno
+        startLoading()
+        stopLoading()
     }
 
     private fun getOnLoginClickedAction(): () -> Unit {
@@ -53,6 +55,12 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     }
 
     private fun login() = toast("logged In")
+
+
+    // 1) como criar um menu de idiomas na action bar (adicionar à MainAcivity)
+    // 2) como exibir os icones dentro do menu (criar layout - faz toda a diferença)
+    // 3) como reagir às alterações de idioma na prática
+    override fun showActionBarOptionMenu() = true // DETALHE IMPORTANTE
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.language_settings, menu)
