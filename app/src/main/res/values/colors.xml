@@ -12,7 +12,7 @@
 
     # app colors
     <color name="text_color_button">@android:color/white</color>
-    <color name="alarm_item_divider">@android:color/white</color>
+    <color name="alarm_item_divider">@color/image_button</color>
     <color name="image_button">#737373</color>
     <color name="text_color_dark">#042745</color>
     <color name="icon_color_dark">#042745</color>

@@ -14,6 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="4dp"
+        app:contentInsetLeft="4dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEndWithActions="0dp"
+        app:titleMarginStart="0dp"
+        app:titleMargin="0dp"
+        app:contentInsetStartWithNavigation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +51,7 @@
         app:menu="@menu/bottom_navigation_menu" />
 
     <!-- +===================================================================+ -->
-    <!-- | Video hide e show progressbar: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     | -->
+    <!-- | Video hide e show progressbar: https://youtu.be/xM3vMpaSMjY       | -->
     <!-- +===================================================================+ -->
     <ProgressBar
         android:id="@+id/progress"

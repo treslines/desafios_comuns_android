@@ -16,4 +16,28 @@
     <string name="password_hint">Senha do usuário</string>
     <string name="loggin">Realizar Login</string>
     <string name="imprint">Política de Dados</string>
+
+    <string-array name="filter_type">
+        <item>operacional</item>
+        <item>técnico</item>
+    </string-array>
+
+    <string-array name="filter_status">
+        <item>inativo</item>
+        <item>ativo</item>
+        <item>desativado</item>
+    </string-array>
+
+    <string-array name="filter_priority">
+        <item>baixa</item>
+        <item>media</item>
+        <item>alta</item>
+    </string-array>
+
+    <string-array name="filter_time">
+        <item>À 15 min.</item>
+        <item>À 1 Hora</item>
+        <item>À 4 Hora</item>
+        <item>À 1 Dia</item>
+    </string-array>
 </resources>

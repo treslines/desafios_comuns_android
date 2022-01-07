@@ -194,19 +194,29 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             recyclerviewBaseAdapter.setOnClickListener { showYoutubeVideo("2PBMBNFdG_E") }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: ESTRUTURA BASE MVP ANDROID: XXXXXXXX                                       |
+            // | VIDEO: ESTRUTURA BASE MVP ANDROID: https://youtu.be/4PiOchwZV7g                   |
             // +-----------------------------------------------------------------------------------+
             mvp.setOnClickListener { navTo(R.id.myViewFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: ITEM DECORATOR RECYCLERVIEW: XXXXXXXX                                      |
+            // | VIDEO: ITEM DECORATOR RECYCLERVIEW: https://youtu.be/r6TmXq1Rc7U                  |
             // +-----------------------------------------------------------------------------------+
             dividerRecyclerview.setOnClickListener { navTo(R.id.itemDecoratorFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: FLOATING LAYOUT/VIEWS : XXXXXXXX                                           |
+            // | VIDEO: FLOATING LAYOUT/VIEWS : https://youtu.be/BhWGDWzNw1w                       |
             // +-----------------------------------------------------------------------------------+
             floatingViews.setOnClickListener { navTo(R.id.loginFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Text highligher : https://youtu.be/XXXXXXXX                                |
+            // +-----------------------------------------------------------------------------------+
+            textHighlighter.setOnClickListener { navTo(R.id.textHighlighterFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Search view : https://youtu.be/XXXXXXXX                                    |
+            // +-----------------------------------------------------------------------------------+
+            searchView.setOnClickListener { navTo(R.id.searchViewFragment) }
         }
     }
 }

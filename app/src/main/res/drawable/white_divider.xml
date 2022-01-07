@@ -3,6 +3,6 @@
     android:shape="rectangle">
     <size
         android:width="100dp"
-        android:height="5dp" />
+        android:height="2dp" />
     <solid android:color="@color/alarm_item_divider" />
 </shape>

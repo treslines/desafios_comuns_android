@@ -74,6 +74,12 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_textHighlighterFragment"
+            app:destination="@id/textHighlighterFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchViewFragment"
+            app:destination="@id/searchViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -225,6 +231,23 @@
         android:label="Layout Flutuante" >
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textHighlighterFragment"
+        android:name="com.progdeelite.dca.text_highlight.TextHighlighterFragment"
+        android:label="Text Highlighter"
+        tools:layout="@layout/fragment_text_highlighter" >
+        <action
+            android:id="@+id/action_textHighlighterFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchViewFragment"
+        android:name="com.progdeelite.dca.searchview.SearchViewFragment"
+        android:label="Search View" >
+        <action
+            android:id="@+id/action_searchViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

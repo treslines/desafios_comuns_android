@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="120dp">
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alarm_item_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alarmCode"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/text_color_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/commentStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        tools:ignore="RtlSymmetry"
+        tools:text="Alarm Item"
+        tools:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/commentStatus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toStartOf="@+id/quittiertStatus"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        android:src="@drawable/ic_contract" />
+
+    <ImageView
+        android:id="@+id/quittiertStatus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toStartOf="@+id/aktivStatus"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        android:src="@drawable/ic_error" />
+
+    <TextView
+        android:id="@+id/aktivStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/text_color_dark"
+        tools:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        tools:text="+" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/text_color_dark"
+        app:layout_constraintEnd_toStartOf="@+id/type"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        tools:text="23:45:12"
+        tools:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/text_color_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/border"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/texts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="16dp"
+        android:textColor="@color/text_color_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmCode"
+        tools:text="Texto do alarme que esta sendo exibido"
+        tools:textColor="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

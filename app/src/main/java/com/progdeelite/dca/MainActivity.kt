@@ -130,7 +130,7 @@ class MainActivity : AppCompatActivity(), ActivityCallback { // IMPORTANTE: SE U
     }
 
     // +----------------------------------------------------------------------------------------+
-    // | VIDEO: COMO SE COMUNICAR COM A MAIN ACTIVITY: XXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+    // | VIDEO: COMO SE COMUNICAR COM A MAIN ACTIVITY: https://youtu.be/dliaAceI2Bo             |
     // +----------------------------------------------------------------------------------------+
     override fun showLoadingSpinner() = binding.progress.setVisible(true)
     override fun hideLoadingSpinner() = binding.progress.setVisible(false)

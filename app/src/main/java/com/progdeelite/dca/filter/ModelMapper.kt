@@ -20,6 +20,8 @@ object ModelMapper {
         return SimpleDateFormat("dd-MM-yyyy hh:mm:ss").parse(string)
     }
 
+    fun getZustandMapping(zustand: Boolean): String = if (zustand) "+" else "-"
+
     @SuppressLint("SimpleDateFormat")
     fun getEnglishDateFromString(string: String): Date? {
         return SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(string)
