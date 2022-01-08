@@ -34,4 +34,8 @@
     <color name="red">#F6412D</color>
     <color name="orange">#FF9800</color>
     <color name="yellow">#FFEC19</color>
+
+    # statusbar colors
+    <color name="statusBarColorInverted">#FFEC19</color>
+    <color name="statusBarColor">#2D679A</color>
 </resources>

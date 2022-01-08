@@ -209,14 +209,24 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             floatingViews.setOnClickListener { navTo(R.id.loginFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Text highligher : https://youtu.be/XXXXXXXX                                |
+            // | VIDEO: Text highligher (uma mão na roda) : https://youtu.be/XXXXXXXX              |
             // +-----------------------------------------------------------------------------------+
             textHighlighter.setOnClickListener { navTo(R.id.textHighlighterFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Search view : https://youtu.be/XXXXXXXX                                    |
+            // | VIDEO: Search view / componente de busca / filtros : https://youtu.be/XXXXXXXX    |
             // +-----------------------------------------------------------------------------------+
             searchView.setOnClickListener { navTo(R.id.searchViewFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Restaurar Ações Botões (Listeners): https://youtu.be/XXXXXXXX              |
+            // +-----------------------------------------------------------------------------------+
+            restoreListeners.setOnClickListener { navTo(R.id.restoreableActionFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Alterar cores statusbar(Barra de Status): https://youtu.be/XXXXXXXX        |
+            // +-----------------------------------------------------------------------------------+
+            changeStatusbarColors.setOnClickListener { navTo(R.id.statusBarDayFragment) }
         }
     }
 }

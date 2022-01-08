@@ -1,12 +1,14 @@
 package com.progdeelite.dca.language
 
 import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.viewbinding.ViewBinding
@@ -42,8 +44,35 @@ abstract class BaseFragment<viewBinding : ViewBinding> : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        setStatusBarColor()
         translationModel.translate()
     }
+
+    // 1) como alterar cor status bar (criando lógica)
+    // 2) como garantir cores entre fragments
+    // 3) como alternar entre temas diferentes
+    private fun setStatusBarColor() {
+        val isInverted = hasInvertedStatusBar()
+        val statusBarColor = ContextCompat.getColor(requireContext(), if (isInverted) R.color.statusBarColorInverted else R.color.statusBarColor)
+        activity?.window?.let { window ->
+            window.statusBarColor = statusBarColor
+            window.navigationBarColor = statusBarColor
+            val statusBarIsLight = !(isDarkMode() || isInverted)
+            WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = statusBarIsLight
+            WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightNavigationBars = statusBarIsLight
+        }
+    }
+
+    private fun isDarkMode(): Boolean {
+        when (resources.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
+            Configuration.UI_MODE_NIGHT_YES -> return true
+            Configuration.UI_MODE_NIGHT_NO -> return false
+            Configuration.UI_MODE_NIGHT_UNDEFINED -> return false
+        }
+        return false
+    }
+
+    protected open fun hasInvertedStatusBar(): Boolean = false
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

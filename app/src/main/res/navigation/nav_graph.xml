@@ -80,6 +80,12 @@
         <action
             android:id="@+id/action_mainFragment_to_searchViewFragment"
             app:destination="@id/searchViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_restoreableActionFragment"
+            app:destination="@id/restoreableActionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_statusBarDayFragment"
+            app:destination="@id/statusBarDayFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -249,5 +255,35 @@
         <action
             android:id="@+id/action_searchViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restoreableActionFragment"
+        android:name="com.progdeelite.dca.restorable_listeners.RestoreableActionFragment"
+        android:label="Retendo Listeners"
+        tools:layout="@layout/fragment_restoreable_action" >
+        <action
+            android:id="@+id/action_restoreableActionFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusBarDayFragment"
+        android:name="com.progdeelite.statusbar.StatusBarDayFragment"
+        android:label="Barra de Status Dia"
+        tools:layout="@layout/fragment_status_bar_night" >
+        <action
+            android:id="@+id/action_statusBarDayFragment_to_statusBarNightFragment"
+            app:destination="@id/statusBarNightFragment" />
+        <action
+            android:id="@+id/action_statusBarDayFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusBarNightFragment"
+        android:name="com.progdeelite.statusbar.StatusBarNightFragment"
+        android:label="Barra de Status Noite"
+        tools:layout="@layout/fragment_status_bar_night" >
+        <action
+            android:id="@+id/action_statusBarNightFragment_to_statusBarDayFragment"
+            app:destination="@id/statusBarDayFragment" />
     </fragment>
 </navigation>
