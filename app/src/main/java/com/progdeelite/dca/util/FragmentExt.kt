@@ -430,14 +430,14 @@ fun openUrl(activity: Activity, url: String) {
     activity.startActivity(Intent(ACTION_VIEW, Uri.parse(url)))
 }
 
-fun openAppSettings(context: Context) {
+fun Fragment.openAppSettings() {
     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
         data = Uri.fromParts("package", BuildConfig.APPLICATION_ID, null)
     }
-    if (canHandleIntent(context, intent)) {
-        context.startActivity(intent)
+    if (canHandleIntent(requireContext(), intent)) {
+        requireContext().startActivity(intent)
     } else {
-        context.startActivity(Intent(Settings.ACTION_SETTINGS))
+        requireContext().startActivity(Intent(Settings.ACTION_SETTINGS))
     }
 }
 

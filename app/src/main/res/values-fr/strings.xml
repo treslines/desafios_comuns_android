@@ -19,6 +19,9 @@
     <string name="show_filter_menu">Exibir Filtros</string>
     <string name="show_text_filter_menu">Exibir Menu Filtragem</string>
 
+    <string name="general_error_header">Erro Desconhecido!</string>
+    <string name="general_error_description">Se o erro persitir, entre em contato com o nosso suporte pelo número 0800 80 80!</string>
+
     <string-array name="filter_type">
         <item>O</item>
         <item>B</item>
