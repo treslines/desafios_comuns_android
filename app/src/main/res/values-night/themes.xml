@@ -31,11 +31,22 @@
     </style>
 
     <!-- +===========================================================+ -->
-    <!-- | Video Dialog From Context: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx  | -->
+    <!-- | Video Dialog From Context: https://youtu.be/2RRr_opi6Fk   | -->
     <!-- +===========================================================+ -->
     <style name="DcaDialog" parent="Theme.AppCompat.DayNight.Dialog">
         <item name="colorOnPrimary">@color/purple_500</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:background">@color/teal_200</item>
+    </style>
+
+    <!-- +===========================================================+ -->
+    <!-- | Video Estilos Personalizados: xxxxxxxxxxxxxxxxxxxxxx      | -->
+    <!-- +===========================================================+ -->
+    <style name="CustomFontStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/gesture_points</item>
+    </style>
+
+    <style name="CustomFontStyleTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/gesture_stroke</item>
     </style>
 </resources>

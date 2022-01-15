@@ -38,7 +38,7 @@
     </style>
 
     <!-- +===========================================================+ -->
-    <!-- | Video Dialog From Context: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx  | -->
+    <!-- | Video Dialog From Context: https://youtu.be/W8La6tMRv14   | -->
     <!-- +===========================================================+ -->
     <style name="DcaDialog" parent="Theme.AppCompat.DayNight.Dialog">
         <item name="colorOnPrimary">@color/purple_500</item>
@@ -47,11 +47,23 @@
     </style>
 
     <!-- +===========================================================+ -->
-    <!-- | Video Menu De Filtros: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx      | -->
+    <!-- | Video Menu De Filtros: https://youtu.be/2RRr_opi6Fk       | -->
     <!-- +===========================================================+ -->
     <style name="ScadaChipChoice.MaterialComponents.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
         <item name="chipBackgroundColor">@color/chip_background_color_selector</item>
         <item name="android:textColor">@color/chip_text_color_selector</item>
     </style>
+
+    <!-- +===========================================================+ -->
+    <!-- | Video Estilos Personalizados: xxxxxxxxxxxxxxxxxxxxxx      | -->
+    <!-- +===========================================================+ -->
+    <style name="CustomFontStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/gesture_points</item>
+    </style>
+
+    <style name="CustomFontStyleTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/gesture_stroke</item>
+    </style>
+
 
 </resources>
