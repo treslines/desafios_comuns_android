@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.progdeelite.statusbar.StatusBarDayFragment">
+    tools:context=".statusbar.StatusBarDayFragment">
 
     <TextView
         android:id="@+id/description"

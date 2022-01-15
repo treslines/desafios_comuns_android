@@ -1,4 +1,4 @@
-package com.progdeelite.statusbar
+package com.progdeelite.dca.statusbar
 
 import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentStatusBarDayBinding

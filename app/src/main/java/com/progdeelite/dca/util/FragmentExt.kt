@@ -1,5 +1,8 @@
 package com.progdeelite.dca.util
 
+import android.animation.ArgbEvaluator
+import android.animation.ObjectAnimator
+import android.animation.ValueAnimator
 import android.app.Activity
 import android.content.Context
 import android.content.Context.INPUT_METHOD_SERVICE
@@ -17,6 +20,7 @@ import android.view.View
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.SHOW_FORCED
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.*
 import androidx.appcompat.app.AlertDialog
@@ -461,4 +465,19 @@ fun <T : AppCompatActivity> Fragment.navigateToNavGraph(
         navGraphStartDestination,
         overridePendingTransition
     )
+}
+
+
+fun Fragment.startFurtaCorAnim(view: TextView, fromColor:Int, toColor:Int){
+    val furtaCorAnim: ValueAnimator = ObjectAnimator.ofInt(
+        view,
+        "textColor",
+        fromColor,
+        toColor
+    )
+    furtaCorAnim.duration = 1000
+    furtaCorAnim.setEvaluator(ArgbEvaluator())
+    furtaCorAnim.repeatCount = ValueAnimator.INFINITE
+    furtaCorAnim.repeatMode = ValueAnimator.REVERSE
+    furtaCorAnim.start()
 }
