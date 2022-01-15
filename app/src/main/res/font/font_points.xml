@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        app:font="@font/gesture_points"
+        app:fontStyle="normal" />
+    <font
+        app:font="@font/gesture_stroke"
+        app:fontStyle="italic" />
+
+</font-family>
