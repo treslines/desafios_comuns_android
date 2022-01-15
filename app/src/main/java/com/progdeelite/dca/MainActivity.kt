@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.progdeelite.dca.databinding.ActivityMainBinding
 import com.progdeelite.dca.language.ActivityCallback
+import com.progdeelite.dca.util.EXTRA_START_NAV_RES_ID
 import com.progdeelite.dca.util.setVisible
 
 // VANTAGEM DE TER UM SINGLE PAGE APPLICATION, VOCÊ FAZ A
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity(), ActivityCallback { // IMPORTANTE: SE U
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         // PREVINE SCREENSHOTS, ESCONDE CONTEÚDO SENSÍVEL
         // ANDO O APP ESTA EM SEGUNDO PLANO. MUITO ÚTIL
         // QUANDO VOCÊ TRABALHA COM ALGUM TIPO DE APP
@@ -93,6 +95,14 @@ class MainActivity : AppCompatActivity(), ActivityCallback { // IMPORTANTE: SE U
         // | VIDEO: COMO CRIAR UMA BOTTOM NAVIGATION VIEW: https://youtu.be/1mG3-I8bof0        |
         // +-----------------------------------------------------------------------------------+
         setupBottomNavigation()
+
+        // +-----------------------------------------------------------------------------------+
+        // | VIDEO: ABRIR NAV GRAPH EM TELE ESPECIFICA: https://youtu.be/XXXXXXXXXXX           |
+        // +-----------------------------------------------------------------------------------+
+        // PERMITE ABRIR UM GRÁFICO DE NAVEGAçÃO EM UMA TELA ESPECIFA
+        intent?.extras?.getInt(EXTRA_START_NAV_RES_ID)
+            ?.takeIf { it > 0 }
+            ?.let { navController.navigate(it) }
     }
 
     // +-----------------------------------------------------------------------------------+

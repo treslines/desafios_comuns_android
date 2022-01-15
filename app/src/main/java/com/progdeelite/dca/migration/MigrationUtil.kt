@@ -1,13 +1,13 @@
-package com.progdeelite.migration
+package com.progdeelite.dca.migration
 
 import android.content.Context
 import com.progdeelite.dca.util.*
-import com.progdeelite.migration.PreferenceKey.APP_BUILD_NUMBER
-import com.progdeelite.migration.PreferenceKey.APP_VERSION
-import com.progdeelite.migration.PreferenceKey.MIGRATION_COMPLETED
-import com.progdeelite.migration.PreferenceKey.USER_LOGIN_ACTIVE
-import com.progdeelite.migration.PreferenceKey.USER_LOGIN_AUTOMATIC
-import com.progdeelite.migration.PreferenceKey.USER_LOGIN_SAVE_ID
+import com.progdeelite.dca.migration.PreferenceKey.APP_BUILD_NUMBER
+import com.progdeelite.dca.migration.PreferenceKey.APP_VERSION
+import com.progdeelite.dca.migration.PreferenceKey.MIGRATION_COMPLETED
+import com.progdeelite.dca.migration.PreferenceKey.USER_LOGIN_ACTIVE
+import com.progdeelite.dca.migration.PreferenceKey.USER_LOGIN_AUTOMATIC
+import com.progdeelite.dca.migration.PreferenceKey.USER_LOGIN_SAVE_ID
 
 // 1) Definir Novas Preference Keys
 // 2) Definir Classe de Migração

@@ -1,4 +1,4 @@
-package com.progdeelite.migration
+package com.progdeelite.dca.migration
 
 object PreferenceKey {
 

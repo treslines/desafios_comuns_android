@@ -209,24 +209,49 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             floatingViews.setOnClickListener { navTo(R.id.loginFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Text highligher (uma mão na roda) : https://youtu.be/XXXXXXXX              |
+            // | VIDEO: Text highligher (uma mão na roda) : https://youtu.be/XTP0CpsyMZU           |
             // +-----------------------------------------------------------------------------------+
             textHighlighter.setOnClickListener { navTo(R.id.textHighlighterFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Search view / componente de busca / filtros : https://youtu.be/XXXXXXXX    |
+            // | VIDEO: Search view / componente de busca / filtros : https://youtu.be/dXun9d5T340 |
             // +-----------------------------------------------------------------------------------+
             searchView.setOnClickListener { navTo(R.id.searchViewFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Restaurar Ações Botões (Listeners): https://youtu.be/XXXXXXXX              |
+            // | VIDEO: Restaurar Ações Botões (Listeners): https://youtu.be/7uscLRBxr1w           |
             // +-----------------------------------------------------------------------------------+
             restoreListeners.setOnClickListener { navTo(R.id.restoreableActionFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Alterar cores statusbar(Barra de Status): https://youtu.be/XXXXXXXX        |
+            // | VIDEO: Alterar cores statusbar(Barra de Status): https://youtu.be/nY_wnMbRjcw     |
             // +-----------------------------------------------------------------------------------+
             changeStatusbarColors.setOnClickListener { navTo(R.id.statusBarDayFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Como customizar fontes: https://youtu.be/XXXXXXXX                          |
+            // +-----------------------------------------------------------------------------------+
+            customFont.setOnClickListener { navTo(R.id.customFontFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Texto Furta-Cor Camaleão: https://youtu.be/XXXXXXXX                        |
+            // +-----------------------------------------------------------------------------------+
+            textFurtaCor.setOnClickListener { navTo(R.id.textFurtaCorFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Navegar para tela específica: https://youtu.be/XXXXXXXX                    |
+            // +-----------------------------------------------------------------------------------+
+            navSpecificScreen.setOnClickListener { navTo(R.id.mainToSecondGraphFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Navegar para tela específica: https://youtu.be/XXXXXXXX                    |
+            // +-----------------------------------------------------------------------------------+
+            ninePatchFiles.setOnClickListener { navTo(R.id.ninePatchFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Estilos personalizados: https://youtu.be/XXXXXXXX                          |
+            // +-----------------------------------------------------------------------------------+
+            customStyles.setOnClickListener { navTo(R.id.customStyleFragment) }
         }
     }
 }

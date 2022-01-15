@@ -449,3 +449,16 @@ fun canHandleIntent(context: Context, intent: Intent): Boolean {
     return context.packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
         .isNotEmpty()
 }
+
+// VEJA VIDEO: NAVEGAçÃO MULTIPLA: XXXXXXXXX
+fun <T : AppCompatActivity> Fragment.navigateToNavGraph(
+    entryPoint: Class<T>,
+    @IdRes navGraphStartDestination: Int? = null,
+    overridePendingTransition: Boolean = false
+) {
+    requireActivity().navigateToNavGraph(
+        entryPoint,
+        navGraphStartDestination,
+        overridePendingTransition
+    )
+}

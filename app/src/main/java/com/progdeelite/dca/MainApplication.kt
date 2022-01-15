@@ -2,7 +2,7 @@ package com.progdeelite.dca
 
 import android.app.Application
 import com.progdeelite.dca.logcat_timber.CustomLogger
-import com.progdeelite.migration.MigrationUtil
+import com.progdeelite.dca.migration.MigrationUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import timber.log.Timber

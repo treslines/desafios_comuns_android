@@ -86,6 +86,21 @@
         <action
             android:id="@+id/action_mainFragment_to_statusBarDayFragment"
             app:destination="@id/statusBarDayFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customFontFragment"
+            app:destination="@id/customFontFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_textFurtaCorFragment"
+            app:destination="@id/textFurtaCorFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainToSecondGraphFragment"
+            app:destination="@id/mainToSecondGraphFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_ninePatchFragment"
+            app:destination="@id/ninePatchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customStyleFragment"
+            app:destination="@id/customStyleFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -267,7 +282,7 @@
     </fragment>
     <fragment
         android:id="@+id/statusBarDayFragment"
-        android:name="com.progdeelite.statusbar.StatusBarDayFragment"
+        android:name="com.progdeelite.dca.statusbar.StatusBarDayFragment"
         android:label="Barra de Status Dia"
         tools:layout="@layout/fragment_status_bar_night" >
         <action
@@ -279,11 +294,56 @@
     </fragment>
     <fragment
         android:id="@+id/statusBarNightFragment"
-        android:name="com.progdeelite.statusbar.StatusBarNightFragment"
+        android:name="com.progdeelite.dca.statusbar.StatusBarNightFragment"
         android:label="Barra de Status Noite"
         tools:layout="@layout/fragment_status_bar_night" >
         <action
             android:id="@+id/action_statusBarNightFragment_to_statusBarDayFragment"
             app:destination="@id/statusBarDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customFontFragment"
+        android:name="com.progdeelite.dca.custom_font.CustomFontFragment"
+        android:label="Fonte Personalizada"
+        tools:layout="@layout/fragment_custom_font" >
+        <action
+            android:id="@+id/action_customFontFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textFurtaCorFragment"
+        android:name="com.progdeelite.dca.text_furtacor.TextFurtaCorFragment"
+        android:label="Texto Furta-Cor"
+        tools:layout="@layout/fragment_text_furta_cor" >
+        <action
+            android:id="@+id/action_textFurtaCorFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainToSecondGraphFragment"
+        android:name="com.progdeelite.dca.navegacao_especifica.MainToSecondGraphFragment"
+        android:label="Gráfico Principal"
+        tools:layout="@layout/fragment_main_to_second_graph" >
+        <action
+            android:id="@+id/action_mainToSecondGraphFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ninePatchFragment"
+        android:name="com.progdeelite.dca.nine_patch.NinePatchFragment"
+        android:label="Arquivos 9-Patch"
+        tools:layout="@layout/fragment_nine_patch" >
+        <action
+            android:id="@+id/action_ninePatchFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customStyleFragment"
+        android:name="com.progdeelite.dca.custom_style.CustomStyleFragment"
+        android:label="Estilos Personalizados"
+        tools:layout="@layout/fragment_custom_style" >
+        <action
+            android:id="@+id/action_customStyleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

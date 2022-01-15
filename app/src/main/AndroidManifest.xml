@@ -4,28 +4,16 @@
 
     <queries>
         <package android:name="com.progdeelite.dca" />
-    </queries>
-
-    <!-- VÍDEO RETROFIT: XXXXXXXXXXXXXXXXX -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- VÍDEO SOLICITANDO PERMISSÕES: https://youtu.be/grYUKZDTzVA -->
+    </queries> <!-- VÍDEO RETROFIT: XXXXXXXXXXXXXXXXX -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- VÍDEO SOLICITANDO PERMISSÕES: https://youtu.be/grYUKZDTzVA -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
-
-    <!-- VÍDEO CELULAR TEM INTERNET: https://youtu.be/DpyxLwibE0M -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- VÍDEO VIBRANDO O CELULAR: https://youtu.be/ogxgiaCq_24 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
-
-    <!-- VÍDEO BIOMETRY: -->
+        tools:ignore="ScopedStorage" /> <!-- VÍDEO CELULAR TEM INTERNET: https://youtu.be/DpyxLwibE0M -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- VÍDEO VIBRANDO O CELULAR: https://youtu.be/ogxgiaCq_24 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- VÍDEO BIOMETRY: -->
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
-    <!-- VÍDEO LOGCAT E TIMBER(.MainApplication): https://youtu.be/rz8O8V4Ho1M -->
-    <!-- VÍDEO SPLASH SCREEN: https://youtu.be/cMXE8PN-qIc -->
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -35,6 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/SplashScreen">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -48,14 +37,24 @@
             </intent-filter>
         </activity>
 
+        <!-- VÍDEO NAGEVACÃO GRAPH TELA ESPECIFICA: https://youtu.be/XXXXXXXXX -->
+        <activity
+            android:name="com.progdeelite.dca.SegundaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DesafiosComunsAndroid"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            tools:ignore="LockedOrientationActivity"/>
+
+
         <!-- VÍDEO CONTENT PROVIDER: https://youtu.be/dcBqUVUwBx4 -->
         <provider
             android:name="com.progdeelite.dca.content_provider.AppInfoProvider"
             android:authorities="${applicationId}.provider"
             android:enabled="true"
+            android:exported="true"
             android:protectionLevel="signature"
-            android:readPermission="${applicationId}.permission.ACCOUNT_STATUS"
-            android:exported="true" />
+            android:readPermission="${applicationId}.permission.ACCOUNT_STATUS" />
     </application>
 
 </manifest>
