@@ -55,7 +55,7 @@
     </style>
 
     <!-- +===========================================================+ -->
-    <!-- | Video Estilos Personalizados: xxxxxxxxxxxxxxxxxxxxxx      | -->
+    <!-- | Video Estilos Personalizados: https://youtu.be/6HPBpeBXlXs  | -->
     <!-- +===========================================================+ -->
     <style name="CustomFontStyle" parent="@android:style/TextAppearance.Large">
         <item name="android:fontFamily">@font/gesture_points</item>

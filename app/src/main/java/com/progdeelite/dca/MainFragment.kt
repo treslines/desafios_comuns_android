@@ -229,27 +229,27 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             changeStatusbarColors.setOnClickListener { navTo(R.id.statusBarDayFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Como customizar fontes: https://youtu.be/XXXXXXXX                          |
+            // | VIDEO: Como customizar fontes: https://youtu.be/ZCNq349mN78                       |
             // +-----------------------------------------------------------------------------------+
             customFont.setOnClickListener { navTo(R.id.customFontFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Texto Furta-Cor Camaleão: https://youtu.be/XXXXXXXX                        |
+            // | VIDEO: Texto Furta-Cor Camaleão: https://youtu.be/rDslK9ulizw                     |
             // +-----------------------------------------------------------------------------------+
             textFurtaCor.setOnClickListener { navTo(R.id.textFurtaCorFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Navegar para tela específica: https://youtu.be/XXXXXXXX                    |
+            // | VIDEO: Navegar para tela específica: https://youtu.be/CwwU1D91elg                 |
             // +-----------------------------------------------------------------------------------+
             navSpecificScreen.setOnClickListener { navTo(R.id.mainToSecondGraphFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Navegar para tela específica: https://youtu.be/XXXXXXXX                    |
+            // | VIDEO: como criar imagens 9-patch: https://youtu.be/kAeU1XmT2Vk                   |
             // +-----------------------------------------------------------------------------------+
             ninePatchFiles.setOnClickListener { navTo(R.id.ninePatchFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Estilos personalizados: https://youtu.be/XXXXXXXX                          |
+            // | VIDEO: Estilos personalizados: https://youtu.be/6HPBpeBXlXs                       |
             // +-----------------------------------------------------------------------------------+
             customStyles.setOnClickListener { navTo(R.id.customStyleFragment) }
         }
