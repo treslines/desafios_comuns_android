@@ -252,6 +252,31 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             // | VIDEO: Estilos personalizados: https://youtu.be/6HPBpeBXlXs                       |
             // +-----------------------------------------------------------------------------------+
             customStyles.setOnClickListener { navTo(R.id.customStyleFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Animação zoom infinito: https://youtu.be/xxxxxxxxxxx                       |
+            // +-----------------------------------------------------------------------------------+
+            zoomInfinito.setOnClickListener { navTo(R.id.zoomInfiniteFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Animação zoom infinito: https://youtu.be/xxxxxxxxxxx                       |
+            // +-----------------------------------------------------------------------------------+
+            animComLottie.setOnClickListener { navTo(R.id.lottieFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |
+            // +-----------------------------------------------------------------------------------+
+            // zoomNoClique.setOnClickListener { navTo(R.id.zoomOnClickFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Listas com linha do tempo: https://youtu.be/xxxxxxxxxxx                    |
+            // +-----------------------------------------------------------------------------------+
+            // timeline.setOnClickListener { navTo(R.id.linhaDoTempoFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: processo de onboarding com progress steps: https://youtu.be/xxxxxxxxxxx    |
+            // +-----------------------------------------------------------------------------------+
+            // onboarding.setOnClickListener { navTo(R.id.onboardingFragment) }
         }
     }
 }

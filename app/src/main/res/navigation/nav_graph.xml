@@ -101,6 +101,21 @@
         <action
             android:id="@+id/action_mainFragment_to_customStyleFragment"
             app:destination="@id/customStyleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_zoomOnClickFragment"
+            app:destination="@id/zoomOnClickFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_zoomInfiniteFragment"
+            app:destination="@id/zoomInfiniteFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_linhaDoTempoFragment"
+            app:destination="@id/linhaDoTempoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_lottieFragment"
+            app:destination="@id/lottieFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -344,6 +359,51 @@
         tools:layout="@layout/fragment_custom_style" >
         <action
             android:id="@+id/action_customStyleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zoomInfiniteFragment"
+        android:name="com.progdeelite.dca.zoom_infinite.ZoomInfiniteFragment"
+        android:label="Animação Zoom Infinito"
+        tools:layout="@layout/fragment_zoom_infinite" >
+        <action
+            android:id="@+id/action_zoomInfiniteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zoomOnClickFragment"
+        android:name="com.progdeelite.dca.zoom_on_click.ZoomOnClickFragment"
+        android:label="Zoom On Click"
+        tools:layout="@layout/fragment_zoom_on_click" >
+        <action
+            android:id="@+id/action_zoomOnClickFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/linhaDoTempoFragment"
+        android:name="com.progdeelite.dca.timeline.LinhaDoTempoFragment"
+        android:label="Linha Do Tempo"
+        tools:layout="@layout/fragment_linha_do_tempo" >
+        <action
+            android:id="@+id/action_linhaDoTempoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.progdeelite.dca.onboarding.OnboardingFragment"
+        android:label="Processo de Onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lottieFragment"
+        android:name="com.progdeelite.dca.lottie_files.LottieFragment"
+        android:label="Animações com Lottie"
+        tools:layout="@layout/fragment_lottie" >
+        <action
+            android:id="@+id/action_lottieFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

@@ -102,7 +102,7 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
 
     // +-----------------------------------------------------------------+
     // | Delegar ViewBinding: https://youtu.be/qivrch6qxQw               |
@@ -123,7 +123,7 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | Material Components                                             |
     // +-----------------------------------------------------------------+
-    implementation 'com.google.android.material:material:1.6.0-alpha01'
+    implementation 'com.google.android.material:material:1.6.0-alpha02'
 
     // +-----------------------------------------------------------------+
     // | Preferences                                                     |
@@ -133,7 +133,7 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | Splashscreen lib android 12: https://youtu.be/cMXE8PN-qIc       |
     // +-----------------------------------------------------------------+
-    implementation "androidx.core:core-splashscreen:1.0.0-alpha02"
+    implementation "androidx.core:core-splashscreen:1.0.0-beta01"
 
     // +-----------------------------------------------------------------+
     // | ktor vide: https://youtu.be/yTqByD4v7Ik                         |
@@ -166,7 +166,7 @@ dependencies {
     // +-----------------------------------------------------------------+
     // | Layouting                                                       |
     // +-----------------------------------------------------------------+
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // +-----------------------------------------------------------------+
@@ -184,6 +184,12 @@ dependencies {
     // | Mostrar caixa de diálogo de autenticação biométrica             |
     // +-----------------------------------------------------------------+
     implementation "androidx.biometric:biometric-ktx:1.2.0-alpha04"
+
+
+    // +-----------------------------------------------------------------+
+    // | Animação com lottie                                             |
+    // +-----------------------------------------------------------------+
+    implementation "com.airbnb.android:lottie:3.7.2"
 
     // +-----------------------------------------------------------------+
     // | Unit Tests (logic)                                              |

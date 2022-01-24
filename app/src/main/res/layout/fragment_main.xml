@@ -1079,6 +1079,53 @@
             android:text="Ver Estilo Customizado"
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Animação Zoom Infinita"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/zoom_infinito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Ver Zoom Infinito"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Animação Com Lottie"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anim_com_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Iniciar Lottie"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 <!--        <TextView-->
 <!--            style="@style/TextAppearance.AppCompat.Small"-->
 <!--            android:layout_width="match_parent"-->
@@ -1086,21 +1133,68 @@
 <!--            android:layout_marginStart="16dp"-->
 <!--            android:layout_marginTop="16dp"-->
 <!--            android:layout_marginBottom="5dp"-->
-<!--            android:text="Navegação e Alertas com MVP"-->
+<!--            android:text="Zoom In No Clique"-->
 <!--            android:textStyle="bold" />-->
 
 <!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/navigation_mvp"-->
+<!--            android:id="@+id/zoom_no_clique"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:layout_marginStart="16dp"-->
 <!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/design_default_color_error"-->
+<!--            android:backgroundTint="@color/design_default_color_primary"-->
 <!--            android:textColor="@color/white"-->
 <!--            android:gravity="left|center_vertical"-->
-<!--            android:text="Navegação com MVP"-->
+<!--            android:text="Dar Zoom no Toque"-->
 <!--            android:textAllCaps="false"-->
 <!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Listagens com Linha do Tempo"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/timeline"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_primary"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Ver Lista Com Timeline"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Processo de Onboarding Passo a Passo"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/onboarding"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_primary"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Processo de Onboarding"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
     </LinearLayout>
 
 </ScrollView>
