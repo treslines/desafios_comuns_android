@@ -38,4 +38,7 @@
     # statusbar colors
     <color name="statusBarColorInverted">#FFEC19</color>
     <color name="statusBarColor">#2D679A</color>
+
+    # zoom in out infinity colors
+    <color name="promo_color">#FF0564FF</color>
 </resources>
