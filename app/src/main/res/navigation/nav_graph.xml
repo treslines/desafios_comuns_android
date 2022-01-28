@@ -116,6 +116,15 @@
         <action
             android:id="@+id/action_mainFragment_to_lottieFragment"
             app:destination="@id/lottieFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_orientationFragment"
+            app:destination="@id/orientationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customButtonFragment"
+            app:destination="@id/customButtonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewListFragment"
+            app:destination="@id/recyclerViewListFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -404,6 +413,33 @@
         tools:layout="@layout/fragment_lottie" >
         <action
             android:id="@+id/action_lottieFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orientationFragment"
+        android:name="com.progdeelite.dca.orientation.OrientationFragment"
+        android:label="Controle de Orientação"
+        tools:layout="@layout/fragment_orientation" >
+        <action
+            android:id="@+id/action_orientationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customButtonFragment"
+        android:name="com.progdeelite.dca.custom_button.CustomButtonFragment"
+        android:label="Custom Material Buttons"
+        tools:layout="@layout/fragment_custom_button" >
+        <action
+            android:id="@+id/action_customButtonFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewListFragment"
+        android:name="com.progdeelite.dca.recyclerview_lists.RecyclerViewListFragment"
+        android:label="Litas Com Recyclerview"
+        tools:layout="@layout/fragment_recycler_view_list" >
+        <action
+            android:id="@+id/action_recyclerViewListFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

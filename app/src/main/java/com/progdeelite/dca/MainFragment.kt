@@ -254,14 +254,34 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             customStyles.setOnClickListener { navTo(R.id.customStyleFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Animação zoom infinito: https://youtu.be/xxxxxxxxxxx                       |
+            // | VIDEO: Animação zoom infinito: https://youtu.be/Ewc1fn2uwhE                       |
             // +-----------------------------------------------------------------------------------+
             zoomInfinito.setOnClickListener { navTo(R.id.zoomInfiniteFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Animação zoom infinito: https://youtu.be/xxxxxxxxxxx                       |
+            // | VIDEO: Animação profissionais com lottie: https://youtu.be/Ylijfgwu7f4            |
             // +-----------------------------------------------------------------------------------+
             animComLottie.setOnClickListener { navTo(R.id.lottieFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Controle de orientação: https://youtu.be/xxxxxxxxxxx                       |
+            // +-----------------------------------------------------------------------------------+
+            orientation.setOnClickListener { navTo(R.id.orientationFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Botões Material Design Personalizados: https://youtu.be/xxxxxxxxxxx        |
+            // +-----------------------------------------------------------------------------------+
+            customButtons.setOnClickListener { navTo(R.id.customButtonFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Listas de produtos com Recyclerview: https://youtu.be/xxxxxxxxxxx          |
+            // +-----------------------------------------------------------------------------------+
+            productList.setOnClickListener { navTo(R.id.recyclerViewListFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Componentes Personalizados: https://youtu.be/xxxxxxxxxxx                   |
+            // +-----------------------------------------------------------------------------------+
+            // customComponents.setOnClickListener { navTo(R.id.customComponentsFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |

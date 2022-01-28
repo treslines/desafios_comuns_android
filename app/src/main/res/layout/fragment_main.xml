@@ -1126,6 +1126,98 @@
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Controlando Orientações"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/orientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="3 Tipos Orientação"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Botões Personalizados"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/custom_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Exibir Material Buttons"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Exibir Produtos em Lista"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/product_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Produtos em Lista"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.AppCompat.Small"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="Criar Componentes Personalizados"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/custom_components"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/design_default_color_primary"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:text="Componentes Personalizados"-->
+<!--            android:textAllCaps="false"-->
+<!--            tools:ignore="RtlHardcoded" />-->
+
 <!--        <TextView-->
 <!--            style="@style/TextAppearance.AppCompat.Small"-->
 <!--            android:layout_width="match_parent"-->
