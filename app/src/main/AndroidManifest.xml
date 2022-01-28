@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
 
-        <!-- VÍDEO NAGEVACÃO GRAPH TELA ESPECIFICA: https://youtu.be/XXXXXXXXX -->
+        <!-- VÍDEO NAGEVACÃO GRAPH TELA ESPECIFICA: https://youtu.be/CwwU1D91elg -->
         <activity
             android:name="com.progdeelite.dca.SegundaActivity"
             android:exported="false"
