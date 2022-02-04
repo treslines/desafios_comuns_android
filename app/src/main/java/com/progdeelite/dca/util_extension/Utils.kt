@@ -1,4 +1,4 @@
-package com.progdeelite.dca.util
+package com.progdeelite.dca.util_extension
 
 import android.content.Context
 import android.graphics.BlendMode
@@ -6,10 +6,8 @@ import android.graphics.BlendModeColorFilter
 import android.graphics.PorterDuff
 import android.graphics.drawable.Drawable
 import android.os.Build
-import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
-import com.progdeelite.dca.R
 
 // Singleton in Kotlin - PERGUNTA FREQUENTE DE RECRUTADORES
 object EmulatorDetector {

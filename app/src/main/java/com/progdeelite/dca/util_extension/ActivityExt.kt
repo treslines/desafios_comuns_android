@@ -1,13 +1,19 @@
-package com.progdeelite.dca.util
+package com.progdeelite.dca.util_extension
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
+import android.view.View.SYSTEM_UI_FLAG_FULLSCREEN
+import android.view.View.SYSTEM_UI_FLAG_VISIBLE
 import android.view.WindowManager
 import androidx.annotation.DrawableRes
 import androidx.annotation.IdRes
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.progdeelite.dca.MainActivity
 
 fun AppCompatActivity.preventScreenshotsAndRecentAppThumbnails() {
@@ -52,4 +58,29 @@ fun <T : AppCompatActivity> Activity.navigateToNavGraph(
         overridePendingTransition(0, 0)
     }
     startActivity(intent)
+}
+
+// COMO ESCONDER E EXIBIR O SYSTEM STATUS BAR
+fun Activity.hideSystemBars() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        ViewCompat.getWindowInsetsController(window.decorView)?.apply {
+            systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            hide(WindowInsetsCompat.Type.systemBars())
+        }
+    } else {
+        @Suppress("DEPRECATION")
+        window.decorView.systemUiVisibility = SYSTEM_UI_FLAG_FULLSCREEN
+    }
+}
+
+fun Activity.showSystemBars() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+        ViewCompat.getWindowInsetsController(window.decorView)?.apply {
+            systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            show(WindowInsetsCompat.Type.systemBars())
+        }
+    } else {
+        @Suppress("DEPRECATION")
+        window.decorView.systemUiVisibility = SYSTEM_UI_FLAG_VISIBLE
+    }
 }

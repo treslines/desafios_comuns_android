@@ -125,6 +125,15 @@
         <action
             android:id="@+id/action_mainFragment_to_recyclerViewListFragment"
             app:destination="@id/recyclerViewListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_customComponentsFragment"
+            app:destination="@id/customComponentsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_hideShowStatusBarFragment"
+            app:destination="@id/hideShowStatusBarFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fadeInFadeOutFragment"
+            app:destination="@id/fadeInFadeOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -440,6 +449,33 @@
         tools:layout="@layout/fragment_recycler_view_list" >
         <action
             android:id="@+id/action_recyclerViewListFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customComponentsFragment"
+        android:name="com.progdeelite.dca.custom_components.CustomComponentsFragment"
+        android:label="Siler Personalizado"
+        tools:layout="@layout/fragment_custom_components" >
+        <action
+            android:id="@+id/action_customComponentsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hideShowStatusBarFragment"
+        android:name="com.progdeelite.dca.statusbar.HideShowStatusBarFragment"
+        android:label="Statusbar Sumiu!"
+        tools:layout="@layout/fragment_hide_show_status_bar" >
+        <action
+            android:id="@+id/action_hideShowStatusBarFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fadeInFadeOutFragment"
+        android:name="com.progdeelite.dca.fadein_fadeout.FadeInFadeOutFragment"
+        android:label="Fade In / Fade Out"
+        tools:layout="@layout/fragment_fade_in_fade_out" >
+        <action
+            android:id="@+id/action_fadeInFadeOutFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

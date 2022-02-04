@@ -1,4 +1,4 @@
-package com.progdeelite.dca.util
+package com.progdeelite.dca.util_extension
 
 import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
@@ -454,7 +454,7 @@ fun canHandleIntent(context: Context, intent: Intent): Boolean {
         .isNotEmpty()
 }
 
-// VEJA VIDEO: NAVEGAçÃO MULTIPLA: XXXXXXXXX
+// VEJA VIDEO: NAVEGAçÃO MULTIPLA: https://youtu.be/CwwU1D91elg
 fun <T : AppCompatActivity> Fragment.navigateToNavGraph(
     entryPoint: Class<T>,
     @IdRes navGraphStartDestination: Int? = null,

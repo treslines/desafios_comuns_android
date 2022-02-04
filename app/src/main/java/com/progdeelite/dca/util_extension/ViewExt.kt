@@ -1,4 +1,4 @@
-package com.progdeelite.dca.util
+package com.progdeelite.dca.util_extension
 
 import android.animation.ObjectAnimator
 import android.os.Build
@@ -13,7 +13,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.ColorRes
-import androidx.annotation.DimenRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.RequiresApi
 import androidx.core.animation.doOnEnd
@@ -164,3 +163,31 @@ fun RecyclerView.setCustomHeadlineDivider() = addItemDecoration(HeadlineItemDeco
 
 // USANDO LAYOUT DE TEXTO - DIVISÕRIAS CUSTOMIZADAS
 fun RecyclerView.attachHeader(str: String) = addItemDecoration(ItemDecoratorWithText(this, str))
+
+
+// +-----------------------------------------------------------------------------------+
+// | VIDEO: EFEITO FADE-IN FADE-OU EM VIEWS: https://youtu.be/XXXXXXXXX                |
+// +-----------------------------------------------------------------------------------+
+fun View.fadeOut(duration: Long = 0) = animate()
+    .also { clearAnimation() }
+    .setDuration(duration)
+    .alphaBy(-1f)
+    .withStartAction { alpha = 1f }
+    .withEndAction {
+        visibility = View.INVISIBLE
+    }
+    .start()
+
+fun View.fadeIn(duration: Long = 0, endAction: () -> Unit = {}) = animate()
+    .also { clearAnimation() }
+    .setDuration(duration)
+    .alpha(1f)
+    .withStartAction {
+        visibility = View.VISIBLE
+        alpha = 0f
+    }
+    .withEndAction {
+        setVisible(true)
+        endAction()
+    }
+    .start()
