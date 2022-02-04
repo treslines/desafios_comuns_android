@@ -7,10 +7,10 @@ import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentItemDecoratorBinding
 import com.progdeelite.dca.recyclerview.CustomMainMenuItemAdapter
-import com.progdeelite.dca.util.attachHeader
-import com.progdeelite.dca.util.setSimpleDefaultDivider
-import com.progdeelite.dca.util.setCustomHeadlineDivider
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.attachHeader
+import com.progdeelite.dca.util_extension.setSimpleDefaultDivider
+import com.progdeelite.dca.util_extension.setCustomHeadlineDivider
+import com.progdeelite.dca.util_extension.toast
 
 // 0) Fragment que vai exibir nossa lista (recyclerView)
 // 1) Criar uma divisória simples com um drawable (divider)

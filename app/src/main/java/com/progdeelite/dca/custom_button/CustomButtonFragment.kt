@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentCustomButtonBinding
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.toast
 
 // 1) COMO CRIAR BOTÕES COM MATERIAL DESIGN
 // 2) COM BORDA, SEM BORDA, ATIVO, INATIVO, EM FORMA DE TEXTO...

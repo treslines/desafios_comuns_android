@@ -45,4 +45,12 @@
         <item>À 4 Hora</item>
         <item>À 1 Dia</item>
     </string-array>
+
+    <string name="camera_aproxime" translatable="false">Aproxime a camera</string>
+    <string name="camera_afaste" translatable="false">Afaste a camera</string>
+    <string name="camera_aguarde" translatable="false">Aguarde um pouco</string>
+    <string name="camera_scaneando" translatable="false">Escaneando</string>
+    <string name="camera_reposicione" translatable="false">Reposicione a camera</string>
+    <string name="camera_nao_se_mexa" translatable="false">Tente não se mover</string>
+
 </resources>

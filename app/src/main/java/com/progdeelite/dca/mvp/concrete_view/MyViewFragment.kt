@@ -12,8 +12,8 @@ import com.progdeelite.dca.mvp.base_view.BaseFragmentView
 import com.progdeelite.dca.mvp.concrete_contract.MyViewContract
 import com.progdeelite.dca.mvp.concrete_presenter.MyViewPresenter
 import com.progdeelite.dca.mvp.navigation.ScreenDestination
-import com.progdeelite.dca.util.hideKeyboard
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.hideKeyboard
+import com.progdeelite.dca.util_extension.toast
 
 // PRESTA A ATENCÃO EM: MyViewContract.Presenter E MyViewContract.View
 class MyViewFragment: BaseFragmentView<MyViewContract.Presenter>(R.layout.fragment_my_view), MyViewContract.View {

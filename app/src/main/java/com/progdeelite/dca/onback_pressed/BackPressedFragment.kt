@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentBackPressedBinding
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.toast
 import timber.log.Timber
 
 // 1) COMO ESCUTAR/REAGIR AO BOTÃO DE BACK DENTRO DE FRAGMENTS?

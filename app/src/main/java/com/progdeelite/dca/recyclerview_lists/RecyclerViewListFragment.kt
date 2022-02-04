@@ -3,12 +3,11 @@ package com.progdeelite.dca.recyclerview_lists
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentRecyclerViewListBinding
-import com.progdeelite.dca.util.navTo
+import com.progdeelite.dca.util_extension.navTo
 
 // 1) Refatorar main fragment (xml, + itemAdapter)
 // 2) mostrar par vcs como seria facil refazer isso usando recyclerview

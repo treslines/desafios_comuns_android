@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentHideKeyboardBinding
-import com.progdeelite.dca.util.hideKeyboard
+import com.progdeelite.dca.util_extension.hideKeyboard
 
 class HideKeyboardFragment : Fragment(R.layout.fragment_hide_keyboard) {
     private lateinit var binding: FragmentHideKeyboardBinding

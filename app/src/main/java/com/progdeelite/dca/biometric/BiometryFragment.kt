@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentBiometryBinding
-import com.progdeelite.dca.util.promptBiometricChecker
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.promptBiometricChecker
+import com.progdeelite.dca.util_extension.toast
 
 // REFERÊNCIAS OFICIAIS
 // https://developer.android.com/jetpack/androidx/releases/biometric

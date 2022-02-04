@@ -9,7 +9,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentTicketSelectionBinding
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.toast
 
 // Video bottom sheet dialog: https://youtu.be/vku9pMNHT9o
 class TicketSelectionFragment(private val showAddItem: Boolean) : BottomSheetDialogFragment(),

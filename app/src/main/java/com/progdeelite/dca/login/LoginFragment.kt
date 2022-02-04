@@ -10,7 +10,7 @@ import com.progdeelite.dca.language.BaseFragment
 import com.progdeelite.dca.language.LanguageResource
 import com.progdeelite.dca.language.LanguageResource.AppLanguagesSettings.FRENCH
 import com.progdeelite.dca.language.LanguageResource.AppLanguagesSettings.GERMAN
-import com.progdeelite.dca.util.*
+import com.progdeelite.dca.util_extension.*
 import com.progdeelite.dca.viewmodel.ExposeObserveViewModel
 
 // 1) Como criar um menu flutuante

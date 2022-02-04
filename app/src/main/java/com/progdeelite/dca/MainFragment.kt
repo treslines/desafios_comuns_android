@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.progdeelite.dca.databinding.FragmentMainBinding
-import com.progdeelite.dca.util.navTo
-import com.progdeelite.dca.util.showYoutubeVideo
-import com.progdeelite.dca.util.toast
-import com.progdeelite.dca.util.vibrate
+import com.progdeelite.dca.util_extension.navTo
+import com.progdeelite.dca.util_extension.showYoutubeVideo
+import com.progdeelite.dca.util_extension.toast
+import com.progdeelite.dca.util_extension.vibrate
 
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -264,24 +264,39 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             animComLottie.setOnClickListener { navTo(R.id.lottieFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Controle de orientação: https://youtu.be/xxxxxxxxxxx                       |
+            // | VIDEO: Controle de orientação: https://youtu.be/6CUQs6U55ww                       |
             // +-----------------------------------------------------------------------------------+
             orientation.setOnClickListener { navTo(R.id.orientationFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Botões Material Design Personalizados: https://youtu.be/xxxxxxxxxxx        |
+            // | VIDEO: Botões Material Design Personalizados: https://youtu.be/szx4z57YQbE        |
             // +-----------------------------------------------------------------------------------+
             customButtons.setOnClickListener { navTo(R.id.customButtonFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Listas de produtos com Recyclerview: https://youtu.be/xxxxxxxxxxx          |
+            // | VIDEO: Listas de produtos com Recyclerview: https://youtu.be/t856vskK9Ao          |
             // +-----------------------------------------------------------------------------------+
             productList.setOnClickListener { navTo(R.id.recyclerViewListFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Componentes Personalizados: https://youtu.be/xxxxxxxxxxx                   |
+            // | VIDEO: Componentes Personalizados: https://youtu.be/szx4z57YQbE                   |
             // +-----------------------------------------------------------------------------------+
-            // customComponents.setOnClickListener { navTo(R.id.customComponentsFragment) }
+            customComponents.setOnClickListener { navTo(R.id.customComponentsFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Componentes Personalizados: https://youtu.be/xxxxxxxxxxxx                  |
+            // +-----------------------------------------------------------------------------------+
+            hideShowStatusBar.setOnClickListener { navTo(R.id.hideShowStatusBarFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Efeitos FadeIn / FadeOut Kotlin: https://youtu.be/xxxxxxxxxxxx             |
+            // +-----------------------------------------------------------------------------------+
+            fadeInFadeOut.setOnClickListener { navTo(R.id.fadeInFadeOutFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Mapeando objetos em Kotlin: https://youtu.be/xxxxxxxxxxxx                  |
+            // +-----------------------------------------------------------------------------------+
+            mapObjects.setOnClickListener { navTo(R.id.mapObjectsFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |

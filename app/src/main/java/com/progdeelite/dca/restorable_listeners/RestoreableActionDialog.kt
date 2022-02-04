@@ -10,7 +10,7 @@ import com.google.android.material.button.MaterialButton
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentRestorableActionDialogBinding
-import com.progdeelite.dca.util.setVisible
+import com.progdeelite.dca.util_extension.setVisible
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.Positive
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.Negative
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.Dismiss
@@ -18,8 +18,8 @@ import com.progdeelite.dca.restorable_listeners.RestoreableAction.ActionType.OPE
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.ActionType.OPEN_PLAYSTORE
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.ActionType.DISMISS
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.ActionType.NONE
-import com.progdeelite.dca.util.openAppSettings
-import com.progdeelite.dca.util.openPlayStore
+import com.progdeelite.dca.util_extension.openAppSettings
+import com.progdeelite.dca.util_extension.openPlayStore
 
 // 1) como criar um dialog que retem os listeners (quando isso pode ocorrer?)
 // - troca de tema de dia para noite

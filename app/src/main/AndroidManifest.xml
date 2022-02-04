@@ -53,8 +53,7 @@
             android:authorities="${applicationId}.provider"
             android:enabled="true"
             android:exported="true"
-            android:protectionLevel="signature"
-            android:readPermission="${applicationId}.permission.ACCOUNT_STATUS" />
+             />
     </application>
 
 </manifest>

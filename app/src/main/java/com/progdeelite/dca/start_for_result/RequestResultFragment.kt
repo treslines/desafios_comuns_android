@@ -11,9 +11,9 @@ import androidx.fragment.app.setFragmentResultListener
 import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentRequestResultBinding
 import com.progdeelite.dca.start_for_result.ResultFragment.Companion.KEY_SELECTED_IMAGE_URI
-import com.progdeelite.dca.util.navTo
-import com.progdeelite.dca.util.shouldRequestPermission
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.navTo
+import com.progdeelite.dca.util_extension.shouldRequestPermission
+import com.progdeelite.dca.util_extension.toast
 
 class RequestResultFragment : Fragment(R.layout.fragment_request_result) {
     private lateinit var binding: FragmentRequestResultBinding

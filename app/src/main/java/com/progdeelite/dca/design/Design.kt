@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.progdeelite.dca.R
-import com.progdeelite.dca.util.setVisible
+import com.progdeelite.dca.util_extension.setVisible
 
 fun getListDivider(
     res: Resources,

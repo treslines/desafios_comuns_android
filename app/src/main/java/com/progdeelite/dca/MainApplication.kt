@@ -1,6 +1,7 @@
 package com.progdeelite.dca
 
 import android.app.Application
+import android.content.Context
 import com.progdeelite.dca.logcat_timber.CustomLogger
 import com.progdeelite.dca.migration.MigrationUtil
 import kotlinx.coroutines.Dispatchers
@@ -32,14 +33,27 @@ import timber.log.Timber
 // +-----------------------------------------------------------------+
 class MainApplication : Application() {
 
+    // +--------------------------------------------------------------------+
+    // | CONTENT PROVIDER C/ INJECAO DE DEPS: https://youtu.be/XXXXXXXXXXX  |
+    // +--------------------------------------------------------------------+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(base)
+        // MOVER INICIALIZACÃO DE INJECAO DE DEPS PARA ESTE MÉTODO, JÁ QUE OS
+        // CONTENT PROVIDERS SÃO INICIALIZADOS ANTES DO "onCreate" DA APPLICATION
+        // setupDependencyInjection()
+    }
+
     override fun onCreate() {
         super.onCreate()
         setupLogging()
-        setupDefaultExceptionHandler() // https://youtu.be/zu9MOl95LKs
-//        setupDependencyInjection()
+        // +------------------------------------------------------------------+
+        // | Instalando DefaultExceptionHandler: https://youtu.be/zu9MOl95LKs |
+        // +------------------------------------------------------------------+
+        setupDefaultExceptionHandler()
+        //setupDependencyInjection()
 
         // +-----------------------------------------------------------------+
-        // | VIDEO: COMO MIGRAR SETTINGS PARA APP NOVO: XXXXXXXXX            |
+        // | COMO MIGRAR SETTINGS P/ APP NOVO: https://youtu.be/HANcH98pU6I  |
         // +-----------------------------------------------------------------+
         MigrationUtil(this).migrateOnlyOnce()
     }

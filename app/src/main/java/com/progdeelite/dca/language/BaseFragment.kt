@@ -14,8 +14,8 @@ import androidx.fragment.app.viewModels
 import androidx.viewbinding.ViewBinding
 import com.progdeelite.dca.MainActivity
 import com.progdeelite.dca.R
-import com.progdeelite.dca.util.getSharedPrefs
-import com.progdeelite.dca.util.setColor
+import com.progdeelite.dca.util_extension.getSharedPrefs
+import com.progdeelite.dca.util_extension.setColor
 import timber.log.Timber
 
 /**

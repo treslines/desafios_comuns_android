@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentFullscreenDialogBinding
-import com.progdeelite.dca.util.showFullscreenAlertDialog
+import com.progdeelite.dca.util_extension.showFullscreenAlertDialog
 
 
 // 1) Definir fullscreen dialog e layout

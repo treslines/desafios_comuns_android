@@ -2,15 +2,12 @@ package com.progdeelite.dca.navegacao_especifica
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.progdeelite.dca.R
 import com.progdeelite.dca.SegundaActivity
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentMainToSecondGraphBinding
-import com.progdeelite.dca.databinding.FragmentTextFurtaCorBinding
-import com.progdeelite.dca.util.navigateToNavGraph
+import com.progdeelite.dca.util_extension.navigateToNavGraph
 
 // 1) COMO CRIAR MULTIPLOS GRÁFICOS DE NAVEGAçÃO
 // 2) COMO ABRIR UM NAV GRAPH E NAVEGAR PAR TELA ESPECÍFICA

@@ -1,7 +1,7 @@
 package com.progdeelite.dca.migration
 
 import android.content.Context
-import com.progdeelite.dca.util.*
+import com.progdeelite.dca.util_extension.*
 import com.progdeelite.dca.migration.PreferenceKey.APP_BUILD_NUMBER
 import com.progdeelite.dca.migration.PreferenceKey.APP_VERSION
 import com.progdeelite.dca.migration.PreferenceKey.MIGRATION_COMPLETED

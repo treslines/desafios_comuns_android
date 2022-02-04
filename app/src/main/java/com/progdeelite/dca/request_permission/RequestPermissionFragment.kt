@@ -8,8 +8,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentRequestPermissionBinding
-import com.progdeelite.dca.util.shouldRequestPermission
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.shouldRequestPermission
+import com.progdeelite.dca.util_extension.toast
 
 // 1) DEFINIR PERMISSÕES NO MANIFEST
 // 2) DEFINIR O LAUNCHER QUE VAI OFERECER UMA CAIXA DE DIALOGO AO USUÁRIO NO onCreate()

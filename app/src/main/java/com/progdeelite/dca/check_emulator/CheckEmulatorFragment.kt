@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentCheckEmulatorBinding
-import com.progdeelite.dca.util.EmulatorDetector
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.EmulatorDetector
+import com.progdeelite.dca.util_extension.toast
 
 // 1) CRIAR PACOTE UTILS PARA RECURSOS COMUNS
 // 2) DEFINIR SINGLETON EM PACOTE UTILS

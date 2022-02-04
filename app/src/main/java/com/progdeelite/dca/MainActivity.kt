@@ -4,8 +4,6 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewTreeObserver
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.findNavController
@@ -13,8 +11,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.progdeelite.dca.databinding.ActivityMainBinding
 import com.progdeelite.dca.language.ActivityCallback
-import com.progdeelite.dca.util.EXTRA_START_NAV_RES_ID
-import com.progdeelite.dca.util.setVisible
+import com.progdeelite.dca.util_extension.EXTRA_START_NAV_RES_ID
+import com.progdeelite.dca.util_extension.setVisible
 
 // VANTAGEM DE TER UM SINGLE PAGE APPLICATION, VOCÊ FAZ A
 // CONFIGURACÃO UMA ÚNICA VEZ EM UM LUGAR CENTRAL!

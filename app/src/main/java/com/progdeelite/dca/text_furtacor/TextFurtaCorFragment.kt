@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentTextFurtaCorBinding
-import com.progdeelite.dca.util.startFurtaCorAnim
+import com.progdeelite.dca.util_extension.startFurtaCorAnim
 
 class TextFurtaCorFragment : Fragment(R.layout.fragment_text_furta_cor) {
 

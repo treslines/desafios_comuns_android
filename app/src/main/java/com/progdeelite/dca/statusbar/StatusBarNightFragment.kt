@@ -4,7 +4,7 @@ import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentStatusBarNightBinding
 import com.progdeelite.dca.language.BaseFragment
 import com.progdeelite.dca.language.LanguageResource
-import com.progdeelite.dca.util.navTo
+import com.progdeelite.dca.util_extension.navTo
 
 // VEJA VIDEO COMO CRIAR UMA CLASSE BASE FRAGMENTS: https://youtu.be/ycTBkqMK9Pg
 class StatusBarNightFragment : BaseFragment<FragmentStatusBarNightBinding>() {

@@ -8,8 +8,8 @@ import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentRestoreableActionBinding
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.*
 import com.progdeelite.dca.restorable_listeners.RestoreableAction.ActionType.*
-import com.progdeelite.dca.util.openAppSettings
-import com.progdeelite.dca.util.openPlayStore
+import com.progdeelite.dca.util_extension.openAppSettings
+import com.progdeelite.dca.util_extension.openPlayStore
 
 // 1) como criar um dialog que retem os listeners (quando isso pode ocorrer?)
 // - troca de tema de dia para noite

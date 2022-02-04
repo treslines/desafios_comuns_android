@@ -101,3 +101,24 @@ class AppInfoProvider : ContentProvider() {
 //
 //    cursor.close()
 //  }
+
+
+// 1) COMO TESTAR O CONTENT PROVIDER PELO TERMINAL
+// 2) COMO USAR O CONTENT PROVIDER COM INJECÃO DE DEPENDÊNCIAS
+// 3) ALTERAçÃO NECESSÁRIAS PARA QUE O CONTENT PROVIDER FUNCIONE
+
+// +---------------------------------------------------------------------+
+// | COMO TESTAR CONTENT PROVIDER PELA LINHA DE COMANDO                  |
+// +---------------------------------------------------------------------+
+
+// Step 1: para testar remover permission no manifest
+
+// Step 2: deployar app, rodar este comando
+// adb shell content query --uri content://com.progdeelite.dca.provider/account_status/
+
+// Step 3: conferir o resultado
+// Row: 0 _id=1, version=1.0, account_status=active
+
+// +---------------------------------------------------------------------+
+// | COMO USAR O CONTENT PROVIDER COM INJEçÃO DE DEPENDÊNCIAS:           |
+// +---------------------------------------------------------------------+

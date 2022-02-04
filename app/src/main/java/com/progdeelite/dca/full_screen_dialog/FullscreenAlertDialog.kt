@@ -7,7 +7,7 @@ import androidx.fragment.app.DialogFragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.DialogAlertFullscreenBinding
-import com.progdeelite.dca.util.setVisible
+import com.progdeelite.dca.util_extension.setVisible
 
 class FullscreenAlertDialog(
     val title: String = "",

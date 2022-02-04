@@ -11,17 +11,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.chip.Chip
-import com.progdeelite.dca.MainActivity
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentSearchViewBinding
 import com.progdeelite.dca.design.getListDivider
 import com.progdeelite.dca.filter.Alarm
 import com.progdeelite.dca.language.ActivityCallback
-import com.progdeelite.dca.util.hideActionBar
-import com.progdeelite.dca.util.hideKeyboard
-import com.progdeelite.dca.util.setVisible
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.hideKeyboard
+import com.progdeelite.dca.util_extension.setVisible
+import com.progdeelite.dca.util_extension.toast
 
 // 1) Como criar um filtro de busca livre (layout)
 // 2) Como fazer o setup dos filtros

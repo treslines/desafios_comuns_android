@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentCheckAppInternetBinding
-import com.progdeelite.dca.util.hasInternet
-import com.progdeelite.dca.util.toast
+import com.progdeelite.dca.util_extension.hasInternet
+import com.progdeelite.dca.util_extension.toast
 
 class CheckAppInternetFragment : Fragment(R.layout.fragment_check_app_internet) {
 

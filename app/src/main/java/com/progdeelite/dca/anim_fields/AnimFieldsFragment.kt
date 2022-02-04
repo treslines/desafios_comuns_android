@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment
 import com.progdeelite.dca.R
 import com.progdeelite.dca.binding.viewBinding
 import com.progdeelite.dca.databinding.FragmentAnimFieldsBinding
-import com.progdeelite.dca.util.hideKeyboard
-import com.progdeelite.dca.util.shake
-import com.progdeelite.dca.util.toast
-import com.progdeelite.dca.util.vibrate
+import com.progdeelite.dca.util_extension.hideKeyboard
+import com.progdeelite.dca.util_extension.shake
+import com.progdeelite.dca.util_extension.toast
+import com.progdeelite.dca.util_extension.vibrate
 
 // 1) DEFINIR ANIMACÃO COMO EXTENSÃO EM CIMA DE VIEWEXT
 // 2) CRIAR UM LAYOUT E SIMULAR UMA VERIFICACÃO

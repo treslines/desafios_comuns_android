@@ -10,7 +10,7 @@ import com.progdeelite.dca.R
 import com.progdeelite.dca.databinding.FragmentResultBinding
 import com.progdeelite.dca.start_for_result.RequestResultFragment.Companion.KEY_CHOOSER_BACK_BUTTON
 import com.progdeelite.dca.start_for_result.RequestResultFragment.Companion.KEY_CHOOSER_REQUEST
-import com.progdeelite.dca.util.navBack
+import com.progdeelite.dca.util_extension.navBack
 
 class ResultFragment : Fragment(R.layout.fragment_result) {
     private lateinit var binding: FragmentResultBinding

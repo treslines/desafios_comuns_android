@@ -8,5 +8,11 @@
         <attr name="mainMenuItemButtonText" format="string" />
         <attr name="mainMenuItemButtonAllCaps" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="SliderItem">
+        <attr name="title" />
+        <attr name="android:value" />
+        <attr name="valueList" format="reference" />
+    </declare-styleable>
     
 </resources>
