@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map_icon.MapObjectsFragment">
+
+    <Button
+        android:id="@+id/mapAfastese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="Mapear Afaste-se"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mapAproximese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="Mapear Aproximi-se"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapAfastese" />
+
+    <Button
+        android:id="@+id/mapNaoSeMexa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapear Não Se Mexa"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapAproximese" />
+
+    <ImageView
+        android:id="@+id/mappedImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapNaoSeMexa"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/mappedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/mappedImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mappedImg"
+        app:layout_constraintTop_toTopOf="@+id/mappedImg"
+        tools:text="Texto que será mapeado" />
+</androidx.constraintlayout.widget.ConstraintLayout>

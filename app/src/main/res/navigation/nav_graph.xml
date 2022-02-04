@@ -134,6 +134,9 @@
         <action
             android:id="@+id/action_mainFragment_to_fadeInFadeOutFragment"
             app:destination="@id/fadeInFadeOutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapObjectsFragment"
+            app:destination="@id/mapObjectsFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -476,6 +479,15 @@
         tools:layout="@layout/fragment_fade_in_fade_out" >
         <action
             android:id="@+id/action_fadeInFadeOutFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapObjectsFragment"
+        android:name="com.progdeelite.dca.map_icon.MapObjectsFragment"
+        android:label="Mapear Objectos"
+        tools:layout="@layout/fragment_map_objects" >
+        <action
+            android:id="@+id/action_mapObjectsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

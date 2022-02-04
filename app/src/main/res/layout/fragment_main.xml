@@ -1264,6 +1264,29 @@
             android:textAllCaps="false"
             tools:ignore="RtlHardcoded" />
 
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Mapeando Objetos em Kotlin"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/map_objects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:gravity="left|center_vertical"
+            android:text="Mostrar Mapeamento"
+            android:textAllCaps="false"
+            tools:ignore="RtlHardcoded" />
+
 <!--        <TextView-->
 <!--            style="@style/TextAppearance.AppCompat.Small"-->
 <!--            android:layout_width="match_parent"-->
