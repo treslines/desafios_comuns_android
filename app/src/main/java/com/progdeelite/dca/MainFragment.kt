@@ -284,19 +284,29 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             customComponents.setOnClickListener { navTo(R.id.customComponentsFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Componentes Personalizados: https://youtu.be/xxxxxxxxxxxx                  |
+            // | VIDEO: Esconder e exibir statusbar: https://youtu.be/yVg5pdp23ew                  |
             // +-----------------------------------------------------------------------------------+
             hideShowStatusBar.setOnClickListener { navTo(R.id.hideShowStatusBarFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Efeitos FadeIn / FadeOut Kotlin: https://youtu.be/xxxxxxxxxxxx             |
+            // | VIDEO: Efeitos FadeIn / FadeOut Kotlin: https://youtu.be/Z4KiEVFw5Os              |
             // +-----------------------------------------------------------------------------------+
             fadeInFadeOut.setOnClickListener { navTo(R.id.fadeInFadeOutFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Mapeando objetos em Kotlin: https://youtu.be/xxxxxxxxxxxx                  |
+            // | VIDEO: Mapeando objetos em Kotlin: https://youtu.be/eDsGosQUiVw                   |
             // +-----------------------------------------------------------------------------------+
             mapObjects.setOnClickListener { navTo(R.id.mapObjectsFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Diferenciando plurais: https://youtu.be/xxxxxxxxx                          |
+            // +-----------------------------------------------------------------------------------+
+            plurais.setOnClickListener { navTo(R.id.pluralFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Visualizar Scrollview flexível em porcentagem: https://youtu.be/xxxxxxxxx  |
+            // +-----------------------------------------------------------------------------------+
+            scrollPercent.setOnClickListener { navTo(R.id.percentualScrollViewFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |

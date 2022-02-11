@@ -46,6 +46,12 @@
         <item>À 1 Dia</item>
     </string-array>
 
+    <!-- tambem poderia ser traduzido: Veja Video tradução -->
+    <plurals name="quantidade" translatable="false">
+        <item quantity="one">%d carro encontrado.</item>
+        <item quantity="other">%d carros encontrados.</item>
+    </plurals>
+
     <string name="camera_aproxime" translatable="false">Aproxime a camera</string>
     <string name="camera_afaste" translatable="false">Afaste a camera</string>
     <string name="camera_aguarde" translatable="false">Aguarde um pouco</string>
