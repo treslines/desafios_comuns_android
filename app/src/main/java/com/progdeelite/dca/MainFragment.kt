@@ -299,29 +299,34 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             mapObjects.setOnClickListener { navTo(R.id.mapObjectsFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Diferenciando plurais: https://youtu.be/xxxxxxxxx                          |
+            // | VIDEO: Diferenciando plurais: https://youtu.be/IuJ2jMiXEjE                        |
             // +-----------------------------------------------------------------------------------+
             plurais.setOnClickListener { navTo(R.id.pluralFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Visualizar Scrollview flexível em porcentagem: https://youtu.be/xxxxxxxxx  |
+            // | VIDEO: Visualizar Scrollview flexível em porcentagem: https://youtu.be/i6jVyR5Wgx4 |
             // +-----------------------------------------------------------------------------------+
             scrollPercent.setOnClickListener { navTo(R.id.percentualScrollViewFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Listas com linha do tempo: https://youtu.be/xxxxxxxxxxx                    |
+            // +-----------------------------------------------------------------------------------+
+             timeline.setOnClickListener { navTo(R.id.linhaDoTempoFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: processo de onboarding com progress steps: https://youtu.be/xxxxxxxxxxx    |
+            // +-----------------------------------------------------------------------------------+
+             onboarding.setOnClickListener { navTo(R.id.onboardingFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: como exibir rating dialog: https://youtu.be/xxxxxxxxxxx                    |
+            // +-----------------------------------------------------------------------------------+
+            ratingDialog.setOnClickListener { navTo(R.id.ratingDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
             // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |
             // +-----------------------------------------------------------------------------------+
             // zoomNoClique.setOnClickListener { navTo(R.id.zoomOnClickFragment) }
-
-            // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Listas com linha do tempo: https://youtu.be/xxxxxxxxxxx                    |
-            // +-----------------------------------------------------------------------------------+
-            // timeline.setOnClickListener { navTo(R.id.linhaDoTempoFragment) }
-
-            // +-----------------------------------------------------------------------------------+
-            // | VIDEO: processo de onboarding com progress steps: https://youtu.be/xxxxxxxxxxx    |
-            // +-----------------------------------------------------------------------------------+
-            // onboarding.setOnClickListener { navTo(R.id.onboardingFragment) }
         }
     }
 }

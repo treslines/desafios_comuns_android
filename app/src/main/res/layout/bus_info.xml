@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/xIdBusInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/xIdBusInfoIconContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/xIdBusInfoContentContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/xIdBusInfoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_description_img_onibus"
+                android:paddingStart="16dp"
+                app:srcCompat="@drawable/ic_bus"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/xIdBusInfoIconTimeline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/bus_large"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/content_description_img_timeline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xIdBusInfoContentContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/xIdBusInfoIconContainer"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xIdBusInfoBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_badge_rounded_red"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/passion_one_bold"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="201" />
+
+                <TextView
+                    android:id="@+id/xIdBusInfoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/bus_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Candeias / Cond. da Boa Vista" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/xIdBusInfoSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/bus_subtitle"
+                android:textSize="12sp"
+                tools:text="Via: Candeias / Cond. da Boa Vista" />
+
+            <TextView
+                android:id="@+id/xIdBusInfoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/bus_subtitle"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="Description" />
+
+            <View
+                android:id="@+id/xIdExpandableContentDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/bus_divider"
+                android:contentDescription="@string/content_description_img_divider"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/xIdBusPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/xIdBusInfoContentContainer">
+
+            <TextView
+                android:id="@+id/xIdIconPrice"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:drawableStart="@drawable/ic_price" />
+
+            <TextView
+                android:id="@+id/xIdBusInfoTariff"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:background="@color/stroke_price"
+                android:paddingTop="3dp"
+                android:paddingRight="2dp"
+                android:textColor="@color/bus_title"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,RtlSymmetry"
+                tools:text="R$ 13.50" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -9,6 +9,7 @@ import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
 import android.content.Intent.ACTION_VIEW
 import android.content.pm.PackageManager
+import android.graphics.drawable.Drawable
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET
 import android.net.NetworkCapabilities.NET_CAPABILITY_VALIDATED
@@ -403,11 +404,11 @@ fun Fragment.setSystemNavigationBarColorOverAttrResource(@AttrRes id: Int) {
     requireActivity().window.navigationBarColor = getColor(id)
 }
 
-fun Fragment.getColor(@AttrRes id: Int): Int {
-    val typedValue = TypedValue()
-    requireContext().theme.resolveAttribute(id, typedValue, true)
-    return typedValue.data
-}
+//fun Fragment.getColor(@AttrRes id: Int): Int {
+//    val typedValue = TypedValue()
+//    requireContext().theme.resolveAttribute(id, typedValue, true)
+//    return typedValue.data
+//}
 
 fun Fragment.setTranslucentWindow(translucent: Boolean) {
     if (translucent) {
@@ -480,4 +481,12 @@ fun Fragment.startFurtaCorAnim(view: TextView, fromColor:Int, toColor:Int){
     furtaCorAnim.repeatCount = ValueAnimator.INFINITE
     furtaCorAnim.repeatMode = ValueAnimator.REVERSE
     furtaCorAnim.start()
+}
+
+fun Fragment.getDrawable(@DrawableRes id: Int): Drawable? {
+    return ContextCompat.getDrawable(requireContext(), id)
+}
+
+fun Fragment.getColor(@ColorRes id: Int): Int {
+    return requireActivity().resources.getColor(id, null)
 }

@@ -1,12 +1,16 @@
 package com.progdeelite.dca.util_extension
 
 import android.animation.ObjectAnimator
+import android.app.Activity
+import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import android.view.KeyEvent
-import android.view.View
-import android.view.WindowInsets
+import android.view.*
 import android.view.animation.Animation
 import android.view.animation.BounceInterpolator
 import android.widget.Button
@@ -14,12 +18,16 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
+import androidx.annotation.LayoutRes
 import androidx.annotation.RequiresApi
 import androidx.core.animation.doOnEnd
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputLayout
+import com.progdeelite.dca.BuildConfig
+import com.progdeelite.dca.R
 import com.progdeelite.dca.item_decoration.HeadlineItemDecorator
 import com.progdeelite.dca.item_decoration.ItemDecoratorWithText
 
@@ -191,3 +199,71 @@ fun View.fadeIn(duration: Long = 0, endAction: () -> Unit = {}) = animate()
         endAction()
     }
     .start()
+
+fun ViewGroup.inflate(@LayoutRes layoutResId: Int, attachToRoot: Boolean = false) =
+    LayoutInflater.from(context).inflate(layoutResId, this, attachToRoot)
+
+const val PREF_KEY_RATING_DONE_BOOL = "RATING_DONE"
+const val PREF_KEY_RATING_INTERVAL_INT = "RATING_INTERVAL"
+lateinit var sharedPrefs: SharedPreferences
+
+fun View.feedback() {
+    sharedPrefs = context.getSharedPreferences(GLOBAL_SHARED_PREFS, Context.MODE_PRIVATE)
+    val ratingDone = sharedPrefs.getBoolean(PREF_KEY_RATING_DONE_BOOL, false)
+    // SE JA VOTOU, NÃO ENCHE MAIS O SACO DO TEU USUÁRIO KKKKKK
+    if (!ratingDone) {
+        var ratingInterval = sharedPrefs.getInt(PREF_KEY_RATING_INTERVAL_INT, 1)
+        // VOCE QUE DEFINE O INTERVALO QUE DESEJA, AQUI BOTEI 5 ITERAçÕES DE >>>> SUCESSO!
+        if (ratingInterval == 5) {
+            val alert: AlertDialog.Builder = AlertDialog.Builder(context)
+            val view = LayoutInflater.from(context).inflate(R.layout.dialog_feedback, null)
+            val randomTitle = mutableListOf(
+                context.getString(R.string.feedbak_rating_title),
+                context.getString(R.string.feedbak_rating_title0),
+                context.getString(R.string.feedbak_rating_title1),
+                context.getString(R.string.feedbak_rating_title2),
+                context.getString(R.string.feedbak_rating_title3)
+            )
+            randomTitle.shuffle() // PRA FICAR LEGAL, DESCONTRAIDO E AUMENTAR A CHANCE DA GALERA VOTAR
+            view.findViewById<TextView>(R.id.feedbackTitle).text = randomTitle[0]
+            alert.setView(view)
+            alert.setPositiveButton("Votar") { _, _ ->
+                sharedPrefs.putAny(PREF_KEY_RATING_DONE_BOOL, true)
+                navigateToGooglePlayStore()
+            }
+            alert.setNegativeButton("Mais tarde") { dialog, _ ->
+                sharedPrefs.putAny(PREF_KEY_RATING_INTERVAL_INT, 1)
+                dialog.dismiss()
+            }
+            alert.setCancelable(false) // PARA QUE O USUÁRIO VEJA O ALERTA E DECIDA O QUE FAZER
+            alert.show()
+        } else {
+            // DO CONTRARIO SIGO CONTANDO...
+            ratingInterval++
+            sharedPrefs.putAny(PREF_KEY_RATING_DONE_BOOL, false)
+            sharedPrefs.putAny(PREF_KEY_RATING_INTERVAL_INT, ratingInterval)
+        }
+    }
+}
+
+/** NAVEGAR PARA PLAYSTORE DE MANEIRA FACIL */
+fun View.navigateToGooglePlayStore() {
+    Intent(Intent.ACTION_VIEW).apply {
+        data =
+            Uri.parse("https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}")
+        setPackage("com.android.vending")
+    }.let { context.startActivity(it) }
+}
+
+fun SharedPreferences.putAny(name: String, any: Any) {
+    when (any) {
+        is String -> edit().putString(name, any).apply()
+        is Int -> edit().putInt(name, any).apply()
+        is Boolean -> edit().putBoolean(name, any).apply()
+        // also accepts Float, Long & StringSet
+    }
+}
+
+fun SharedPreferences.remove(name: String) {
+    edit().remove(name).apply()
+}

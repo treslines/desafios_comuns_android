@@ -45,4 +45,40 @@
         <item>À 4 Hora</item>
         <item>À 1 Dia</item>
     </string-array>
+
+    <string name="fragment_onboarding_text_btn">\"Oxê, fácil demais hômi. Simbora!\"</string>
+    <string name="into_slide_title1_onboarding">Visualize Paradas</string>
+    <string name="into_slide_desc1_onboarding">Nada de ficar conversando com o motorista! Exiba todo o itinerário das linhas e suas respectivas paradas com apenas um click!</string>
+    <string name="into_slide_title2_onboarding">Trace Rotas</string>
+    <string name="into_slide_title3_onboarding">Use Filtros</string>
+    <string name="into_slide_title4_onboarding">Linhas &amp; Tarifas</string>
+    <string name="into_slide_title5_onboarding">Itens Incríveis</string>
+    <string name="into_slide_title6_onboarding">Disponível Em Breve</string>
+    <string name="into_slide_desc2_onboarding">Descubra rotas diretas ou com escalas. Visualize as tarifas ou exiba rotas com melhor custo benefício.</string>
+    <string name="into_slide_desc3_onboarding">Melhore sua pesquisa usando filtros, descubra as rotas mais baratas, exiba os ônibus com ar condicionado ou os \"Curujões\" que passam de madrugada.</string>
+    <string name="into_slide_desc4_onboarding">Descubra quais ônibus passam por perto de você, na sua rua/avenida, quais tarifas eles cobram e quais números os identificam.</string>
+    <string name="into_slide_desc5_onboarding">Divirta-se com nosso \"Sutaque\", adquira itens para melhorar seus resultados ou ganhar dinheiro. Encontre os \"eastereggs\" escondidos.</string>
+    <string name="into_slide_desc6_onboarding">A tão esperada e solicitada função de visualizar paradas ou buscar ônibus pelo mapa, estará disponível em breve! Fique atento!</string>
+
+    <string name="text_destino">Destino</string>
+    <string name="text_partida">Partida</string>
+    <string name="text_escala">Escala</string>
+
+    <string name="content_description_img_timeline">Ícone da timeline</string>
+    <string name="content_description_img_onibus">Ícone de ônibus</string>
+    <string name="content_description_img_escala">Ícone de escala</string>
+    <string name="content_description_img_destino">Ícone de destino</string>
+    <string name="content_description_img_divider">Divisor de conteúdo</string>
+    <string name="content_description_img_start">Ícone de start</string>
+    <string name="content_description_img_best_price">Ícone que indica rota com melhor tarifa</string>
+
+    <string name="content_description_rating">"Ícone com cinco estrelas "</string>
+    <string name="feedbak_rating_title">\"Ainda num votasse?\"</string>
+    <string name="feedbak_rating_title0">\"Já avaliasse?\"</string>
+    <string name="feedbak_rating_title1">\"Já fosse votar?\"</string>
+    <string name="feedbak_rating_title2">\"Cadê teu voto?\"</string>
+    <string name="feedbak_rating_title3">\"Já motivasse a gente?\"</string>
+    <string name="feedback_rating_subtitle">\"Façiço não. Vote logo!\"</string>
+    <string name="feedback_rating_btn_send">\"Foi mal vei! Vô votar agora mermo!\"</string>
+    <string name="feedback_rating_btn_later">Mais tarde</string>
 </resources>

@@ -42,4 +42,17 @@
     # zoom in out infinity colors
     <color name="promo_color">#FF0564FF</color>
 
+    # bus colors
+    <color name="bus_divider">#E6E6E6</color>
+    <color name="bus_timeline">#193969</color>
+    <color name="bus_title">#212121</color>
+    <color name="bus_subtitle">#757575</color>
+    <color name="stroke_price">#E6E6E6</color>
+    <color name="badge_destino">#2BA44D</color>
+    <color name="text_color">#F5F5F5</color>
+
+    <color name="card_blue_bg">#C5E5FF</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_blue">#0061A5</color>
+
 </resources>

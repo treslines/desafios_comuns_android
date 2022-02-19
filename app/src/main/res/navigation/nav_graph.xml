@@ -107,12 +107,12 @@
         <action
             android:id="@+id/action_mainFragment_to_zoomInfiniteFragment"
             app:destination="@id/zoomInfiniteFragment" />
-<!--        <action-->
-<!--            android:id="@+id/action_mainFragment_to_linhaDoTempoFragment"-->
-<!--            app:destination="@id/linhaDoTempoFragment" />-->
-<!--        <action-->
-<!--            android:id="@+id/action_mainFragment_to_onboardingFragment"-->
-<!--            app:destination="@id/onboardingFragment" />-->
+        <action
+            android:id="@+id/action_mainFragment_to_linhaDoTempoFragment"
+            app:destination="@id/linhaDoTempoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
         <action
             android:id="@+id/action_mainFragment_to_lottieFragment"
             app:destination="@id/lottieFragment" />
@@ -143,6 +143,9 @@
         <action
             android:id="@+id/action_mainFragment_to_pluralFragment"
             app:destination="@id/pluralFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_ratingDialogFragment"
+            app:destination="@id/ratingDialogFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -406,24 +409,24 @@
 <!--            android:id="@+id/action_zoomOnClickFragment_to_mainFragment"-->
 <!--            app:destination="@id/mainFragment" />-->
 <!--    </fragment>-->
-<!--    <fragment-->
-<!--        android:id="@+id/linhaDoTempoFragment"-->
-<!--        android:name="com.progdeelite.dca.timeline.LinhaDoTempoFragment"-->
-<!--        android:label="Linha Do Tempo"-->
-<!--        tools:layout="@layout/fragment_linha_do_tempo" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_linhaDoTempoFragment_to_mainFragment"-->
-<!--            app:destination="@id/mainFragment" />-->
-<!--    </fragment>-->
-<!--    <fragment-->
-<!--        android:id="@+id/onboardingFragment"-->
-<!--        android:name="com.progdeelite.dca.onboarding.OnboardingFragment"-->
-<!--        android:label="Processo de Onboarding"-->
-<!--        tools:layout="@layout/fragment_onboarding" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_onboardingFragment_to_mainFragment"-->
-<!--            app:destination="@id/mainFragment" />-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@+id/linhaDoTempoFragment"
+        android:name="com.progdeelite.dca.timeline.LinhaDoTempoFragment"
+        android:label="Linha Do Tempo"
+        tools:layout="@layout/fragment_linha_do_tempo" >
+        <action
+            android:id="@+id/action_linhaDoTempoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.progdeelite.dca.onboarding.OnboardingFragment"
+        android:label="Processo de Onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/lottieFragment"
         android:name="com.progdeelite.dca.lottie_files.LottieFragment"
@@ -512,6 +515,15 @@
         tools:layout="@layout/fragment_plural" >
         <action
             android:id="@+id/action_pluralFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratingDialogFragment"
+        android:name="com.progdeelite.dca.rating_dialog.RatingDialogFragment"
+        android:label="Rating Dialog"
+        tools:layout="@layout/fragment_rating_dialog" >
+        <action
+            android:id="@+id/action_ratingDialogFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
