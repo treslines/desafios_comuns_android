@@ -95,4 +95,19 @@
     <string name="feedback_rating_btn_send">\"Foi mal vei! Vô votar agora mermo!\"</string>
     <string name="feedback_rating_btn_later">Mais tarde</string>
 
+    <string name="card_route_title">Conexões de ônibus</string>
+    <string name="card_route_subtitle">Trace rotas e visualize conexões…</string>
+
+    <string name="card_bus_map_title">Ônibus no Mapa</string>
+    <string name="card_bus_map_subtitle">Clique linhas e destino no mapa…</string>
+
+    <string name="card_bus_stop_title">Paradas de ônibus</string>
+    <string name="card_bus_stop_subtitle">Veja se esta perto de descer…</string>
+
+    <string name="card_bus_line_title">Linhas de ônibus</string>
+    <string name="card_bus_line_subtitle">Quais linhas passam por aqui?</string>
+
+    <string name="view_item_title">Título View Item</string>
+    <string name="view_item_subtitle">Subtítulo com descrição</string>
+
 </resources>

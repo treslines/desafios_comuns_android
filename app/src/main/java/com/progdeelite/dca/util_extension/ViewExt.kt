@@ -200,7 +200,7 @@ fun View.fadeIn(duration: Long = 0, endAction: () -> Unit = {}) = animate()
     }
     .start()
 
-fun ViewGroup.inflate(@LayoutRes layoutResId: Int, attachToRoot: Boolean = false) =
+fun ViewGroup.inflate(@LayoutRes layoutResId: Int, attachToRoot: Boolean = false): View =
     LayoutInflater.from(context).inflate(layoutResId, this, attachToRoot)
 
 const val PREF_KEY_RATING_DONE_BOOL = "RATING_DONE"

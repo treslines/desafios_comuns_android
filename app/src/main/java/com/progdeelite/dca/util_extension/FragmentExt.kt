@@ -490,3 +490,22 @@ fun Fragment.getDrawable(@DrawableRes id: Int): Drawable? {
 fun Fragment.getColor(@ColorRes id: Int): Int {
     return requireActivity().resources.getColor(id, null)
 }
+
+fun Fragment.showDialog(
+    title: String? = null,
+    message: String,
+    positiveButtonLabel: String,
+    positiveButtonClickListener: () -> Unit = {},
+    negativeButtonLabel: String? = null,
+    negativeButtonClickListener: () -> Unit = {},
+    cancelable: Boolean = true,
+    cancelListener: () -> Unit = {}
+) = MaterialAlertDialogBuilder(requireContext())
+    .setTitle(title)
+    .setMessage(message)
+    .setPositiveButton(positiveButtonLabel) { _, _ -> positiveButtonClickListener() }
+    .setNegativeButton(negativeButtonLabel) { _, _ -> negativeButtonClickListener() }
+    .setCancelable(cancelable)
+    .setOnCancelListener { cancelListener() }
+    .create()
+    .also { it.show() }

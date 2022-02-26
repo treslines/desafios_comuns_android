@@ -50,6 +50,7 @@
     <color name="stroke_price">#E6E6E6</color>
     <color name="badge_destino">#2BA44D</color>
     <color name="text_color">#F5F5F5</color>
+    <color name="card_lang_bg">#85C9F6</color>
 
     <color name="card_blue_bg">#C5E5FF</color>
     <color name="color_white">#FFFFFF</color>

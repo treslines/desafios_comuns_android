@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_ro"
+    android:layout_marginTop="6dp">
+
+    <!--Base CardView-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/base_cardview"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ConstraintLayout for entire CardView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_card"
+            app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--This is fixed -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fixed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/cardIconMain"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="sua descrição"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="40dp"
+                    android:paddingBottom="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/fixed_layout"
+                    app:srcCompat="@drawable/route_66"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/cardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bangers"
+                    android:textColor="@color/color_blue"
+                    app:layout_constraintEnd_toStartOf="@+id/cardIconMain"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="seu titulo"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="18sp"
+                    android:paddingStart="16dp"
+                    tools:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/cardSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:paddingStart="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/color_blue"
+                    android:fontFamily="@font/ubuntu_light"
+                    app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                    app:layout_constraintEnd_toEndOf="@+id/cardTitle"
+                    app:layout_constraintStart_toStartOf="@+id/cardTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/cardTitle"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="seu sub titulo"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/cardImgArrow"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="sua descrição"
+                    android:padding="6dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/cardIconMain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_right"
+                    app:tint="@color/color_blue" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
