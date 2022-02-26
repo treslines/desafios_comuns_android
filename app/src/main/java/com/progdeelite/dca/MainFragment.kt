@@ -309,24 +309,39 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             scrollPercent.setOnClickListener { navTo(R.id.percentualScrollViewFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Listas com linha do tempo: https://youtu.be/xxxxxxxxxxx                    |
+            // | VIDEO: Listas com linha do tempo: https://youtu.be/W8QwM17Kqts                    |
             // +-----------------------------------------------------------------------------------+
              timeline.setOnClickListener { navTo(R.id.linhaDoTempoFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: processo de onboarding com progress steps: https://youtu.be/xxxxxxxxxxx    |
+            // | VIDEO: processo de onboarding com progress steps: https://youtu.be/XXF6BLzCd3Q    |
             // +-----------------------------------------------------------------------------------+
              onboarding.setOnClickListener { navTo(R.id.onboardingFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: como exibir rating dialog: https://youtu.be/xxxxxxxxxxx                    |
+            // | VIDEO: como exibir rating dialog: https://youtu.be/WSF0cQQ_tcM                    |
             // +-----------------------------------------------------------------------------------+
             ratingDialog.setOnClickListener { navTo(R.id.ratingDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Zoom In no clique: https://youtu.be/xxxxxxxxxxx                            |
+            // | VIDEO: Como forçar atualização App: https://youtu.be/xxxxxxxxxxx                  |
             // +-----------------------------------------------------------------------------------+
-            // zoomNoClique.setOnClickListener { navTo(R.id.zoomOnClickFragment) }
+            forceUpdate.setOnClickListener { navTo(R.id.forceUpdateFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Livedata que só atualiza nas mudanças https://youtu.be/xxxxxxxxxxx         |
+            // +-----------------------------------------------------------------------------------+
+            livedata.setOnClickListener { navTo(R.id.normalEventObserverFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Como exibir views diferentes em listas: https://youtu.be/xxxxxxxxxxx       |
+            // +-----------------------------------------------------------------------------------+
+            viewItem.setOnClickListener { navTo(R.id.viewTypesFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Settings com view types recyclerview: https://youtu.be/xxxxxxxxxxx         |
+            // +-----------------------------------------------------------------------------------+
+            settingsViewItem.setOnClickListener { navTo(R.id.settingsFragment) }
         }
     }
 }

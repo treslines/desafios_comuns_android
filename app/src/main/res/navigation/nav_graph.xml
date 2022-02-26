@@ -146,6 +146,18 @@
         <action
             android:id="@+id/action_mainFragment_to_ratingDialogFragment"
             app:destination="@id/ratingDialogFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_normalEventObserverFragment"
+            app:destination="@id/normalEventObserverFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_forceUpdateFragment"
+            app:destination="@id/forceUpdateFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewTypesFragment"
+            app:destination="@id/viewTypesFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -524,6 +536,54 @@
         tools:layout="@layout/fragment_rating_dialog" >
         <action
             android:id="@+id/action_ratingDialogFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleEventObserverFragment"
+        android:name="com.progdeelite.dca.single_event_livedata.SingleEventObserverFragment"
+        android:label="Evento Único LiveData"
+        tools:layout="@layout/fragment_single_event_observer" >
+        <action
+            android:id="@+id/action_singleEventObserverFragment_to_normalEventObserverFragment"
+            app:destination="@id/normalEventObserverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/normalEventObserverFragment"
+        android:name="com.progdeelite.dca.single_event_livedata.NormalEventObserverFragment"
+        android:label="Evento Único LiveData"
+        tools:layout="@layout/fragment_normal_event_observer" >
+        <action
+            android:id="@+id/action_normalEventObserverFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_normalEventObserverFragment_to_singleEventObserverFragment"
+            app:destination="@id/singleEventObserverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.progdeelite.dca.settings_recycleview.SettingsFragment"
+        android:label="Configurações ViewType"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forceUpdateFragment"
+        android:name="com.progdeelite.dca.force_update.ForceUpdateFragment"
+        android:label="Forçar Atualização"
+        tools:layout="@layout/fragment_force_update" >
+        <action
+            android:id="@+id/action_forceUpdateFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTypesFragment"
+        android:name="com.progdeelite.dca.view_types.ViewTypesFragment"
+        android:label="Visualizações Diferentes"
+        tools:layout="@layout/fragment_view_types" >
+        <action
+            android:id="@+id/action_viewTypesFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
