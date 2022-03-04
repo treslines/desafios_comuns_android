@@ -158,6 +158,12 @@
         <action
             android:id="@+id/action_mainFragment_to_viewTypesFragment"
             app:destination="@id/viewTypesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_secureFlagFragment"
+            app:destination="@id/secureFlagFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_lifecycleObserverFragment"
+            app:destination="@id/lifecycleObserverFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -584,6 +590,24 @@
         tools:layout="@layout/fragment_view_types" >
         <action
             android:id="@+id/action_viewTypesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secureFlagFragment"
+        android:name="com.progdeelite.dca.secure_flag.SecureFlagFragment"
+        android:label="Secure Flag"
+        tools:layout="@layout/fragment_secure_flag" >
+        <action
+            android:id="@+id/action_secureFlagFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lifecycleObserverFragment"
+        android:name="com.progdeelite.dca.lifecycleobserver.LifecycleObserverFragment"
+        android:label="Lifecycle Observer"
+        tools:layout="@layout/fragment_lifecycle_observer" >
+        <action
+            android:id="@+id/action_lifecycleObserverFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

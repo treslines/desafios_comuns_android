@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secure_flag.SecureFlagFragment">
+
+
+    <TextView
+        android:id="@+id/help_text"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center"
+        android:text="Toque e segure para exibir"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hidden_text"
+        android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="@dimen/default_margin"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="123-4567"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_text" />
+
+    <TextView
+        android:id="@+id/hidden_text_mask"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/hidden_text"
+        app:layout_constraintStart_toStartOf="@+id/hidden_text"
+        app:layout_constraintTop_toBottomOf="@+id/help_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

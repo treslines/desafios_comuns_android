@@ -324,24 +324,34 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             ratingDialog.setOnClickListener { navTo(R.id.ratingDialogFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Como forçar atualização App: https://youtu.be/xxxxxxxxxxx                  |
+            // | VIDEO: Como forçar atualização App: https://youtu.be/quz0eojFwb0                  |
             // +-----------------------------------------------------------------------------------+
             forceUpdate.setOnClickListener { navTo(R.id.forceUpdateFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Livedata que só atualiza nas mudanças https://youtu.be/xxxxxxxxxxx         |
+            // | VIDEO: Livedata que só atualiza nas mudanças https://youtu.be/IYD2vFAKY0s         |
             // +-----------------------------------------------------------------------------------+
             livedata.setOnClickListener { navTo(R.id.normalEventObserverFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Como exibir views diferentes em listas: https://youtu.be/xxxxxxxxxxx       |
+            // | VIDEO: Como exibir views diferentes em listas: https://youtu.be/3GXC7cRv5yw       |
             // +-----------------------------------------------------------------------------------+
             viewItem.setOnClickListener { navTo(R.id.viewTypesFragment) }
 
             // +-----------------------------------------------------------------------------------+
-            // | VIDEO: Settings com view types recyclerview: https://youtu.be/xxxxxxxxxxx         |
+            // | VIDEO: Settings com view types recyclerview: https://youtu.be/DrrqAfDKPDA         |
             // +-----------------------------------------------------------------------------------+
             settingsViewItem.setOnClickListener { navTo(R.id.settingsFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Como contornar problema secure flag Android 12: https://youtu.be/xxxxxxxxxx |
+            // +-----------------------------------------------------------------------------------+
+            secureFlag.setOnClickListener { navTo(R.id.secureFlagFragment) }
+
+            // +-----------------------------------------------------------------------------------+
+            // | VIDEO: Como saber que app foi para background: https://youtu.be/xxxxxxxxxxxx      |
+            // +-----------------------------------------------------------------------------------+
+            lifecycleObserver.setOnClickListener { navTo(R.id.lifecycleObserverFragment) }
         }
     }
 }
