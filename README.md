@@ -2,6 +2,8 @@
 # 🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
 **Tenho certeza que cedo ou tarde você vai precisar desse repositório.** Após o **SUCESSO** que a playlist do **Certificado** para o <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a> teve e esta tendo no canal <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">**PROGRAMADOR DE ELITE**</a>, resolvi criar mais esse App no mesmo estilo, porém agora focando nos principais desafios que enfrentamos no nosso dia a dia. Tudo em 🇵🇹 **PORTUGUÊS** 🇧🇷 e em **KOTLIN!** 
 
+Agora se você estiver intessado em Compose, já segue e deixa uma estrelinha nesse repositório aqui: <a href="https://github.com/treslines/android_compose_arsenal" target="_blank">**COMPOSE ARSENAL**</a> 
+
 
 ### 👉 Desafios Comuns Android
 Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguêsa** 🇧🇷! 
