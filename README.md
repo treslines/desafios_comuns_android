@@ -119,9 +119,8 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 🇧🇷 **Preparatório em Português** 🇵🇹
 </br>
 <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a>
-
-| 🎨 App Multi-Uso | 🎨 Resultdo Final |
-| :------------- |:-------------:|
-| <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer1.png" width="240" height="520"></a> | <a href="https://github.com/treslines/aad" target="_blank"><img src="https://github.com/treslines/aad/blob/main/app/src/main/mini/google-android-certification-associate-android-developer2.png" width="240" height="520"></a>|
+</br>
+<a href="https://github.com/treslines/aad" target="_blank"> **JETPACK COMPOSE ARSENAL** </a>
+</br>
 
 
