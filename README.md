@@ -1,33 +1,17 @@
 
 # 🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
-**Tenho certeza que cedo ou tarde você vai precisar desse repositório.** Após o **SUCESSO** que a playlist do **Certificado** para o <a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a> teve e esta tendo no canal <a href="https://www.youtube.com/c/ProgramadordeElite" target="_blank">**PROGRAMADOR DE ELITE**</a>, resolvi criar mais esse App no mesmo estilo, porém agora focando nos principais desafios que enfrentamos no nosso dia a dia. Tudo em 🇵🇹 **PORTUGUÊS** 🇧🇷 e em **KOTLIN!** 
-
-Agora se você estiver intessado em Compose, já segue e deixa uma estrelinha nesse repositório aqui: <a href="https://github.com/treslines/android_compose_arsenal" target="_blank">**COMPOSE ARSENAL**</a> 
-
-
-### 👉 Desafios Comuns Android
 Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguêsa** 🇧🇷! 
 
-| Desafios Comuns Android Dia | Desafios Comuns Android Noite |
-| ------------- | ------------- |
-| <img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/desafios_comuns_android_kotlin_1.jpg" width="280" height="607"> | <img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/desafios_comuns_android_kotlin_2.jpg" width="280" height="607"> |
+| Desafios Comuns Android |
+| ------------- | 
+| <img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/desafios_comuns_android_kotlin_1.jpg" width="280" height="607"> 
 
 ### 👉 Quais são as vantagens desse aplicativo referência?
 * ✔️ Ele é modular e pode ser incrementado com cada novidade que for surgindo
 * ✔️ Você não tem que baixar centenas de "Codelabs" espalhados por ai.
 * ✔️ Você pode usar os snippets em seus projetos comerciais sem problemas
-* ✔️✔️ **Indice, títulos e thumbnails para as vídeo-aulas no youtube** (👇 OLHA AQUI EM BAIXO)
+* ✔️ **Indice, títulos e thumbnails para as vídeo-aulas no youtube** (👇 OLHA AQUI EM BAIXO)
 
-
-### 👉 Gostaria de Contribuir de alguma maneira?
-Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL 🤖** mostrando esse Projeto a grupos de #️⃣ **slack**, 💬 **whatsapp**, 📖 **facebook** etc. Por mais conteúdo de qualidade e em 🇵🇹 Português! 🇧🇷 Estamos juntos!👊
-
----
-
-### 👉 **Ta curtindo o Projeto?**
-🎉 Deixa uma estrelinha ⭐ ai para me motivar! 😉 
-
----
 
 ### 🧪 **PROBLEMA OU DESAFIO**
 | Titulo        | 📺 Youtube Link |
@@ -113,6 +97,16 @@ Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL �
 | ✔️ VIEWTYPES - COMO CRIAR TELA DE CONFIGURAçÕES PERSONALIZADA COM RECYCLERVIEW NO KOTLON ANDROID | <a href="https://youtu.be/DrrqAfDKPDA" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BVIEWTYPES%5D-COMO-CRIAR-TELA-DE-CONFIGURA%C3%A7%C3%95ES-PERSONALIZADA-COM-RECYCLERVIEW-NO-KOTLON-ANDROID.png" width="100" height="56"></a> |
 | ✔️ RECENT APPS THUMBNAIL - COMO IMPEDIR QUE A TELA DE BACKGROUND SEJA EXIBIDA PARA O USUÁRIO ANDROID | <a href="https://youtu.be/tKCdjoUJunQ" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BRECENT-APPS-THUMBNAIL%5D-COMO-IMPEDIR-QUE-A-TELA-DE-BACKGROUND-SEJA-EXIBIDA-PARA-O-USU%C3%81RIO-ANDROID.png" width="100" height="56"></a> |
 | ✔️ APP IN BACKGROUND - COMO DETECTAR QUE APP ENTROU EM BACKGROUND KOTLIN ANDROID | <a href="https://youtu.be/tZnRK93TMlE" target="_blank"><img src="https://github.com/treslines/desafios_comuns_android/blob/main/app/src/main/mini/%5BAPP-IN-BACKGROUND%5D-COMO-DETECTAR-QUE-APP-ENTROU-EM-BACKGROUND-KOTLIN-ANDROID.png" width="100" height="56"></a> |
+---
+
+### 👉 Gostaria de Contribuir de alguma maneira?
+Me ajudem a fomentar e fortalecer nossa **COMUNIDADE ANDROID BRASIL/PORTUGAL 🤖** mostrando esse Projeto a grupos de #️⃣ **slack**, 💬 **whatsapp**, 📖 **facebook** etc. Por mais conteúdo de qualidade e em 🇵🇹 Português! 🇧🇷 Estamos juntos!👊
+
+---
+
+### 👉 **Ta curtindo o Projeto?**
+🎉 Deixa uma estrelinha ⭐ ai para me motivar! 😉 
+
 ---
 
 ### 👉 **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
