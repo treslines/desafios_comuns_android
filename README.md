@@ -1,6 +1,6 @@
 
 # 🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
-Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguêsa** 🇧🇷! 
+Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguesa** 🇧🇷! 
 
 | Desafios Comuns Android |
 | ------------- | 
@@ -126,15 +126,16 @@ Você prefere um conteúdo por escrito de **alta qualidade** e **extremamente di
 - 🧲 | LinkedIn: seja encontrado por recrutadores ► https://bit.ly/linkedinGb
 - 🧲 | Github: deixa uma estrelinha ► https://github.com/treslines
 
-
 ---
 
-### 👉 **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
-🇧🇷 **Preparatório em Português** 🇵🇹
+### ⚽ **OUTROS REPOSITÓRIOS QUE VOCÊ VAI CURTIR MUITO:**
+🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
 </br>
-<a href="https://github.com/treslines/aad" target="_blank">**GOOGLE DEVELOPER CERTIFICATION**</a>
+<a href="https://github.com/treslines/aad" target="_blank"> 👉 **GOOGLE DEVELOPER CERTIFICATION**</a>
 </br>
-<a href="https://github.com/treslines/aad" target="_blank"> **JETPACK COMPOSE ARSENAL** </a>
+<a href="https://github.com/treslines/android_compose_arsenal" target="_blank"> 👉 **JETPACK COMPOSE ARSENAL** </a>
+</br>
+<a href="https://github.com/treslines/kotlin_multiplatform_mobile" target="_blank"> 👉 **KOTLIN MULTIPLATFORM MOBILE (KMM)** </a>
 </br>
 
 
