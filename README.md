@@ -105,6 +105,13 @@ Algum dos meus vídeos, posts ou repositórios te salvou muito tempo ou te ajudo
 #### Caso não possa, me deixa ao menos uma estrelinha ⭐ aqui no repositório. Obrigado pelo suporte. 😎🤜🤛
 ![image](https://user-images.githubusercontent.com/1042887/170558597-8ff115e4-58f1-445e-9125-422729a67a22.png)
 
+# Posso Ajudar/Contribuir?
+Seja também um multiplicador de conhecimento. Mostre esse repositório para sua **COMUNIDADE/GRUPO/SLACK MOBILE**
+:
+| 👇 Texto com link para postar nas redes sociais 👇 |
+| :------------- |
+| Repositório bacana em Português 🇵🇹 🇧🇷 para quem pretende criar um projeto multiplataforma mobile. Vai te evitar dor de cabeça e economizar muito tempo no trabalho. https://bit.ly/kotlin-multiplatform-mobile |
+
 # Quer fazer networking, mas não sabe como? 
 **Telegram**: Entra no nosso do telegram para um contato mais rápido e direto: https://bit.ly/telegramGb
 ![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
