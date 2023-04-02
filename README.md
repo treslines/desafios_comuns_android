@@ -2,6 +2,19 @@
 # 🇧🇷 **Almanac do Desenvolvedor Profissional Android** 🇵🇹 
 Resoluções a problemas e desafios comuns da plataforma Android, que todo desenvolvedor profissional cedo ou tarde irá enfrentar e deveria ter visto, ao menos, uma única vez na vida! Feito para fortalecer nossa comunidade Android da 🇵🇹 **língua Portuguesa** 🇧🇷! 
 
+Aqui alguns tópicos que iremos abordar neste repositório:
+
+- Introdução ao desenvolvimento de aplicativos Android com Kotlin
+- Como configurar o ambiente de desenvolvimento para Kotlin no Android Studio
+- Como criar a interface do usuário (UI) com o Android XML e o Kotlin
+- Trabalhando com o ciclo de vida de uma Activity em Kotlin
+- Como implementar a lógica de negócios em Kotlin
+- Acesso a dados com Kotlin e SQLite
+- Como consumir APIs REST em Kotlin para aplicativos Android
+- Implementando autenticação e autorização em aplicativos Android com Kotlin
+- Como implementar notificações push em aplicativos Android com Kotlin
+- Testes de unidade e testes de integração em aplicativos Android com Kotlin
+
 # ⛓️ **Antes de continuar, garanta sua empregabilidade futura!**
 Networking é uma das coisas mais importantes na área de TI. (Se não a mais importante) **Em tempos de tantos layoffs, uma boa rede de contatos é indispensável**. Portanto, comece a criar sua rede de networking o quanto antes. Você irá me agradecer no futuro.  **Não sabe por onde começar?** Conecte-se comigo e participe dos nossos grupos de ajuda e networking. O pessoal é super ativo, colaborativo e nos ajudamos uns aos outros. 
 - 🧲 | Telegram: networking gratuito ► https://bit.ly/telegramGb
